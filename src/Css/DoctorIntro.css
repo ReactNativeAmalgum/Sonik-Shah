@@ -1,0 +1,122 @@
+.section-about {
+    height: 75vh;
+    position: relative;
+}
+
+.about-box {
+    background-color: #FFFFFF;
+    padding: 50px 30px
+}
+
+.appointment-form .form-group {
+    margin-bottom: 20px
+}
+
+.appointment-form .form-control {
+    /* ; */
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    padding-left: 0;
+    position: relative;
+}
+
+.appointment-form .form-control::placeholder {
+    color: #fff
+}
+
+.appointment-form input.form-control:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -1px;
+    width: 0%;
+    height: 1px;
+    background-color: #00a3c8;
+    transition: all ease 0.5s
+}
+
+.appointment-form .form-control:focus:hover {
+    width: 100%
+}
+
+.appointment-form .form-control:focus {
+    box-shadow: none;
+    border-bottom-color: #00a3c8
+}
+
+
+.scanqr{
+    font-size: 12px;color: #666666;
+}
+
+.qrimg{
+    width: 120px;
+}
+
+.tm-half-section-bg.right {
+    right: 0;
+}
+.tm-half-section-bg {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+}
+.tm-half-section-bg:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--colorPrimary);
+    opacity: 0.85;
+}
+.tm-half-section-bg img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.about-box {
+    background-color: #FFFFFF;
+    padding: 50px 30px;
+}
+.section-title2.dark {
+    border-bottom-color: #ddd;
+}
+.section-title2 {
+    border-bottom: 2px solid var(--colorPrimary);
+    margin-bottom: 20px;
+}
+.section-title2.dark h4 {
+    color: var(--colorPrimary);
+}
+.section-title2 h4 {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+.section-title2.dark h4:after {
+    background-color: var(--colorPrimary);
+}
+.section-title2 h4:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+}
+.sonik-shah-img{
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+}
+ .doctorIntro{
+    height: 50vh;
+}

@@ -1,0 +1,33 @@
+const Blogs =[
+    {
+        id:"1",
+        blogTitle:"",
+        blogDescription:"",
+    },
+    {
+        id:"1",
+        blogTitle:"",
+        blogDescription:"",
+    },
+    {
+        id:"1",
+        blogTitle:"",
+        blogDescription:"",
+    },
+    {
+        id:"1",
+        blogTitle:"",
+        blogDescription:"",
+    },
+    {
+        id:"1",
+        blogTitle:"",
+        blogDescription:"",
+    },
+    {
+        id:"1",
+        blogTitle:"",
+        blogDescription:"",
+    },
+]
+export default Blogs

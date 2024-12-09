@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Breadcrumb = () => {
+const Breadcrumb = ({title}) => {
   return (
     <>
         <section className="breadcrumb">
@@ -9,12 +9,12 @@ const Breadcrumb = () => {
       <div className="col-12" bis_skin_checked={1}>
         <div className="breadcrumb_text" bis_skin_checked={1}>
           <div>
-          <h1>service details</h1>
+          <h1>{title}</h1>
           <ul>
             <li>
               <a href="#">Home</a>
             </li>
-            <li>Service Details</li>
+            <li>{title}</li>
           </ul>
           </div>
         </div>

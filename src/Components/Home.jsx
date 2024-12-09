@@ -22,18 +22,54 @@ import 'swiper/css/pagination';
 // import required modules
 import { Pagination } from 'swiper/modules';
 import Testimonials from "./Testimonials";
+import { MetaTags } from "react-meta-tags";
+import bgImage from '../Asserts/banner_img_bg.webp'
+import galleryData from "../Asserts/galleryData";
 
 const Home = () => {
   return (
     <>
+
+      <MetaTags>
+        <title>Best Orthopedic Surgeon in Kandivali | Sonik Shah</title>
+        <meta title="Best Orthopedic Surgeon in Kandivali | Sonik Shah" />
+        <meta name="description" content="Best Orthopedic Surgeon in Kandivali, Orthopedic Doctor in Kandivali, Golden Knee Replacement in Kandivali, Best Trauma Surgeons in Kandivali, Best Orthopedic in Kandivali, Knee Surgeon in kandivali,best shoulder specialist in Kandivali,Hip Surgeon in Kandivali, Partial Knee Replacement in Kandivali, Robotic Knee Replacement Surgeon in Kandivali, Best Arthroscopy Doctors in Kandivali, Ortho Specialist in Kandivali, Orthopedic Care near Kandivali" />
+        <link rel="canonical" href="https://drsonikshah.com/" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta property="og:title" content="Best Orthopedic Surgeon in Kandivali | Sonik Shah" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://drsonikshah.com/" />
+        <meta property="og:description" content="Discover unparalleled orthopedic care with the Best Orthopedic Surgeon in Kandivali. Expertise, compassion & cutting-edge treatments tailored to your needs.." />
+        <meta property="og:image" content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png" />
+      </MetaTags>
+      <div
+        className="col-xxl-6 col-lg-6 col-xl-6 wow fadeInRight home-banner"
+        data-wow-duration="1s"
+        style={{
+          visibility: "visible",
+          animationDuration: "1s",
+          animationName: "fadeInRight",
+        }}
+      >
+        <div className="banner_img">
+          <img src={galleryData.banner} />
+        </div>
+      </div>
+      <div className='head-cont'>
+        <h1 className='special-h1'>Orthopedic Doctor in Kandivali</h1>
+      </div>
       <section
         className="banner"
         style={{
-          background:
-            "url(https://html.themefax.com/madifax/images/banner_bg.jpg)",
+          backgroundImage: bgImage,
         }}
       >
+
         <div className="container">
+
           <div className="row justify-content-between">
             <div
               className="col-xxl-5 col-md-9 col-xl-6 col-lg-6 wow fadeInLeft"
@@ -46,7 +82,7 @@ const Home = () => {
             >
               <div className="banner_text">
                 <h5>Welcome to The best Health center</h5>
-                <h1>We Are Committed To Your Health</h1>
+                <h2 style={{ fontWeight: 200 }}>We Are Committed To Your Health</h2>
                 <p>
                   At our core, we are dedicated to providing exceptional care and support to ensure your health and well-being are always our top priority.
                 </p>
@@ -75,55 +111,10 @@ const Home = () => {
                 </ul>
               </div>
             </div>
-            <div
-              className="col-xxl-6 col-lg-6 col-xl-6 wow fadeInRight"
-              data-wow-duration="1s"
-              style={{
-                visibility: "visible",
-                animationDuration: "1s",
-                animationName: "fadeInRight",
-              }}
-            >
-              <div className="banner_img">
-                <div className="img">
-                  <img
-                    src="https://html.themefax.com/madifax/images/banner_img.png"
-                    alt="img"
-                    className="img-fluid w-100"
-                  />
-                </div>
-                <div className="react">
-                  <img
-                    src={reactIcon}
-                    alt="react img"
-                    className="img-fluid w-100"
-                  />
-                </div>
-                <div className="video_call">
-                  <img
-                    src={videoCall}
-                    alt="video img"
-                    className="img-fluid w-100"
-                  />
-                </div>
-                <div className="call">
-                  <img
-                    src={call}
-                    alt="call img"
-                    className="img-fluid w-100"
-                  />
-                </div>
-                <div className="review">
-                  <img
-                    src={review}
-                    alt="review img"
-                    className="img-fluid w-100"
-                  />
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
+
       </section>
 
       {/* Banner End */}
@@ -422,7 +413,7 @@ const Home = () => {
               }}
             >
               <Fade left>
-                <iframe 
+                <iframe
                   width={640}
                   height={360}
                   src="https://www.youtube.com/embed/CxZreWHb3LQ?si=w6jXp5lnCO-pYl8s&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -439,7 +430,7 @@ const Home = () => {
               }}
             >
               <Fade left>
-                <iframe                  width={640}
+                <iframe width={640}
                   height={360} src="https://www.youtube.com/embed/dYNfPlQxq_U?si=Ka1axxXTZYeXopQ0&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </Fade>
               {/* <VideoPlayer /> */}

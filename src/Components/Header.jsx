@@ -89,7 +89,7 @@ const NavBar = () => {
               <Navbar.Brand href="/">
                 <img
                   src={logo}
-                  alt=""
+                  alt="Best Orthopedic Surgeon in Kandivali"
                 />
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -103,25 +103,13 @@ const NavBar = () => {
                     </Link>
                   </Nav.Link>
 
-                  <Nav.Link className="nav-link" href="/AboutUs">
+                  <Nav.Link className="nav-link" href="/orthopedic-doctor-kandivali">
                     {" "}
-                    <Link className="nav-link" to="/AboutUs">
+                    <Link className="nav-link" to="/orthopedic-doctor-kandivali">
                       About Us
                     </Link>
                   </Nav.Link>
 
-                  {/* <Nav.Link
-                    className="nav-link"
-                    href="/best-agro-tourism-resort-neral"
-                  >
-                    {" "}
-                    <Link
-                      className="nav-link"
-                      to="/best-agro-tourism-resort-neral"
-                    >
-                      Rooms
-                    </Link>
-                  </Nav.Link> */}
 
                   <NavDropdown
                     className="nav-link "
@@ -141,31 +129,22 @@ const NavBar = () => {
                       })}
                     </Row>
                   </NavDropdown>
-                  {/* <Nav.Link  className="nav-link"  href="/resort-neral-stay">                 
-                    <Link  className="nav-link"  to="/resort-neral-stay">Services</Link></Nav.Link> */}
 
-                  {/* <Nav.Link href="/Gallery" className="nav-link">
+                  <Nav.Link className="nav-link" href="/ortho-specialist-kandivali">
                     {" "}
-                    <Link to="/Gallery" className="nav-link">
-                      {" "}
-                      Gallery
-                    </Link>
-                  </Nav.Link> */}
-                  {/* <Nav.Link className="nav-link" href="/Blog">
-                    {" "}
-                    <Link className="nav-link" to="/Blog">
-                      Blog
-                    </Link>
-                  </Nav.Link> */}
-                  <Nav.Link className="nav-link" href="/faq">
-                    {" "}
-                    <Link className="nav-link" to="/faq">
+                    <Link className="nav-link" to="/ortho-specialist-kandivali">
                       FAQ
                     </Link>
                   </Nav.Link>
-                  <Nav.Link className="nav-link" href="/Contact">
+                  <Nav.Link className="nav-link" href="/Gallery">
                     {" "}
-                    <Link className="nav-link" to="/Contact">
+                    <Link className="nav-link" to="/Gallery">
+                      Gallery
+                    </Link>
+                  </Nav.Link>
+                  <Nav.Link className="nav-link" href="/orthopedic-near-kandivali">
+                    {" "}
+                    <Link className="nav-link" to="/orthopedic-near-kandivali">
                       Contact Us
                     </Link>
                   </Nav.Link>
@@ -174,16 +153,42 @@ const NavBar = () => {
 
               <div className="socialLinks d-lg-flex d-none">
                 <button className="common_btn faq_btn">Enquiry Now</button>
-                {/* <a
-                  href="https://neelresorts.in/Neelresort/OnlineBooking"
-                  target="_blank"
-                >
-                  {" "}
-                  <i className="fa fa-address-book" /> <span>Book Now</span>
-                </a> */}
+               
               </div>
             </Container>
           </Navbar>
+          {/* <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+            </div>
+            
+          </nav> */}
         </div>
       </section>
     </>

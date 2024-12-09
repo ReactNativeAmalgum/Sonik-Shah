@@ -10,6 +10,10 @@ import ContactUs from './Components/ContactUs';
 import Faq from './Pages/Faq';
 import Blog from './Pages/Blog';
 import AboutUs from './Components/AboutUs';
+import Gallery from './Components/Gallery';
+import Non from './Components/Non';
+
+
 function App() {
   return (
     <>
@@ -26,10 +30,12 @@ function App() {
             </>
           )
         })}
-        <Route path='/Contact' element={<ContactUs />} />
-        <Route path='/AboutUs' element={<AboutUs />} />
-        <Route path='/Blog' element={<Blog />} />
-        <Route path='/faq' element={<Faq />} />
+        <Route path='/orthopedic-near-kandivali' element={<ContactUs />} />
+        <Route path='/orthopedic-doctor-kandivali' element={<AboutUs />} />
+        <Route path='/Gallery' element={<Gallery />} />
+        {/* <Route path='/Blog' element={<Blog />} /> */}
+        <Route path='/ortho-specialist-kandivali' element={<Faq />} />
+        <Route path='*' element={<Non />} />
       </Routes>
       <Footer />
     </BrowserRouter>

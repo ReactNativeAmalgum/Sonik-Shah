@@ -16,6 +16,9 @@ const serviceData = [
         ben3:`Gold is highly compatible with the human body, reducing the risk of allergic reactions.`,
         ben4:`Gold knee replacements provide smoother joint motion, improving mobility and comfort.`,
         ben5:`The gold finish offers a unique and visually appealing look for the knee implant.`,
+        title:`Best Orthopedic Surgeon in Kandivali | Sonik Shah`,
+        slug_descp:`Explore Golden Knee Replacement options in Kandivali for effective surgical solutions. Our expert surgeons provide personalized care.`,
+        keyword:`Golden Knee Replacement in Kandivali`,
     },
     {
         id:1,
@@ -33,7 +36,10 @@ const serviceData = [
         ben2:`The surgery restores function to the knee, making it easier to walk, climb stairs, and engage in other physical activities.`,
         ben3:`With pain reduced and movement improved, patients experience a better overall quality of life, including better participation in social and recreational activities.`,
         ben4:`Modern knee implants are designed to last for many years, providing long-term relief from knee issues.`,
-        ben5:`Patients regain the ability to perform daily tasks without assistance, improving self-reliance and reducing the need for assistive devices.`
+        ben5:`Patients regain the ability to perform daily tasks without assistance, improving self-reliance and reducing the need for assistive devices.`,
+        title:`Partial Knee Replacement in Kandivali | Sonik Shah`,
+        slug_descp:`Discover Partial Knee Replacement options in Kandivali for targeted joint care. Our expert surgeons specialize in advanced techniques.`,
+        keyword:`Best Trauma Surgeons in Kandivali`,
     },
     {
         id:1,
@@ -52,6 +58,9 @@ const serviceData = [
         ben3:`Partial knee replacement can provide significant relief from pain while maintaining a natural feel and movement in the knee.`,
         ben4:`With less extensive surgery, the risk of complications such as infection or blood clots is reduced.`,
         ben5:`Since the procedure is less invasive, patients can usually return to their normal activities, including sports, sooner than with total knee replacement.`,
+        title:`Partial Knee Replacement in Kandivali | Sonik Shah`,
+        slug_descp:` Discover Partial Knee Replacement options in Kandivali for targeted joint care. Our expert surgeons specialize in advanced techniques.`,
+        keyword:`Partial Knee Replacement in Kandivali`,
     },
     {
         id:1,
@@ -70,6 +79,9 @@ const serviceData = [
         ben3:` Surgery can prevent additional injury or complications, ensuring the best possible healing outcome.`,
         ben4:`Proper surgical intervention can help speed up the healing process, allowing patients to recover faster and regain strength.`,
         ben5:` Trauma surgery provides a foundation for long-term recovery, reducing the risk of permanent disability or loss of function.`,
+        title:`Best Trauma Surgeons in Kandivali | Sonik Shah`,
+        slug_descp:`Find the best trauma surgeons in Kandivali for expert emergency care. Our skilled team specializes in treating traumatic injuries with precision and compassion.`,
+        keyword:`Best Trauma Surgeons in Kandivali`,
     },
     {
         id:1,
@@ -88,6 +100,10 @@ const serviceData = [
         ben3:`Patients often experience a significant improvement in overall quality of life, with reduced pain and better mobility.`,
         ben4:`Modern shoulder replacements are designed for durability, providing long-term relief from shoulder joint problems.`,
         ben5:` With advances in surgical techniques, many patients experience a quicker recovery and can resume normal activities sooner.`,
+        title:`Best Shoulder Specialist in Kandivali | Sonik Shah`,
+        slug_descp:`Discover the Best Shoulder Specialist in Kandivali for expert shoulder care. Our specialist offers advanced treatment options tailored to your needs.`,
+        keyword:`best shoulder specialist in Kandivali`,
+        
     },
     {
         id:1,
@@ -105,7 +121,11 @@ const serviceData = [
         ben2:`The surgery is tailored to each patient's specific knee anatomy, ensuring a more customized fit for the implant.`,
         ben3:`Robotic techniques enable smaller incisions and less disruption of surrounding tissues, leading to reduced pain and faster recovery.`,
         ben4:`With less invasive procedures and improved precision, recovery time is often shorter compared to traditional knee replacement surgery.`,
-        ben5:`The enhanced accuracy of robotic surgery helps achieve better implant placement, leading to improved knee function and longer-lasting results.`
+        ben5:`The enhanced accuracy of robotic surgery helps achieve better implant placement, leading to improved knee function and longer-lasting results.`,
+        title:`Robotic Knee Replacement Surgeon in Kandivali | Sonik Shah`,
+        slug_descp:'Meet the leading Robotic Knee Replacement Surgeon in Kandivali specializing in advanced joint surgery. ',
+        keyword:`Robotic Knee Replacement Surgeon in Kandivali`
+
     },
     {
         id:1,
@@ -124,6 +144,9 @@ const serviceData = [
         ben3:`Orthopedic specialists offer advice, treatments, and preventative measures to reduce the risk of future injuries and musculoskeletal issues.`,
         ben4:`By addressing mobility and pain, orthopedic services improve overall quality of life, allowing individuals to engage in daily activities with ease.`,
         ben5:` Orthopedic services are tailored to each patient’s specific condition, ensuring effective treatment and better outcomes.`,
+        title:`Best Orthopedic in Kandivali | Sonik Shah`,
+        slug_descp:` Discover the Best Orthopedic Care in Kandivali for superior treatment of bone and joint issues. Our expert orthopedic team offers personalized care .`,
+        keyword:`Best Orthopedic in Kandivali`,
     },
     // {
     //     id:1,
@@ -151,7 +174,10 @@ const serviceData = [
         ben2:`Through surgery, physical therapy, and rehabilitation, orthopedic services help patients regain movement and flexibility.`,
         ben3:`Orthopedic specialists offer advice, treatments, and preventative measures to reduce the risk of future injuries and musculoskeletal issues.`,
         ben4:`By addressing mobility and pain, orthopedic services improve overall quality of life, allowing individuals to engage in daily activities with ease.`,
-        ben5:`Orthopedic services are tailored to each patient’s specific condition, ensuring effective treatment and better outcomes.`
+        ben5:`Orthopedic services are tailored to each patient’s specific condition, ensuring effective treatment and better outcomes.`,
+        title:`Hip Surgeon in Kandivali | Sonik Shah`,
+        slug_descp:`Find the leading Hip Surgeon in Kandivali for comprehensive hip care. Our expert specializes in advanced surgical techniques, providing personalized care.`,
+        keyword:`Hip Surgeon in Kandivali`,
     },
     {
         id:1,
@@ -170,6 +196,9 @@ const serviceData = [
         ben3:`The smaller incisions and less invasive approach usually result in less post-surgical pain.`,
         ben4:`Arthroscopy allows surgeons to both diagnose and treat joint problems with high precision, improving outcomes.`,
         ben5:`With reduced downtime and faster healing, patients can return to normal activities, including sports, more quickly.`,
+        title:`Best Arthroscopy Doctors in Kandivali | Sonik Shah`,
+        slug_descp:'Best Arthroscopy Doctors in Kandivali | Sonik Shah',
+        keyword:`Best Arthroscopy Doctors in Kandivali`
     },  
 ]
 

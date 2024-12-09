@@ -1,3 +1,19 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+allow:/
+allow:/orthopedic-doctor-kandivali
+allow:/golden-knee-replacement-kandivali
+allow:/best-trauma-surgeons-kandivali
+allow:/best-trauma-surgeons-kandivali
+allow:/knee-surgeon-kandivali
+Disallow:/best-shoulder-specialist-kandivali   
+allow:/partial-knee-replacement-kandivali
+allow:/robotic-knee-replacement-surgeon-kandivali
+allow:/best-arthroscopy-doctors-kandivali
+allow:/ortho-specialist-kandivali
+allow:/orthopedic-near-kandivali
+# Host
+Host: https://drsonikshah.com/
+
+# Sitemaps
+Sitemap: https://drsonikshah.com/sitemap.xml

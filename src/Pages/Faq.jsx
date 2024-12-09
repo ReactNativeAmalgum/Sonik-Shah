@@ -3,38 +3,31 @@ import Breadcrumb from "./Breadcrumb";
 import Accordion from 'react-bootstrap/Accordion';
 import FaqData from "../Asserts/FaqData";
 import Fade from 'react-reveal/Fade';
+import { MetaTags } from "react-meta-tags";
 
 const Faq = () => {
   return (
     <>
-      <Breadcrumb />
-      {/* <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion> */}
+      <MetaTags>
+        <title>Ortho Specialist in Kandivali | Sonik Shah </title>
+        <meta title="Ortho Specialist in Kandivali | Sonik Shah " />
+        <meta name="description" content="Best Orthopedic Surgeon in Kandivali, Orthopedic Doctor in Kandivali, Golden Knee Replacement in Kandivali, Best Trauma Surgeons in Kandivali, Best Orthopedic in Kandivali, Knee Surgeon in kandivali,best shoulder specialist in Kandivali,Hip Surgeon in Kandivali, Partial Knee Replacement in Kandivali, Robotic Knee Replacement Surgeon in Kandivali, Best Arthroscopy Doctors in Kandivali, Ortho Specialist in Kandivali, Orthopedic Care near Kandivali" />
+        <link rel="canonical" href="https://drsonikshah.com/" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta property="og:title" content="Ortho Specialist in Kandivali | Sonik Shah " />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://drsonikshah.com/" />
+        <meta property="og:description" content="Find the top Ortho Specialist in Kandivali for comprehensive orthopedic care. Our specialist offers expert diagnosis and treatment for bone and joint conditions." />
+        <meta property="og:image" content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png" />
+      </MetaTags>
+      <Breadcrumb title={'FAQ'} />
       <section className="faq_page pt_75 xs_pt_45 pb_100 xs_pb_70">
+      <div className='head-cont'>
+          <h1 className='special-h1'>Ortho Specialist in Kandivalii</h1>
+        </div>
         <div className="container" bis_skin_checked={1}>
           <div
             className="faq_accordion accordion accordion-flush mb-5"

@@ -1,0 +1,28 @@
+.home-about-dr {
+    background-color: #f8f9fa;
+  }
+  
+  .home-about-dr h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home-about-dr p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .home-about-dr h2 {
+      font-size: 1.8rem;
+    }
+    .home-about-dr p {
+      font-size: 0.95rem;
+    }
+  }
+  
+
+  .home-dr{
+    font-family: 'Open Sans', sans-serif;
+  }

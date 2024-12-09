@@ -147,8 +147,8 @@ a.more-link {
   letter-spacing: 1px;
 }
 
-section {
-  padding: 70px 0 40px 0;
+.error-container-404 {
+  /* padding: 70px 0 40px 0; */
   display: flex
 ;
   justify-content: center;

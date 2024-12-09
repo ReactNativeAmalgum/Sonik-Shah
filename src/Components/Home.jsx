@@ -14,7 +14,7 @@ import { FaBuilding } from "react-icons/fa";
 import { IoMdCall } from "react-icons/io";
 import Fade from 'react-reveal/Fade';
 import roboticKnee from "../Asserts/robotic-knee-replacement.png";
-
+import HomeAboutDr from "../Pages/HomeAboutDr";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -55,7 +55,7 @@ const Home = () => {
         }}
       >
         <div className="banner_img">
-          <img src={galleryData.banner} />
+          <img src={galleryData.banner} alt="Best Orthopedic Surgeon in Kandivali" />
         </div>
       </div>
       <div className='head-cont'>
@@ -136,15 +136,15 @@ const Home = () => {
                 <div className="about_img">
                   <div className="about_img_1">
                     <img
-                      src="https://images.squarespace-cdn.com/content/v1/5abdee1596d455819877579b/c869715e-2496-41e5-991b-ad3c83131d76/orthopaedic-transformed.png?format=2500w"
-                      alt="about img"
+                      src={galleryData.knee}
+                      alt="Best Orthopedic Surgeon in Kandivali"
                       className="img-fluid w-100"
                     />
                   </div>
                   <div className="about_img_2">
                     <img
-                      src="https://media.istockphoto.com/id/1133629763/photo/therapist-showing-knee-joint-model.jpg?s=2048x2048&w=is&k=20&c=rZlbQpN7fifIlHJ2ArD62u26-l4ZRRXOeP4jPEXq_mc="
-                      alt="about img"
+                      src={galleryData.knee1}
+                      alt="Best Orthopedic Surgeon in Kandivali"
                       className="img-fluid w-100"
                     />
                     <a
@@ -183,7 +183,7 @@ const Home = () => {
                   <li>On duty Doctors</li>
                   <li>24/7 Medical Emergency</li>
                 </ul>
-                <a href="about.html" className="common_btn">
+                <a href="/orthopedic-doctor-kandivali" className="common_btn">
                   Discover More
                 </a>
               </div>
@@ -209,26 +209,11 @@ const Home = () => {
                 <div className="about_img">
                   <div className="">
                     <img
-                      src="https://aroraclinic.com/wp-content/uploads/2020/11/goldent-knee.png"
-                      alt="about img"
+                      src={galleryData.goldknee}
+                      alt="Best Orthopedic Surgeon in Kandivali"
                       className="img-fluid w-100"
                     />
                   </div>
-                  {/* <div className="about_img_2">
-                    <img
-                    src="https://html.themefax.com/madifax/images/about_img2.jpg"
-                    alt="about img"
-                    className="img-fluid w-100"
-                    />
-                    <a
-                    className="play_btn venobox vbox-item"
-                    data-autoplay="true"
-                    data-vbtype="video"
-                    href="https://youtu.be/nqye02H_H6I"
-                    >
-                    <i className="fas fa-play" aria-hidden="true" />
-                    </a>
-                </div> */}
                 </div>
               </div>
             </Fade>
@@ -256,7 +241,7 @@ const Home = () => {
                   <li>On duty Doctors</li>
                   <li>24/7 Medical Emergency</li>
                 </ul>
-                <a href="about.html" className="common_btn">
+                <a href="/golden-knee-replacement" className="common_btn">
                   Discover More
                 </a>
               </div>
@@ -314,14 +299,14 @@ const Home = () => {
                   <div className="">
                     <img
                       src={roboticKnee}
-                      alt="about img"
+                      alt="Best Orthopedic Surgeon in Kandivali"
                       className="img-fluid w-100"
                     />
                   </div>
                   {/* <div className="about_img_2">
                     <img
                     src="https://html.themefax.com/madifax/images/about_img2.jpg"
-                    alt="about img"
+                    alt="Best Orthopedic Surgeon in Kandivali"
                     className="img-fluid w-100"
                     />
                     <a
@@ -343,19 +328,16 @@ const Home = () => {
 
       <HomeServices />
 
-      <DoctorIntro />
-      {/* doctor intro end */}
 
       <section className="about pt_100 xs_pt_70 pb_100 xs_pb_70 py-5">
         <div className="container">
-          <div className="common_heading">
+          <div className="text-center mb-4">
             <h5>Video</h5>
             <h2>Video Testimonials Of Patients.</h2>
           </div>
-          <div className="row">
-
+          <div className="row g-3">
             <div
-              className="col-xl-6 col-sm-12 col-lg-6  wow fadeInRight"
+              className="col-xl-6 col-md-6 col-sm-12 wow fadeInRight"
               data-wow-duration="1s"
               style={{
                 visibility: "visible",
@@ -365,46 +347,20 @@ const Home = () => {
             >
               <Fade left>
                 <iframe
-                  // className="elementor-video"
                   frameBorder={0}
                   allowFullScreen=""
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  title="MINIMALLY INVASIVE HIP REPLACEMENT SURGERY | DR BAKUL ARORA | HIP REPLACEMENT SURGEON IN THANE"
-                  width={640}
-                  height={360}
-                  src="https://www.youtube.com/embed/FvcfThzQnk8?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Fdrbakularora.com&widgetid=17"
-                  id="widget18"
-                  data-gtm-yt-inspected-5="true"
+                  title="MINIMALLY INVASIVE HIP REPLACEMENT SURGERY"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                  src="https://www.youtube.com/embed/FvcfThzQnk8?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1"
                 />
               </Fade>
-              {/* <VideoPlayer /> */}
             </div>
             <div
-              className="col-xl-6 col-sm-12 col-lg-6  wow fadeInRight"
-              data-wow-duration="1s"
-              style={{
-                visibility: "visible",
-                animationDuration: "1s",
-                animationName: "fadeInRight",
-              }}
-            >
-              <Fade left>
-                <iframe width="560" height="315"
-                  src="https://www.youtube.com/embed/NWUBpVoUbSk?si=yaHbkvzowzZP_X-R&amp;start=3"
-                  allowFullScreen=""
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  title="ROBOTIC KNEE REPLACEMENT SURGERY | DR BAKUL ARORA | ROBOTIC KNEE REPLACEMENT SURGERY IN THANE"
-                  width={640}
-                  height={360}
-                  id="widget18"
-                  data-gtm-yt-inspected-5="true"
-
-                />
-              </Fade>
-              {/* <VideoPlayer /> */}
-            </div>
-            <div
-              className="col-xl-6 col-sm-12 col-lg-6  wow fadeInRight"
+              className="col-xl-6 col-md-6 col-sm-12 wow fadeInRight"
               data-wow-duration="1s"
               style={{
                 visibility: "visible",
@@ -414,14 +370,19 @@ const Home = () => {
             >
               <Fade left>
                 <iframe
-                  width={640}
-                  height={360}
-                  src="https://www.youtube.com/embed/CxZreWHb3LQ?si=w6jXp5lnCO-pYl8s&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                  src="https://www.youtube.com/embed/NWUBpVoUbSk?start=3"
+                  allowFullScreen=""
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  title="ROBOTIC KNEE REPLACEMENT SURGERY"
+                />
               </Fade>
-              {/* <VideoPlayer /> */}
             </div>
             <div
-              className="col-xl-6 col-sm-12 col-lg-6  wow fadeInRight"
+              className="col-xl-6 col-md-6 col-sm-12 wow fadeInRight"
               data-wow-duration="1s"
               style={{
                 visibility: "visible",
@@ -430,35 +391,43 @@ const Home = () => {
               }}
             >
               <Fade left>
-                <iframe width={640}
-                  height={360} src="https://www.youtube.com/embed/dYNfPlQxq_U?si=Ka1axxXTZYeXopQ0&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                  src="https://www.youtube.com/embed/CxZreWHb3LQ?start=3"
+                  allowFullScreen=""
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  title="YouTube video player"
+                />
               </Fade>
-              {/* <VideoPlayer /> */}
             </div>
-            {/* <Fade right>
             <div
-              className="col-xl-6 col-sm-9  col-lg-5 col-md-7 wow fadeInLeft"
+              className="col-xl-6 col-md-6 col-sm-12 wow fadeInRight"
               data-wow-duration="1s"
               style={{
                 visibility: "visible",
                 animationDuration: "1s",
-                animationName: "fadeInLeft",
+                animationName: "fadeInRight",
               }}
             >
-              <div className="about_img">
-                <div className="">
-                  <VideoPlayer />
-                </div>
-              </div>
+              <Fade left>
+                <iframe
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                  src="https://www.youtube.com/embed/dYNfPlQxq_U?start=3"
+                  allowFullScreen=""
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  title="YouTube video player"
+                />
+              </Fade>
             </div>
-            </Fade> */}
           </div>
         </div>
       </section>
-      {/* Patient end video  */}
-      {/* services start */}
-
-      {/* services end */}
       <section
         className="service"
         style={{ background: "url(https://html.themefax.com/madifax/images/service_bg.jpg)" }}
@@ -512,42 +481,27 @@ const Home = () => {
                       }}
                     >
                       <div className="single_service">
-                        {/* <div className="service_img">
-      <span className="tf_service_icon">
-        <i className="fas fa-eye" aria-hidden="true" />
-      </span>
-      <img
-        src="https://www.drsachintapasvi.com/img/QR/Bund-garden-road.jpg"
-        alt="service img"
-        className="img-fluid w-100"
-      />
-    </div>
-     <p className="text-center text-muted scanner-text">Scan QR Code for directions</p> */}
+
                         <div className="service_text">
-                          <a href="service_details.html" className="service_heading mb-1" tabIndex={-1}>
+                          <a href="https://www.google.com/maps/dir/19.1388495,72.8426742/City+Hospital+S+V+Road,Behram+baug+signal,+Jogeshwari+West./@19.1407141,72.8408212,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be7b765ffed44bf:0xc187170b650ca234!2m2!1d72.8431936!2d19.1431765?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" className="service_heading mb-1" tabIndex={-1}>
                             <i style={{ color: "var(--colorPrimary)" }}> <FaLocationDot /> </i> City Hospital
                           </a>
                           <a href="#">
                             <i className="fas fa-" aria-hidden="true" ><IoMdCall /></i>
-                            &nbsp; &nbsp; <label className="text-black"> +919892302803</label>
+                            &nbsp; &nbsp; <label className="text-black"> +91 9892302803</label>
                           </a>
                           <p className="d-flex">
                             <div>  <i className="-alt" style={{ fontSize: "20px" }} aria-hidden="true" > <FaBuilding /></i></div>
                             <div className="location-address">
                               <span className="">
-                                S V Road,Behram baug signal, Jogeshwari West.
-                                Timmings:- Mon. to sat (5.00 p.m. to 6.30 p.m.)
+                                best arthroscopic shoulder surgeon in mumbai
+                                City Hospital
+                                S V Road,Behram baug signal, Jogeshwari West.                                Timmings:- Mon. to sat (5.00 p.m. to 6.30 p.m.)
                               </span>
                             </div>
                           </p>
-                          {/* <p>
-        Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia
-        officia quaerat ipsam hic sunt quaerat!
-      </p> */}
-                          {/* <a href="service_details.html" className="service_link" tabIndex={-1}>
-        read more <i className="far fa-long-arrow-right" aria-hidden="true" />
-      </a> */}
-                          <a href="https://maps.app.goo.gl/ZQYsdsXqCzPNHpqv9" target="_blank" className="common_btns">
+
+                          <a href="https://www.google.com/maps/dir/19.1388495,72.8426742/City+Hospital+S+V+Road,Behram+baug+signal,+Jogeshwari+West./@19.1407141,72.8408212,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be7b765ffed44bf:0xc187170b650ca234!2m2!1d72.8431936!2d19.1431765?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" className="common_btns">
                             get  Location
                           </a>
 
@@ -570,43 +524,29 @@ const Home = () => {
                       }}
                     >
                       <div className="single_service">
-                        {/* <div className="service_img">
-      <span className="tf_service_icon">
-        <i className="fas fa-eye" aria-hidden="true" />
-      </span>
-      <img
-        src="https://www.drsachintapasvi.com/img/QR/Bund-garden-road.jpg"
-        alt="service img"
-        className="img-fluid w-100"
-      />
-    </div>
-     <p className="text-center text-muted scanner-text">Scan QR Code for directions</p> */}
+
                         <div className="service_text">
-                          <a href="service_details.html" className="service_heading mb-1" tabIndex={-1}>
-                            <i style={{ color: "var(--colorPrimary)" }}> <FaLocationDot /> </i> City Hospital
+                          <a href="https://www.google.com/maps?sca_esv=711f59ee6954731e&sxsrf=ADLYWIIOLRZGU1Fwkx1XAtWue4QB9FozYw:1733744142361&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2thcGFkaWEqAggAMhAQLhiABBhDGMcBGIoFGK8BMgsQLhiABBjHARivATIFEC4YgAQyEBAuGIAEGEMYxwEYigUYrwEyExAuGIAEGEMYxwEYigUYjgUYrwEyDhAuGIAEGMcBGI4FGK8BMgUQABiABDIFEAAYgAQyCxAuGIAEGMcBGK8BMgUQABiABDIfEC4YgAQYQxjHARiKBRivARiXBRjcBBjeBBjgBNgBAUjcIlAAWMwMcAF4AJABAJgBsgKgAYwMqgEHMC40LjIuMbgBA8gBAPgBAZgCCaAC3hioAhPCAgcQIxgnGOoCwgIQEAAYAxi0AhjqAhiPAdgBAcICIBAuGIAEGJECGLQCGMcBGMgDGIoFGOoCGI4FGK8B2AEBwgIdEC4YgAQYkQIYtAIYxwEYyAMYigUY6gIYrwHYAQHCAhQQLhiABBiRAhjHARiKBRiOBRivAcICCxAAGIAEGLEDGIMBwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QLhiABBixAxiDARiKBcICIxAuGIAEGJECGMcBGIoFGI4FGK8BGJcFGNwEGN4EGOAE2AEBwgIKEC4YgAQYQxiKBcICCxAAGIAEGJECGIoFwgIKEAAYgAQYQxiKBcICIhAuGIAEGEMYigUYlwUY3AQY3gQY4AQY9AMY8QMY9QPYAQHCAggQLhiABBixA8ICCxAuGIAEGLEDGNQCwgIIEAAYgAQYsQPCAg4QLhiABBixAxjRAxjHAZgDCvEFnbcUMNXNSYq6BgYIARABGAqSBwsxLjMuMi4yLjctMaAH7LEB&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KWUBosVRtuc7MVGrckvjJGL_&daddr=Mahatma+Gandhi+Rd,+Shri+Nagar,+Goregaon+West,+Mumbai,+Maharashtra+400062" className="service_heading mb-1" tabIndex={-1}>
+                            <i style={{ color: "var(--colorPrimary)" }}> <FaLocationDot /> </i> Kapadia Hospital
                           </a>
                           <a href="#">
                             <i className="fas fa-" aria-hidden="true" ><IoMdCall /></i>
-                            &nbsp; &nbsp; <label className="text-black"> +919892302803</label>
+                            &nbsp; &nbsp; <label className="text-black"> +91 77770 45206</label>
                           </a>
                           <p className="d-flex">
                             <div>  <i className="-alt" style={{ fontSize: "20px" }} aria-hidden="true" > <FaBuilding /></i></div>
                             <div className="location-address">
                               <span className="">
-                                S V Road,Behram baug signal, Jogeshwari West.
+
+                                Kapadia Hospital
+                                1st floor ,Asmi Dreams,opp. Ratna hotel,S.V. Road ,Goregaon (West)
                                 Timmings:- Mon. to sat (5.00 p.m. to 6.30 p.m.)
                               </span>
                             </div>
                           </p>
-                          {/* <p>
-        Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia
-        officia quaerat ipsam hic sunt quaerat!
-      </p> */}
-                          {/* <a href="service_details.html" className="service_link" tabIndex={-1}>
-        read more <i className="far fa-long-arrow-right" aria-hidden="true" />
-      </a> */}
+
                         </div>
-                        <a href="https://maps.app.goo.gl/ZQYsdsXqCzPNHpqv9" target="_blank" className="common_btns">
+                        <a href="https://www.google.com/maps?sca_esv=711f59ee6954731e&sxsrf=ADLYWIIOLRZGU1Fwkx1XAtWue4QB9FozYw:1733744142361&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2thcGFkaWEqAggAMhAQLhiABBhDGMcBGIoFGK8BMgsQLhiABBjHARivATIFEC4YgAQyEBAuGIAEGEMYxwEYigUYrwEyExAuGIAEGEMYxwEYigUYjgUYrwEyDhAuGIAEGMcBGI4FGK8BMgUQABiABDIFEAAYgAQyCxAuGIAEGMcBGK8BMgUQABiABDIfEC4YgAQYQxjHARiKBRivARiXBRjcBBjeBBjgBNgBAUjcIlAAWMwMcAF4AJABAJgBsgKgAYwMqgEHMC40LjIuMbgBA8gBAPgBAZgCCaAC3hioAhPCAgcQIxgnGOoCwgIQEAAYAxi0AhjqAhiPAdgBAcICIBAuGIAEGJECGLQCGMcBGMgDGIoFGOoCGI4FGK8B2AEBwgIdEC4YgAQYkQIYtAIYxwEYyAMYigUY6gIYrwHYAQHCAhQQLhiABBiRAhjHARiKBRiOBRivAcICCxAAGIAEGLEDGIMBwgIREC4YgAQYsQMY0QMYgwEYxwHCAg4QLhiABBixAxiDARiKBcICIxAuGIAEGJECGMcBGIoFGI4FGK8BGJcFGNwEGN4EGOAE2AEBwgIKEC4YgAQYQxiKBcICCxAAGIAEGJECGIoFwgIKEAAYgAQYQxiKBcICIhAuGIAEGEMYigUYlwUY3AQY3gQY4AQY9AMY8QMY9QPYAQHCAggQLhiABBixA8ICCxAuGIAEGLEDGNQCwgIIEAAYgAQYsQPCAg4QLhiABBixAxjRAxjHAZgDCvEFnbcUMNXNSYq6BgYIARABGAqSBwsxLjMuMi4yLjctMaAH7LEB&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KWUBosVRtuc7MVGrckvjJGL_&daddr=Mahatma+Gandhi+Rd,+Shri+Nagar,+Goregaon+West,+Mumbai,+Maharashtra+400062" target="_blank" className="common_btns">
                           get  Location
                         </a>
 
@@ -628,20 +568,10 @@ const Home = () => {
                       }}
                     >
                       <div className="single_service">
-                        {/* <div className="service_img">
-      <span className="tf_service_icon">
-        <i className="fas fa-eye" aria-hidden="true" />
-      </span>
-      <img
-        src="https://www.drsachintapasvi.com/img/QR/Bund-garden-road.jpg"
-        alt="service img"
-        className="img-fluid w-100"
-      />
-    </div>
-     <p className="text-center text-muted scanner-text">Scan QR Code for directions</p> */}
+
                         <div className="service_text">
-                          <a href="service_details.html" className="service_heading mb-1" tabIndex={-1}>
-                            <i style={{ color: "var(--colorPrimary)" }}> <FaLocationDot /> </i> City Hospital
+                          <a href="https://www.google.com/maps/dir/19.1389388,72.8397314/,lancelot+bldg,opp.+kalyan+jewellers,S.v.+road+,+borivali(w)/@19.1796927,72.810385,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be7b72aa202a415:0x81e5ec20e9ef9bf9!2m2!1d72.8518503!2d19.2191268?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" className="service_heading mb-1" tabIndex={-1}>
+                            <i style={{ color: "var(--colorPrimary)" }}> <FaLocationDot /> </i> Bala Hanuman Hospital
                           </a>
                           <a href="#">
                             <i className="fas fa-" aria-hidden="true" ><IoMdCall /></i>
@@ -656,15 +586,9 @@ const Home = () => {
                               </span>
                             </div>
                           </p>
-                          {/* <p>
-        Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia
-        officia quaerat ipsam hic sunt quaerat!
-      </p> */}
-                          {/* <a href="service_details.html" className="service_link" tabIndex={-1}>
-        read more <i className="far fa-long-arrow-right" aria-hidden="true" />
-      </a> */}
+
                         </div>
-                        <a href="https://maps.app.goo.gl/ZQYsdsXqCzPNHpqv9" className="common_btn">
+                        <a href="v" className="common_btn">
                           get  Location
                         </a>
 
@@ -686,20 +610,10 @@ const Home = () => {
                       }}
                     >
                       <div className="single_service">
-                        {/* <div className="service_img">
-      <span className="tf_service_icon">
-        <i className="fas fa-eye" aria-hidden="true" />
-      </span>
-      <img
-        src="https://www.drsachintapasvi.com/img/QR/Bund-garden-road.jpg"
-        alt="service img"
-        className="img-fluid w-100"
-      />
-    </div>
-     <p className="text-center text-muted scanner-text">Scan QR Code for directions</p> */}
+
                         <div className="service_text">
-                          <a href="service_details.html" className="service_heading mb-1" tabIndex={-1}>
-                            <i style={{ color: "var(--colorPrimary)" }}> <FaLocationDot /> </i> City Hospital
+                          <a href="https://maps.app.goo.gl/ZQYsdsXqCzPNHpqv9" className="service_heading mb-1" tabIndex={-1}>
+                            <i style={{ color: "var(--colorPrimary)" }}> <FaLocationDot /> </i> Namaha Hospital
                           </a>
                           <a href="#">
                             <i className="fas fa-" aria-hidden="true" ><IoMdCall /></i>
@@ -709,18 +623,11 @@ const Home = () => {
                             <div>  <i className="-alt" style={{ fontSize: "20px" }} aria-hidden="true" > <FaBuilding /></i></div>
                             <div className="location-address">
                               <span className="">
-                                S V Road,Behram baug signal, Jogeshwari West.
-                                Timmings:- Mon. to sat (5.00 p.m. to 6.30 p.m.)
+                              Namaha Healthcare,S.V Road, opp. Rajyaguru Flyover, Kandivali, Bhadran Nagar, Kandivali West, Mumbai, Maharashtra 400067
                               </span>
                             </div>
                           </p>
-                          {/* <p>
-        Lorem ipsum dolor sit amet consectetur ipsam adipisicing elit. Rem quia
-        officia quaerat ipsam hic sunt quaerat!
-      </p> */}
-                          {/* <a href="service_details.html" className="service_link" tabIndex={-1}>
-        read more <i className="far fa-long-arrow-right" aria-hidden="true" />
-      </a> */}
+
                         </div>
                         <a href="https://maps.app.goo.gl/ZQYsdsXqCzPNHpqv9" target="_blank" className="common_btns">
                           get  Location
@@ -730,66 +637,14 @@ const Home = () => {
                     </div>
                   </Fade>
                 </SwiperSlide>
-                {/* <SwiperSlide>Slide 4</SwiperSlide> */}
               </Swiper>
 
-
-              {/* <ul className="slick-dots" style={{}} role="tablist">
-          <li className="slick-active" role="presentation">
-            <button
-              type="button"
-              role="tab"
-              id="slick-slide-control00"
-              aria-controls="slick-slide00"
-              aria-label="1 of 2"
-              tabIndex={0}
-              aria-selected="true"
-            >
-              1
-            </button>
-          </li>
-          <li role="presentation" className="">
-            <button
-              type="button"
-              role="tab"
-              id="slick-slide-control01"
-              aria-controls="slick-slide01"
-              aria-label="2 of 2"
-              tabIndex={-1}
-            >
-              2
-            </button>
-          </li>
-          <li role="presentation" className="">
-            <button
-              type="button"
-              role="tab"
-              id="slick-slide-control02"
-              aria-controls="slick-slide02"
-              aria-label="3 of 2"
-              tabIndex={-1}
-            >
-              3
-            </button>
-          </li>
-          <li role="presentation" className="">
-            <button
-              type="button"
-              role="tab"
-              id="slick-slide-control03"
-              aria-controls="slick-slide03"
-              aria-label="4 of 2"
-              tabIndex={-1}
-            >
-              4
-            </button>
-          </li>
-        </ul> */}
             </div>
           </div>
         </div>
       </section>
       <Testimonials />
+      <HomeAboutDr />
     </>
   );
 };

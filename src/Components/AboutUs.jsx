@@ -9,6 +9,7 @@ import counterBg from "../Asserts/counter_bg.webp";
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
 import { MetaTags } from 'react-meta-tags';
+import galleryData from '../Asserts/galleryData';
 
 const AboutUs = () => {
   return (
@@ -48,15 +49,15 @@ const AboutUs = () => {
                 >
                   <div className="about_img">
                     <div className="about_img_1">
-                      <img
+                      {/* <img
                         src="https://html.themefax.com/madifax/images/about-img1.jpg"
                         alt="Orthopedic Doctor in Kandivali"
                         className="img-fluid w-100"
-                      />
+                      /> */}
                     </div>
                     <div className="about_img_2">
                       <img
-                        src="https://drsonikshah.com/assets/img/sonik.jpg"
+                        src={galleryData.dr}
                         alt="Orthopedic Doctor in Kandivali"
                         className="img-fluid w-100"
                       />
@@ -85,7 +86,7 @@ const AboutUs = () => {
                   <div className="common_heading">
                     <h5>PROFILE</h5>
                     <h2>DR. SONIK B. SHAH   </h2>
-                    <span className='qualification'> M.S.( ORTHO) MUMBAI <br /> Consultant Orthopedic surgeon Joint replacement,Arthroscopy & sports medicine</span> <br />
+                    {/* <span className='qualification'> M.S.( ORTHO) MUMBAI <br /> Consultant Orthopedic surgeon Joint replacement,Arthroscopy & sports medicine</span> <br /> */}
                     <p>
                       Dr Sonik Shah, a passionate orthopedic doctor in Kandivali, is dynamic and loves sports. For more than ten years, he has been offering top-notch orthopaedic therapy to patients in Mumbai and throughout the nation. Dr. Shah is well-known for his great surgical results and caring attitude, placing a high priority on the cooperative connections he develops with his patients.
                     </p>

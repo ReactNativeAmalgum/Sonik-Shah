@@ -37,7 +37,7 @@ const Footer = () => {
                 {/* <p>There are to popular belie Lorem is Ipsum is not simply random.</p> */}
                 <div className="footer_mail" bis_skin_checked={1}>
                   <span>Hello to :</span>
-                  <a href="#">support@gmail.com</a>
+                  <a href="#">Shah.sonik@gmail.com</a>
                 </div>
                 <div
                   className="tf_footer_icon d-flex flex-wrap align-items-center"
@@ -47,22 +47,22 @@ const Footer = () => {
                   <span>Follow :</span>
                   <ul style={{marginBottom:'0px', paddingLeft:'0px'}} className="d-flex flex-wrap">
                     <li>
-                      <a href="#">
+                      <a href="https://www.facebook.com/dr.sonikshah">
                         <i className="fab fa-facebook-f" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fab fa-twitter" aria-hidden="true" />
+                      <a href="https://www.google.com/maps/place/Dr+Sonik+Shah,+Best+Orthopaedic+Surgeon,+Knee+Shoulder+Arthroscopist,+Minimal+Invaise+Joint+Replacement+Surgeon/@19.197824,72.848294,11z/data=!4m6!3m5!1s0x3be7b7b881a7309d:0x83bb0d31dc18f27e!8m2!3d19.1978239!4d72.848294!16s%2Fg%2F11hf80v34g?ll=19.197824,72.848294&z=11&t=m&hl=en&gl=IN&mapclient=embed&cid=9492195147410633342&shorturl=1">
+                        <i className="fab fa-google-plus-square " aria-hidden="true" />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fab fa-pinterest-p" aria-hidden="true" />
+                      <a href="https://www.instagram.com/dr.sonikshah/">
+                        <i className="fab fa-instagram" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.linkedin.com/in/dr-sonik-shah-a8a69013">
                         <i className="fab fa-linkedin-in" aria-hidden="true" />
                       </a>
                     </li>

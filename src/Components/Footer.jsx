@@ -3,6 +3,7 @@ import foterbg from "../Asserts/footer_bg.jpg";
 import servicesData from "../Asserts/ServiceData";
 import { Link } from 'react-router-dom';
 import logo from '../Asserts/logo.png'
+import './footer.css'
 const Footer = () => {
   return (
 
@@ -94,7 +95,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-4 col-sm-6 col-md-3" bis_skin_checked={1}>
+            <div className="col-lg-4 col-sm-6 col-md-12" bis_skin_checked={1}>
               <div className="quick_link" bis_skin_checked={1}>
                 <h5>Our Services</h5>
                 <ul className='row row-cols-2'>
@@ -140,23 +141,7 @@ const Footer = () => {
           </div>
           <div className="row mt_70 xs_mt_45 sm_margin " bis_skin_checked={1}>
             <div className="col-xl-12" bis_skin_checked={1}>
-              {/* <div
-                className="copyright d-flex flex-wrap justify-content-between"
-                bis_skin_checked={1}
-              >
-                <p>2024 sonikshah. All rights reserved.</p>
-                <ul className="d-flex flex-wrap">
-                  <li>
-                    <a href="terms_condition.html">Terms and conditions</a>
-                  </li>
-                  <li>
-                    <a href="#">Cookies</a>
-                  </li>
-                  <li>
-                    <a href="privacy.html">Privacy policy</a>
-                  </li>
-                </ul>
-              </div> */}
+      
             </div>
           </div>
         </div>

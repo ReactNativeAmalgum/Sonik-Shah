@@ -2,6 +2,10 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
 
+.appoinment_overlay .appointment-row{
+  display: flex;
+  flex-direction: row !important;
+}
 .error-text{
   color: red;
   font-size: 15px;
@@ -23,6 +27,9 @@
   }
 }
 
+.bottom-col{
+  text-align: center;
+}
 .inputstyle {
   width: 100%;
   padding: 12px;
@@ -1571,6 +1578,11 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media(max-width:769px){
+  .appoinment_overlay .appointment-row {
+    gap:50px
+  }
 }
 
 .appoinment_bg {

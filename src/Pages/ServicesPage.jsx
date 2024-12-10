@@ -408,7 +408,7 @@ const ServicesPage = () => {
             bis_skin_checked={1}
           >
             <div className="appoinment_overlay" bis_skin_checked={1}>
-              <div style={{ display: 'flex', flexDirection: 'row', gap:'50px' }} className="row" bis_skin_checked={1}>
+              <div style={{ }} className="row appointment-row" bis_skin_checked={1}>
                 <div
                   className="col-xl-6 col-lg-6 wow fadeInLeft"
                   data-wow-duration="1s"

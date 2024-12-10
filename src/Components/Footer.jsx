@@ -21,7 +21,7 @@ const Footer = () => {
               }}
               bis_skin_checked={1}
             >
-        
+
             </div>
           </div>
           <div className="row mt_10" bis_skin_checked={1}>
@@ -42,10 +42,10 @@ const Footer = () => {
                 <div
                   className="tf_footer_icon d-flex flex-wrap align-items-center"
                   bis_skin_checked={1}
-                  style={{marginBottom:'0px'}}
+                  style={{ marginBottom: '0px' }}
                 >
                   <span>Follow :</span>
-                  <ul style={{marginBottom:'0px', paddingLeft:'0px'}} className="d-flex flex-wrap">
+                  <ul style={{ marginBottom: '0px', paddingLeft: '0px' }} className="d-flex flex-wrap">
                     <li>
                       <a href="https://www.facebook.com/dr.sonikshah">
                         <i className="fab fa-facebook-f" aria-hidden="true" />
@@ -108,11 +108,11 @@ const Footer = () => {
                       </li>
                     )
                   })}
-                 
+
                 </ul>
               </div>
             </div>
-           
+
             <div
               className="col-lg-3 col-sm-6 col-md-6 order-md-2"
               bis_skin_checked={1}
@@ -128,7 +128,7 @@ const Footer = () => {
                     Shah.sonik@gmail.com
                   </a>
                   <a href="#">
-                    <div style={{display:'none'}} >
+                    <div style={{ display: 'none' }} >
                       <span>MS</span>
                     </div>
                     <i className="fas fa-phone-alt" aria-hidden="true" />
@@ -140,12 +140,22 @@ const Footer = () => {
           </div>
           <div className="row mt_70 xs_mt_45 sm_margin " bis_skin_checked={1}>
             <div className="col-xl-12" bis_skin_checked={1}>
-      
+
             </div>
           </div>
         </div>
-      </footer>
 
+      </footer>
+      <div className='contianer-fluid' style={{ justifyContent: 'space-around' }}>
+        <div className='row'>
+          <div className='col bottom-col'>
+            © Copyright . All Rights Reserved Dr. Sonik Shah
+          </div>
+          <div className='col bottom-col'>
+            Designed by Shree Krishna Digital Marketing
+          </div>
+        </div>
+      </div>
     </>
   )
 }

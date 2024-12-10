@@ -29,7 +29,7 @@ const Gallery = () => {
         <meta property="og:image" content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png" />
       </MetaTags>
       <Breadcrumb title={'Gallery'} />
-      <section className="contact mt_75 xs_mt_45 pb_100 xs_pb_70">
+      <section className="contact mt_75 xs_mt_45 pb_100 xs_pb_70 custom-cont">
         <div className="head-cont">
           <h1 className="special-h1">Orthopedic Care near Kandivali</h1>
         </div>

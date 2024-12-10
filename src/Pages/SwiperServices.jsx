@@ -11,7 +11,7 @@ import { Pagination } from 'swiper/modules';
 const SwiperServices = () => {
   return (
     <>
- <Swiper
+      <Swiper
         slidesPerView={1}
         spaceBetween={10}
         pagination={{
@@ -34,63 +34,63 @@ const SwiperServices = () => {
         modules={[Pagination]}
         className="mySwiper"
       >
-        
-       {ServiceData.map((v,i)=>{
-        return(<>
-     
+
+        {ServiceData.map((v, i) => {
+          return (<>
+
             <SwiperSlide>
-            <Fade up>
-        <div
-              className=" wow fadeInUp"
-              data-wow-duration="1s"
-              style={{
-                width: "100%",
-                display: "inline-block",
-                visibility: "visible",
-                animationDuration: "1s",
-                animationName: "fadeInUp",
-              }}
-            >
-              <div className="single_service">
-                <div className="service_img">
-                  <span className="tf_service_icon">
-                    <i className="fas fa-eye" aria-hidden="true" />
-                  </span>
-                  <img
-                    src={v.serviceImg}
-                    alt="service img"
-                    className="img-fluid w-100"
-                  />
+              <Fade up>
+                <div
+                  className=" wow fadeInUp"
+                  data-wow-duration="1s"
+                  style={{
+                    width: "100%",
+                    display: "inline-block",
+                    visibility: "visible",
+                    animationDuration: "1s",
+                    animationName: "fadeInUp",
+                  }}
+                >
+                  <div className="single_service">
+                    <div className="service_img">
+                      <span className="tf_service_icon">
+                        <i className="fas fa-eye" aria-hidden="true" />
+                      </span>
+                      <img
+                        src={v.serviceImg}
+                        alt={v.keyword}
+                        className="img-fluid w-100"
+                      />
+                    </div>
+                    <div className="service_text">
+                      <a
+                        href="service_details.html"
+                        className="service_heading"
+                        tabIndex={-1}
+                      >
+                        {v.ServiceName}
+                      </a>
+                      <p>
+                        {v.ServiceDescription}
+                      </p>
+                      <a
+                        href="service_details.html"
+                        className="service_link"
+                        tabIndex={-1}
+                      >
+                        read more{" "}
+                        <i className="far fa-long-arrow-right" aria-hidden="true" />
+                      </a>
+                    </div>
+                  </div>
+
                 </div>
-                <div className="service_text">
-                  <a
-                    href="service_details.html"
-                    className="service_heading"
-                    tabIndex={-1}
-                  >
-                    {v.ServiceName}
-                  </a>
-                  <p>
-                  {v.ServiceDescription}
-                  </p>
-                  <a
-                    href="service_details.html"
-                    className="service_link"
-                    tabIndex={-1}
-                  >
-                    read more{" "}
-                    <i className="far fa-long-arrow-right" aria-hidden="true" />
-                  </a>
-                </div>
-              </div>
-              
-            </div>
-            </Fade>
-        </SwiperSlide>
-        
-        </>)
-       })}
-      
+              </Fade>
+            </SwiperSlide>
+
+          </>)
+        })}
+
       </Swiper>
     </>
   )

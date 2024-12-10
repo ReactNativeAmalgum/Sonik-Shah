@@ -37,10 +37,10 @@ const NavBar = () => {
                     Shah.sonik@gmail.com
                   </a>
                 </li>
-                <li>
-                  <p>
+                <li className="special-address">
+                  <p className="special-address">
                     <i className="fas fa-map-marker-alt" aria-hidden="true" />
-                    modi road(S.M.Road) Kandivali west.. Mumbai 400067
+                    Namaha Healthcare,S.V Road, Mumbai, Maharashtra 400067
 
                   </p>
                 </li>
@@ -52,23 +52,23 @@ const NavBar = () => {
             >
               <ul className="topbar_icon d-flex flex-wrap">
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/dr.sonikshah">
                     <i className="fab fa-facebook-f" aria-hidden="true" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fab fa-twitter" aria-hidden="true" />
+                  <a href="https://www.google.com/maps/place/Dr+Sonik+Shah,+Best+Orthopaedic+Surgeon,+Knee+Shoulder+Arthroscopist,+Minimal+Invaise+Joint+Replacement+Surgeon/@19.197824,72.848294,11z/data=!4m6!3m5!1s0x3be7b7b881a7309d:0x83bb0d31dc18f27e!8m2!3d19.1978239!4d72.848294!16s%2Fg%2F11hf80v34g?ll=19.197824,72.848294&z=11&t=m&hl=en&gl=IN&mapclient=embed&cid=9492195147410633342&shorturl=1#">
+                    <i className="fab fa-google-plus-square" aria-hidden="true" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fab fa-youtube" aria-hidden="true" />
+                  <a href="https://www.instagram.com/dr.sonikshah/">
+                    <i className="fab fa-instagram" aria-hidden="true" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fab fa-google-plus-g" aria-hidden="true" />
+                  <a href="https://www.linkedin.com/in/dr-sonik-shah-a8a69013">
+                    <i className="fab fa-linkedin-in" aria-hidden="true" />
                   </a>
                 </li>
               </ul>
@@ -152,7 +152,7 @@ const NavBar = () => {
               </Navbar.Collapse>
 
               <div className="socialLinks d-lg-flex d-none">
-                <button className="common_btn faq_btn">Enquiry Now</button>
+                <Link to={'/orthopedic-near-kandivali'} className="common_btn faq_btn">Enquiry Now</Link>
                
               </div>
             </Container>

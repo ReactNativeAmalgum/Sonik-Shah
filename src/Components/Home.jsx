@@ -86,7 +86,7 @@ const Home = () => {
                 <p>
                   At our core, we are dedicated to providing exceptional care and support to ensure your health and well-being are always our top priority.
                 </p>
-                <a href="doctor.html" className="common_btn">
+                <a href="/orthopedic-doctor-kandivali" className="common_btn">
                   meet a doctor
                 </a>
                 <ul className="banner_counter d-flex ">
@@ -250,8 +250,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About End gold kneee replacement treatment */}
-      {/* About start robomatic replacement treatment */}
       <section className="about pt_100 xs_pt_70 pb_100 xs_pb_70 section-custom-padding custom-bg-color">
         <div className="container">
           <div className="row">
@@ -280,7 +278,7 @@ const Home = () => {
                   <li>On duty Doctors</li>
                   <li>24/7 Medical Emergency</li>
                 </ul>
-                <a href="about.html" className="common_btn">
+                <a href="/robotic-knee-replacement-surgery" className="common_btn">
                   Discover More
                 </a>
               </div>
@@ -303,21 +301,7 @@ const Home = () => {
                       className="img-fluid w-100"
                     />
                   </div>
-                  {/* <div className="about_img_2">
-                    <img
-                    src="https://html.themefax.com/madifax/images/about_img2.jpg"
-                    alt="Best Orthopedic Surgeon in Kandivali"
-                    className="img-fluid w-100"
-                    />
-                    <a
-                    className="play_btn venobox vbox-item"
-                    data-autoplay="true"
-                    data-vbtype="video"
-                    href="https://youtu.be/nqye02H_H6I"
-                    >
-                    <i className="fas fa-play" aria-hidden="true" />
-                    </a>
-                </div> */}
+                 
                 </div>
               </div>
             </Fade>

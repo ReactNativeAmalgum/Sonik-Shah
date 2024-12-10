@@ -1073,3 +1073,9 @@
       position: fixed !important;
   }
 } */
+ 
+@media(max-width:1024px){
+  .special-address{
+    display: none;
+  }
+}

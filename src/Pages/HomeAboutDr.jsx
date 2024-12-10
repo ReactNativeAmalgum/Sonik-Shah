@@ -11,7 +11,7 @@ export default function HomeAboutDr() {
           <div className="col-lg-6 col-md-6 col-sm-12 text-center mb-4 mb-md-0">
             <img
               src={galleryData.dr}
-              alt="Doctor"
+              alt="Best Orthopedic Surgeon in Kandivali"
               className="img-fluid"
             />
           </div>

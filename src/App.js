@@ -8,7 +8,6 @@ import ServicesPage from './Pages/ServicesPage';
 import  Header  from './Components/Header';
 import ContactUs from './Components/ContactUs';
 import Faq from './Pages/Faq';
-import Blog from './Pages/Blog';
 import AboutUs from './Components/AboutUs';
 import Gallery from './Components/Gallery';
 import Non from './Components/Non';

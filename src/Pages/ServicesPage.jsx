@@ -9,19 +9,152 @@ import {
   ZoomInOutlined,
   ZoomOutOutlined,
 } from "@ant-design/icons";
-import React from "react";
+import React, { useState } from "react";
 import { Image, Space } from "antd";
 import { GiMedicines } from "react-icons/gi";
 import { MetaTags } from "react-meta-tags";
-
-// const src ="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png";
+import serviceData from "../Asserts/ServiceData";
+import $ from "jquery";
+import galleryData from "../Asserts/galleryData";
 
 const ServicesPage = () => {
   const serach = useLocation();
   const path = serach.pathname;
   //   console.log(path);
   const getData = ServiceData.find((elm) => elm.slugs === path);
-  //   console.log(getData);
+  const [formData, setFormData] = React.useState({
+    patientName: "",
+    email: "",
+    department: "",
+    date: "",
+    time: "",
+    phoneNumber: ''
+  });
+
+  const Appointment = (formData) => {
+    const body = `
+      <!DOCTYPE html>
+      <html> 
+        <head> 
+          <title>Dr Sonik B Shah</title> 
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+          <meta name="viewport" content="width=device-width,initial-scale=1"> 
+          <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        </head> 
+        <body style="margin:0!important;padding:0!important;background-color:#eee" bgcolor="#eeeeee">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#fff">
+            <tr>
+              <td align="center" style="background-color:#eee" bgcolor="#eeeeee">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px">
+                  <tr>
+                    <td align="center" valign="top" style="font-size:0;padding:10px" bgcolor="#FFD44C">
+                      <a href="tel:+91 986745454" style="text-decoration:none;color:#000;font-size:16px">Lead generated for Dr Sonik Shah</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top" style="font-size:0;padding:15px" bgcolor="#fff">
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td align="center" valign="top" style="font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:36px;font-weight:800;line-height:48px">
+                            <img style="width:100%;height:120px" src="https://justmirrorsalon.in/static/media/JMS.7493f202fc387288d7c0.png" alt="Logo">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" valign="top" style="font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:16px;font-weight:800;padding:10px 0">
+                            <h1 style="font-size:14px;font-weight:500;margin:0;text-align:center;color:#000">Client Enquiry Details</h1>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="100%" align="center" style="padding:0 35px 35px 35px">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:660px">
+                              <tr>
+                                <td width="50%" align="left" style="font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:16px">
+                                  <p style="font-size:16px;font-weight:600;color:#0074be">Customer First Name:</p>
+                                  <p style="font-size:14px;font-weight:500;color:#111">${formData.patientName}</p>
+                                </td>
+                                <td width="50%" align="left" style="font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:16px">
+                                  <p style="font-size:16px;font-weight:600;color:#0074be">Customer Email:</p>
+                                  <p style="font-size:14px;font-weight:500;color:#111">${formData.email}</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td width="50%" align="left" style="font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:16px">
+                                  <p style="font-size:16px;font-weight:600;color:#0074be">Enquiry Department</p>
+                                  <p style="font-size:14px;font-weight:500;color:#111">${formData.department}</p>
+                                </td>
+                                <td width="50%" align="left" style="font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:16px">
+                                  <p style="font-size:16px;font-weight:600;color:#0074be">Customer Phone Number:</p>
+                                  <p style="font-size:14px;font-weight:500;color:#111">${formData.phoneNumber}</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td width="50%" align="left" style="font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:16px">
+                                  <p style="font-size:16px;font-weight:600;color:#0074be">Enquiry Date:</p>
+                                  <p style="font-size:14px;font-weight:500;color:#111">${formData.date}</p>
+                                </td>
+                                <td width="50%" align="left" style="font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:16px">
+                                  <p style="font-size:16px;font-weight:600;color:#0074be">Enquiry Time:</p>
+                                  <p style="font-size:14px;font-weight:500;color:#111">${formData.time}</p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="100%" align="center" bgcolor="#FFD44C" style="padding:10px 0">
+                            <p style="color:#000;font-weight:500;font-size:1rem;padding:0;margin:0">Dr Sonik Shah</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </body>
+      </html>
+    `;
+
+    return fetch("https://skdm.in/server/v1/send_lead_mail.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: new URLSearchParams({
+        toEmail: "Shah.sonik@gmail.com",
+        fromEmail: "skdmlead@gmail.com",
+        bccMail: "skdmlead@gmail.com",
+        mailSubject: "New Customer Lead",
+        mailBody: body,
+        accountName: "Just Mirror Saloon",
+        accountLeadSource: "https://drsonikshah.com/",
+        accountLeadName: formData.patientName
+      })
+    });
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await Appointment(formData);
+      if (response.ok) {
+        alert("Your Form has been submitted. Our team will contact you soon.");
+      } else {
+        alert("There was an issue submitting your form. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("An unexpected error occurred. Please try again later.");
+    }
+  };
+
   return (
     <>
       <MetaTags>
@@ -40,16 +173,16 @@ const ServicesPage = () => {
         <meta property="og:image" content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png" />
       </MetaTags>
       <Breadcrumb title={getData.ServiceName} />
-      <section className="service_details pt_100 xs_pt_70 pb_100 xs_pb_70">
+      <section className="service_details pt_100 xs_pt_70 pb_100 xs_pb_70 custom-cont">
         <div className='head-cont'>
           <h1 className='special-h1'>{getData.keyword}</h1>
         </div>
         <div className="container" bis_skin_checked={1}>
 
-          <div className="my-5">
+          {/* <div className="my-5">
             <h3 className="fs-1 ">{getData.ServiceName}</h3>
             <div class="devicer "></div>
-          </div>
+          </div> */}
           <div className="row" bis_skin_checked={1}>
             <div
               className="col-xl-12 col-lg-12 mb-sm-3 sm-mb-3 wow fadeInLeft"
@@ -67,7 +200,7 @@ const ServicesPage = () => {
                 </span>
                 <img
                   src={getData.serviceImg}
-                  alt="service"
+                  alt={getData.keyword}
                   className="img-fluid w-100"
                 />
               </div>
@@ -103,15 +236,12 @@ const ServicesPage = () => {
               </div>
               <div className="row" bis_skin_checked={1}>
                 <div className="col-xl-4 col-sm-6" bis_skin_checked={1}>
-                  {/* <a
-                    className="service_details_gallery venobox vbox-item"
-                    data-gall="gallery01"
-                    href="images/service_dtls-3.jpg"
-                  > */}
+                  
                   <Image
                     width={300}
                     height={200}
                     src={getData.img1}
+                    alt={getData.keyword}
                     preview={{
                       toolbarRender: (
                         _,
@@ -145,21 +275,15 @@ const ServicesPage = () => {
                       ),
                     }}
                   />
-                  {/* <div className="overlay" bis_skin_checked={1}>
-                    <i className="fal fa-plus" aria-hidden="true" />
-                  </div> */}
-                  {/* </a> */}
+
                 </div>
                 <div className="col-xl-4 col-sm-6" bis_skin_checked={1}>
-                  {/* <a
-                    className="service_details_gallery venobox vbox-item"
-                    data-gall="gallery01"
-                    href="images/service_dtls-4.jpg"
-                  > */}
+
                   <Image
                     width={300}
                     height={200}
                     src={getData.img2}
+                    alt={getData.keyword}
                     preview={{
                       toolbarRender: (
                         _,
@@ -193,21 +317,15 @@ const ServicesPage = () => {
                       ),
                     }}
                   />
-                  {/* <div className="overlay" bis_skin_checked={1}>
-                    <i className="fal fa-plus" aria-hidden="true" />
-                  </div> */}
-                  {/* </a> */}
+
                 </div>
                 <div className="col-xl-4 col-sm-6" bis_skin_checked={1}>
-                  {/* <a
-                    className="service_details_gallery venobox vbox-item"
-                    data-gall="gallery01"
-                    href="images/service_dtls-5.jpg"
-                  > */}
+
                   <Image
                     width={300}
                     height={200}
                     src={getData.img3}
+                    alt={getData.keyword}
                     preview={{
                       toolbarRender: (
                         _,
@@ -241,10 +359,7 @@ const ServicesPage = () => {
                       ),
                     }}
                   />
-                  {/* <div className="overlay" bis_skin_checked={1}>
-                    <i className="fal fa-plus" aria-hidden="true" />
-                  </div> */}
-                  {/* </a> */}
+
                 </div>
               </div>
               <div className="row mt-5 mb-5 shadow" bis_skin_checked={1}>
@@ -278,337 +393,10 @@ const ServicesPage = () => {
                   </div>
                 </div>
               </div>
-              {/* <ul className="tf_service_pdf_link pt_25">
-                <li>
-                  <a href="#">
-                    <i className="fas fa-file-pdf" aria-hidden="true" />
-                    Download on
-                    <span>PDF</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fas fa-file-word" aria-hidden="true" />
-                    Download on
-                    <span>Doc</span>
-                  </a>
-                </li>
-              </ul> */}
-              {/* <div className="comment_area" bis_skin_checked={1}>
-          <h2>Total Review (04)</h2>
-          <div className="single_comment" bis_skin_checked={1}>
-            <div className="comment_img" bis_skin_checked={1}>
-              <img
-                src="images/comment-1.png"
-                alt="review"
-                className="img-fluid w-100"
-              />
+
+
             </div>
-            <div className="comment_text" bis_skin_checked={1}>
-              <h4>
-                Robert Smith{" "}
-                <span>
-                  <i className="fal fa-clock" aria-hidden="true" />4 hour ago
-                </span>
-              </h4>
-              <span className="rating">
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-              </span>
-              <p>
-                But the majority have suffered alteration in some form, by
-                injected humour, or randomi sed its wordsn look even slightly
-                believable.
-              </p>
-              <a href="#">
-                <i className="fal fa-reply-all" aria-hidden="true" />
-                reply
-              </a>
-            </div>
-          </div>
-          <div className="single_comment commant_reply" bis_skin_checked={1}>
-            <div className="comment_img" bis_skin_checked={1}>
-              <img
-                src="images/comment-2.png"
-                alt="review"
-                className="img-fluid w-100"
-              />
-            </div>
-            <div className="comment_text" bis_skin_checked={1}>
-              <h4>
-                Steven Smith{" "}
-                <span>
-                  <i className="fal fa-clock" aria-hidden="true" />1 hour ago
-                </span>
-              </h4>
-              <span className="rating">
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-              </span>
-              <p>
-                But the majority have suffered alteration in some form, by
-                injected humour, or randomi sed its wordsn look even slightly
-                believable.
-              </p>
-              <a href="#">
-                <i className="fal fa-reply-all" aria-hidden="true" />
-                reply
-              </a>
-            </div>
-          </div>
-          <div className="single_comment" bis_skin_checked={1}>
-            <div className="comment_img" bis_skin_checked={1}>
-              <img
-                src="images/comment-3.png"
-                alt="review"
-                className="img-fluid w-100"
-              />
-            </div>
-            <div className="comment_text" bis_skin_checked={1}>
-              <h4>
-                Deni Rover
-                <span>
-                  <i className="fal fa-clock" aria-hidden="true" /> 6 hour ago
-                </span>
-              </h4>
-              <span className="rating">
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-              </span>
-              <p>
-                But the majority have suffered alteration in some form, by
-                injected humour, or randomi sed its wordsn look even slightly
-                believable.
-              </p>
-              <a href="#">
-                <i className="fal fa-reply-all" aria-hidden="true" />
-                reply
-              </a>
-            </div>
-          </div>
-          <div className="single_comment" bis_skin_checked={1}>
-            <div className="comment_img" bis_skin_checked={1}>
-              <img
-                src="images/comment-1.png"
-                alt="review"
-                className="img-fluid w-100"
-              />
-            </div>
-            <div className="comment_text" bis_skin_checked={1}>
-              <h4>
-                Robert Smith{" "}
-                <span>
-                  <i className="fal fa-clock" aria-hidden="true" />4 hour ago
-                </span>
-              </h4>
-              <span className="rating">
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-                <i className="fas fa-star" aria-hidden="true" />
-              </span>
-              <p>
-                But the majority have suffered alteration in some form, by
-                injected humour, or randomi sed its wordsn look even slightly
-                believable.
-              </p>
-              <a href="#">
-                <i className="fal fa-reply-all" aria-hidden="true" />
-                reply
-              </a>
-            </div>
-          </div>
-        </div>
-        <form className="comment_input_area">
-          <h2>Leave a Review</h2>
-          <p>
-            <i className="fas fa-star" aria-hidden="true" />
-            <i className="fas fa-star" aria-hidden="true" />
-            <i className="fas fa-star" aria-hidden="true" />
-            <i className="fas fa-star" aria-hidden="true" />
-            <i className="fas fa-star" aria-hidden="true" />
-          </p>
-          <div className="row" bis_skin_checked={1}>
-            <div className="col-xl-6" bis_skin_checked={1}>
-              <input type="text" placeholder="Name..." />
-            </div>
-            <div className="col-xl-6" bis_skin_checked={1}>
-              <input type="text" placeholder="Email..." />
-            </div>
-            <div className="col-xl-12 mt-4 mb-4" bis_skin_checked={1}>
-              <textarea
-                rows={4}
-                placeholder="Write A Comment..."
-                defaultValue={""}
-              />
-            </div>
-            <div className="col-xl-12" bis_skin_checked={1}>
-              <a href="#" className="common_btn">
-                Submit Now
-              </a>
-            </div>
-          </div>
-        </form> */}
-            </div>
-            {/* <div
-        className="col-xl-3 col-lg-4 wow fadeInRight"
-        data-wow-duration="1s"
-        style={{
-          position: "relative",
-          visibility: "visible",
-          animationDuration: "1s",
-          animationName: "fadeInRight"
-        }}
-        bis_skin_checked={1}
-      >
-        <div
-          id="sticky_sidebar"
-          style={{ willChange: "transform", transform: "translateZ(0px)" }}
-          bis_skin_checked={1}
-          className=""
-        >
-          <div className="service_dtls_rightside" bis_skin_checked={1}>
-            <h4>Search</h4>
-            <form action="#" className="blog_form">
-              <input type="text" placeholder="Search..." />
-              <button className="_blog_btn">
-                <i className="fas fa-search" aria-hidden="true" />
-              </button>
-            </form>
-          </div>
-          <div className="service_dtls_rightside" bis_skin_checked={1}>
-            <h5>Categories</h5>
-            <ul className="sidebar_category">
-              <li>
-                <a href="#">Urology</a>
-              </li>
-              <li>
-                <a href="#">Gynecologist</a>
-              </li>
-              <li>
-                <a href="#">Medicine</a>
-              </li>
-              <li>
-                <a href="#">Child Care</a>
-              </li>
-              <li>
-                <a href="#">Covid Test</a>
-              </li>
-              <li>
-                <a href="#">Dentist</a>
-              </li>
-            </ul>
-          </div>
-          <div className="service_dtls_rightside" bis_skin_checked={1}>
-            <h5>Recent Post</h5>
-            <ul className="sidebar_post">
-              <li>
-                <div className="recent_post_img" bis_skin_checked={1}>
-                  <img
-                    src="images/blog_dtls-2.jpg"
-                    alt="post"
-                    className="img-fluid w-100"
-                  />
-                </div>
-                <div className="recent_post_text" bis_skin_checked={1}>
-                  <p>
-                    <i className="fas fa-calendar-alt" aria-hidden="true" />
-                    22 June 2023
-                  </p>
-                  <a href="#">Precious Tips To Help You Get Better.</a>
-                </div>
-              </li>
-              <li>
-                <div className="recent_post_img" bis_skin_checked={1}>
-                  <img
-                    src="images/blog_dtls-3.jpg"
-                    alt="post"
-                    className="img-fluid w-100"
-                  />
-                </div>
-                <div className="recent_post_text" bis_skin_checked={1}>
-                  <p>
-                    <i className="fas fa-calendar-alt" aria-hidden="true" />
-                    22 June 2023
-                  </p>
-                  <a href="#">Precious Tips To Help You Get Better.</a>
-                </div>
-              </li>
-              <li>
-                <div className="recent_post_img" bis_skin_checked={1}>
-                  <img
-                    src="images/blog_dtls-4.jpg"
-                    alt="post"
-                    className="img-fluid w-100"
-                  />
-                </div>
-                <div className="recent_post_text" bis_skin_checked={1}>
-                  <p>
-                    <i className="fas fa-calendar-alt" aria-hidden="true" />
-                    22 June 2023
-                  </p>
-                  <a href="#">Precious Tips To Help You Get Better.</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div
-            className="service_dtls_rightside sidebar_tags"
-            bis_skin_checked={1}
-          >
-            <h5>Post Tags</h5>
-            <ul className="d-flex flex-wrap">
-              <li>
-                <a href="#">Appointment</a>
-              </li>
-              <li>
-                <a href="#">Doctors</a>
-              </li>
-              <li>
-                <a href="#">Importance</a>
-              </li>
-              <li>
-                <a href="#">Health</a>
-              </li>
-              <li>
-                <a href="#">Best</a>
-              </li>
-              <li>
-                <a href="#">Hospital</a>
-              </li>
-              <li>
-                <a href="#">Laboratory</a>
-              </li>
-              <li>
-                <a href="#">Antibiotics</a>
-              </li>
-              <li>
-                <a href="#">Doctors</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div
-          id="sticky_sidebar"
-          className="jquery-stickit-spacer"
-          style={{
-            height: "1429.19px",
-            visibility: "hidden !important",
-            display: "none !important"
-          }}
-          bis_skin_checked={1}
-        />
-      </div> */}
+
           </div>
         </div>
       </section>
@@ -620,9 +408,9 @@ const ServicesPage = () => {
             bis_skin_checked={1}
           >
             <div className="appoinment_overlay" bis_skin_checked={1}>
-              <div className="row" bis_skin_checked={1}>
+              <div style={{ display: 'flex', flexDirection: 'row', gap:'50px' }} className="row" bis_skin_checked={1}>
                 <div
-                  className="col-xl-7 col-lg-7 wow fadeInLeft"
+                  className="col-xl-6 col-lg-6 wow fadeInLeft"
                   data-wow-duration="1s"
                   style={{
                     visibility: "visible",
@@ -636,193 +424,90 @@ const ServicesPage = () => {
                       <h5>Appointment</h5>
                       <h2>Apply For Free Now</h2>
                     </div>
-                    <form action="#">
+                    <form onSubmit={handleSubmit}>
                       <div className="row" bis_skin_checked={1}>
                         <div className="col-lg-6 col-sm-6" bis_skin_checked={1}>
                           <div className="appoinment_form_input" bis_skin_checked={1}>
-                            <input type="text" placeholder="Patient Name*" />
+                            <input
+                              type="patientName"
+                              placeholder="Patient Name*"
+                              name="patientName"
+                              value={formData.patientName}
+                              onChange={handleChange}
+                            />
                           </div>
                         </div>
                         <div className="col-lg-6 col-sm-6" bis_skin_checked={1}>
                           <div className="appoinment_form_input" bis_skin_checked={1}>
-                            <input type="email" placeholder="Email*" />
+                            <input
+                              type="email"
+                              placeholder="Email*"
+                              name="email"
+                              value={formData.email}
+                              onChange={handleChange} />
                           </div>
                         </div>
                         <div className="col-lg-6 col-sm-6" bis_skin_checked={1}>
                           <div className="appoinment_form_input" bis_skin_checked={1}>
-                            <input type="email" placeholder="Email Address*" />
-                          </div>
-                        </div>
-                        <div className="col-lg-6 col-sm-6" bis_skin_checked={1}>
-                          <div className="appoinment_form_input" bis_skin_checked={1}>
-                            <select
-                              className="select_2 select2-hidden-accessible"
-                              data-select2-id="select2-data-1-ayd1"
-                              tabIndex={-1}
-                              aria-hidden="true"
-                            >
-                              <option value="" data-select2-id="select2-data-3-oein">
-                                Select Department
-                              </option>
-                              <option value="">Cardiology</option>
-                              <option value="">Ophthalmology</option>
-                              <option value="">Pediatric</option>
-                              <option value="">Radiology</option>
-                              <option value="">Urology</option>
-                            </select>
-                            <span
-                              className="select2 select2-container select2-container--default"
-                              dir="ltr"
-                              data-select2-id="select2-data-2-gro6"
-                              style={{ width: 203 }}
-                            >
-                              <span className="selection">
-                                <span
-                                  className="select2-selection select2-selection--single"
-                                  role="combobox"
-                                  aria-haspopup="true"
-                                  aria-expanded="false"
-                                  tabIndex={0}
-                                  aria-disabled="false"
-                                  aria-labelledby="select2-owyu-container"
-                                  aria-controls="select2-owyu-container"
-                                >
-                                  <span
-                                    className="select2-selection__rendered"
-                                    id="select2-owyu-container"
-                                    role="textbox"
-                                    aria-readonly="true"
-                                    title="Select Department"
-                                  >
-                                    Select Department
-                                  </span>
-                                  <span
-                                    className="select2-selection__arrow"
-                                    role="presentation"
-                                  >
-                                    <b role="presentation" />
-                                  </span>
-                                </span>
-                              </span>
-                              <span className="dropdown-wrapper" aria-hidden="true" />
-                            </span>
+                            <input
+                              type="phoneNumber"
+                              placeholder="PhoneNumber*"
+                              name="phoneNumber"
+                              value={formData.phoneNumber}
+                              onChange={handleChange} />
                           </div>
                         </div>
                         <div className="col-lg-6 col-sm-6" bis_skin_checked={1}>
                           <div className="appoinment_form_input" bis_skin_checked={1}>
                             <select
-                              className="select_2 select2-hidden-accessible"
-                              data-select2-id="select2-data-4-jf4z"
-                              tabIndex={-1}
-                              aria-hidden="true"
+                              name="department"
+                              style={{ borderRadius: 50, width: '100%' }}
+                              value={formData.department}
+                              onChange={handleChange}
+                              required
                             >
-                              <option value="" data-select2-id="select2-data-6-uz8t">
-                                Select Doctor
-                              </option>
-                              <option value="">Dr. Hasan Mahamud</option>
-                              <option value="">Dr. Moinuddin</option>
-                              <option value="">Dr. Afroja Akter</option>
-                              <option value="">Dr. Mamunur Rasid</option>
-                              <option value="">Dr. Abdus Salam</option>
+                              <option value="">Select Department</option>
+                              {serviceData.map((s, i) => (
+                                <option key={i} value={s.ServiceName}>
+                                  {s.ServiceName}
+                                </option>
+                              ))}
                             </select>
-                            <span
-                              className="select2 select2-container select2-container--default"
-                              dir="ltr"
-                              data-select2-id="select2-data-5-s9fz"
-                              style={{ width: 210 }}
-                            >
-                              <span className="selection">
-                                <span
-                                  className="select2-selection select2-selection--single"
-                                  role="combobox"
-                                  aria-haspopup="true"
-                                  aria-expanded="false"
-                                  tabIndex={0}
-                                  aria-disabled="false"
-                                  aria-labelledby="select2-497n-container"
-                                  aria-controls="select2-497n-container"
-                                >
-                                  <span
-                                    className="select2-selection__rendered"
-                                    id="select2-497n-container"
-                                    role="textbox"
-                                    aria-readonly="true"
-                                    title="Select Doctor"
-                                  >
-                                    Select Doctor
-                                  </span>
-                                  <span
-                                    className="select2-selection__arrow"
-                                    role="presentation"
-                                  >
-                                    <b role="presentation" />
-                                  </span>
-                                </span>
-                              </span>
-                              <span className="dropdown-wrapper" aria-hidden="true" />
-                            </span>
+
+
                           </div>
                         </div>
                         <div className="col-lg-6 col-sm-6" bis_skin_checked={1}>
                           <div className="appoinment_form_input" bis_skin_checked={1}>
-                            <input type="date" />
+                            <input type="date"
+                              type="date"
+                              name="date"
+                              value={formData.date}
+                              onChange={handleChange}
+                              required
+                            />
                           </div>
                         </div>
-                        <div className="col-lg-6 col-sm-6" bis_skin_checked={1}>
-                          <div className="appoinment_form_input" bis_skin_checked={1}>
+                        <div className="col-lg-6 col-sm-6">
+                          <div className="appoinment_form_input">
                             <select
-                              className="reservation_input select_2 select2-hidden-accessible"
-                              data-select2-id="select2-data-7-hwf6"
-                              tabIndex={-1}
-                              aria-hidden="true"
+                              name="time"
+                              value={formData.time}
+                              style={{ borderRadius: 50, width: '100%' }}
+                              onChange={handleChange}
+                              required
                             >
-                              <option value="" data-select2-id="select2-data-9-2cdc">
-                                Select Time
-                              </option>
-                              <option value="">10.00 am to 11.00 am</option>
-                              <option value="">11.00 am to 12.00 pm</option>
-                              <option value="">3.00 pm to 4.00 pm</option>
-                              <option value="">4.00 pm to 5.00 pm</option>
+                              <option value="">Select Time</option>
+                              <option value="10:00 am to 11:00 am">10:00 am to 11:00 am</option>
+                              <option value="11:00 am to 12:00 pm">11:00 am to 12:00 pm</option>
+                              <option value="3:00 pm to 4:00 pm">3:00 pm to 4:00 pm</option>
+                              <option value="4:00 pm to 5:00 pm">4:00 pm to 5:00 pm</option>
                             </select>
-                            <span
-                              className="select2 select2-container select2-container--default"
-                              dir="ltr"
-                              data-select2-id="select2-data-8-y1pe"
-                              style={{ width: 215 }}
-                            >
-                              <span className="selection">
-                                <span
-                                  className="select2-selection select2-selection--single"
-                                  role="combobox"
-                                  aria-haspopup="true"
-                                  aria-expanded="false"
-                                  tabIndex={0}
-                                  aria-disabled="false"
-                                  aria-labelledby="select2-pg2y-container"
-                                  aria-controls="select2-pg2y-container"
-                                >
-                                  <span
-                                    className="select2-selection__rendered"
-                                    id="select2-pg2y-container"
-                                    role="textbox"
-                                    aria-readonly="true"
-                                    title="Select Time"
-                                  >
-                                    Select Time
-                                  </span>
-                                  <span
-                                    className="select2-selection__arrow"
-                                    role="presentation"
-                                  >
-                                    <b role="presentation" />
-                                  </span>
-                                </span>
-                              </span>
-                              <span className="dropdown-wrapper" aria-hidden="true" />
-                            </span>
                           </div>
                         </div>
-                        <div className="col-lg-6 col-sm-6" bis_skin_checked={1}>
+
+                        <div className="col-lg-12 col-sm-12"
+                        >
                           <div className="appoinment_form_input" bis_skin_checked={1}>
                             <button className="common_btn">book appoinment</button>
                           </div>
@@ -831,14 +516,9 @@ const ServicesPage = () => {
                     </form>
                   </div>
                 </div>
-                <div className="col-xl-4" bis_skin_checked={1}>
-                  <div className="appoinment_img" bis_skin_checked={1}>
-                    <img
-                      src="https://html.themefax.com/madifax/images/appoinment_img.png"
-                      alt="appointment"
-                      className="img-fluid w-100"
-                    />
-                  </div>
+                <div
+                  className="col-xl-6 col-lg-6 wow fadeInLeft">
+                  <img style={{height:'100%', borderRadius:10}} src={galleryData.dr} />
                 </div>
               </div>
             </div>

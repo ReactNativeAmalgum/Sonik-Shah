@@ -122,8 +122,7 @@ const Footer = () => {
                 <div className="tf_footer_address" bis_skin_checked={1}>
                   <p>
                     <i className="fas fa-map-marker-alt" aria-hidden="true" />
-                    All India Superspeciality Hospital, Flat 1,2 Kanchanganga chsl Next to balbharti school, Opp to shantilal modi road(S.M.Road) Kandivali west.. Mumbai 400067
-                  </p>
+                    Namaha Healthcare,S.V Road, opp. Rajyaguru Flyover, Kandivali, Bhadran Nagar, Kandivali West, Mumbai, Maharashtra 400067                  </p>
                   <a href="#">
                     <i className="fas fa-envelope" aria-hidden="true" />
                     Shah.sonik@gmail.com

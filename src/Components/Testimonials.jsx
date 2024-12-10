@@ -74,7 +74,7 @@ const Testimonials = () => {
                         <div className="img" bis_skin_checked={1}>
                           <img
                             src="https://sk-wallpaper.vercel.app/static/media/img_avatar3.9ced398fb53bae1e911d.webp"
-                            alt="reviewer"
+                            alt="Best Orthopedic Surgeon in Kandivali"
                             className="img-fluid w-100"
                           />
                         </div>
@@ -102,7 +102,7 @@ const Testimonials = () => {
                         <div className="img" bis_skin_checked={1}>
                           <img
                             src="https://sk-wallpaper.vercel.app/static/media/img_avatar3.9ced398fb53bae1e911d.webp"
-                            alt="reviewer"
+                            alt="Best Orthopedic Surgeon in Kandivali"
                             className="img-fluid w-100"
                           />
                         </div>
@@ -130,7 +130,7 @@ const Testimonials = () => {
                         <div className="img" bis_skin_checked={1}>
                           <img
                             src="https://sk-wallpaper.vercel.app/static/media/img_avatar3.9ced398fb53bae1e911d.webp"
-                            alt="reviewer"
+                            alt="Best Orthopedic Surgeon in Kandivali"
                             className="img-fluid w-100"
                           />
                         </div>
@@ -158,7 +158,7 @@ const Testimonials = () => {
                         <div className="img" bis_skin_checked={1}>
                           <img
                             src="https://sk-wallpaper.vercel.app/static/media/img_avatar3.9ced398fb53bae1e911d.webp"
-                            alt="reviewer"
+                            alt="Best Orthopedic Surgeon in Kandivali"
                             className="img-fluid w-100"
                           />
                         </div>

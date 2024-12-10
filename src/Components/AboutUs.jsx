@@ -30,7 +30,7 @@ const AboutUs = () => {
         <meta property="og:image" content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png" />
       </MetaTags>
       <Breadcrumb title={'About Us'} />
-      <section className="about_page">
+      <section className="about_page custom-cont">
         <div className='head-cont'>
           <h1 className='special-h1'>Orthopedic Doctor in Kandivali</h1>
         </div>
@@ -374,7 +374,7 @@ const AboutUs = () => {
                   <div className="helpline_img" bis_skin_checked={1}>
                     <img
                       src={helpLine}
-                      alt="help img"
+                      alt="Orthopedic Doctor in Kandivali"
                       className="img-fluid w-100"
                     />
                   </div>

@@ -64,7 +64,7 @@ const SwiperServices = () => {
                     </div>
                     <div className="service_text">
                       <a
-                        href="service_details.html"
+                        href={v.slugs}
                         className="service_heading"
                         tabIndex={-1}
                       >
@@ -74,7 +74,7 @@ const SwiperServices = () => {
                         {v.ServiceDescription}
                       </p>
                       <a
-                        href="service_details.html"
+                        href={v.slugs}
                         className="service_link"
                         tabIndex={-1}
                       >

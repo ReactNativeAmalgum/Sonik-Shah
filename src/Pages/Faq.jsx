@@ -172,11 +172,9 @@ const Faq = () => {
         <meta property="og:description" content="Find the top Ortho Specialist in Kandivali..." />
         <meta property="og:image" content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png" />
       </MetaTags>
-      <Breadcrumb title={'FAQ'} />
+      <Breadcrumb title={'Ortho Specialist in Kandivali'} />
       <section className="faq_page pt_75 xs_pt_45 pb_100 xs_pb_70 custom-cont">
-        <div className="head-cont">
-          <h1 className='special-h1'>Ortho Specialist in Kandivali</h1>
-        </div>
+        
         <div className="container">
           <div className="faq_accordion accordion accordion-flush mb-5" id="accordionFlushExample">
             <div>

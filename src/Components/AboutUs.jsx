@@ -29,11 +29,11 @@ const AboutUs = () => {
         <meta property="og:description" content="Find leading Orthopedic Doctors in Kandivali providing specialized care for bone and joint problems. Our experts offer comprehensive treatment options." />
         <meta property="og:image" content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png" />
       </MetaTags>
-      <Breadcrumb title={'About Us'} />
+      <Breadcrumb title={'Orthopedic Doctor in Kandivali'} />
       <section className="about_page custom-cont">
-        <div className='head-cont'>
+        {/* <div className='head-cont'>
           <h1 className='special-h1'>Orthopedic Doctor in Kandivali</h1>
-        </div>
+        </div> */}
         <section className="about pt_100 xs_pt_70 pb_100 xs_pb_70 py-5 ">
           <div className="container">
             <div className="row">
@@ -327,7 +327,7 @@ const AboutUs = () => {
                     <h5>Emergency helpline</h5>
                     <h2>Need Emergency Contact</h2>
                     <p>
-                      In case of an emergency, please contact us immediately at [emergency contact number] for swift assistance. Our team is available 24/7 to address urgent concerns and ensure your safety and well-being.
+                      In case of an emergency, please contact us immediately at 9892302803 for swift assistance. Our team is available 24/7 to address urgent concerns and ensure your safety and well-being.
 
                     </p>
                   </div>
@@ -344,7 +344,7 @@ const AboutUs = () => {
                       <div className="helpline_contact_text" bis_skin_checked={1}>
                         <p>Phone Number</p>
                         <a href="callto:123456789" bis_skin_checked={1}>
-                          +880 13 2525 065
+                          +91 9892302803
                         </a>
                       </div>
                     </li>
@@ -355,7 +355,7 @@ const AboutUs = () => {
                       <div className="helpline_contact_text" bis_skin_checked={1}>
                         <p>Quick Your Email</p>
                         <a href="mailto:example@gmail.com" bis_skin_checked={1}>
-                          help.info@gmail.com
+                        Shah.sonik@gmail.com
                         </a>
                       </div>
                     </li>

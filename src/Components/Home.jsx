@@ -1,15 +1,9 @@
 import React from "react";
-import DoctorIntro from "../Pages/DoctorIntro";
-import SwiperPatients from "../Pages/SwiperPatients";
-import VideoPlayer from "../Pages/VideoPlayer";
+
 import HomeServices from "../Pages/HomeServices";
-import call from "../Asserts/Call.png";
-import videoCall from "../Asserts/Video-call.png";
-import reactIcon from "../Asserts/react.png";
-import review from "../Asserts/Review.png";
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FaLocationDot } from "react-icons/fa6";
-import { IoCall } from "react-icons/io5";
 import { FaBuilding } from "react-icons/fa";
 import { IoMdCall } from "react-icons/io";
 import Fade from 'react-reveal/Fade';
@@ -25,6 +19,7 @@ import Testimonials from "./Testimonials";
 import { MetaTags } from "react-meta-tags";
 import bgImage from '../Asserts/banner_img_bg.webp'
 import galleryData from "../Asserts/galleryData";
+import { Slide } from "react-reveal";
 
 const Home = () => {
   return (
@@ -59,7 +54,9 @@ const Home = () => {
         </div>
       </div>
       <div className='head-cont'>
-        <h1 className='special-h1'>Orthopedic Doctor in Kandivali</h1>
+       <Slide left sm>
+       <h1 className='special-h1'>Orthopedic Doctor in Kandivali</h1>
+       </Slide>
       </div>
       <section
         className="banner"
@@ -151,7 +148,7 @@ const Home = () => {
                       className="play_btn venobox vbox-item"
                       data-autoplay="true"
                       data-vbtype="video"
-                      href="https://youtu.be/nqye02H_H6I"
+                      href="https://www.youtube.com/watch?v=AY54XFuNYBY"
                     >
                       <i className="fas fa-play" aria-hidden="true" />
                     </a>
@@ -285,7 +282,7 @@ const Home = () => {
             </Fade>
             <Fade right>
               <div
-                className="col-xl-6 col-sm-9  col-lg-5 col-md-7 wow fadeInLeft"
+                className="col-xl-6 col-sm-9  col-lg-5 col-md-7 mt-sm-5 wow fadeInLeft"
                 data-wow-duration="1s"
                 style={{
                   visibility: "visible",
@@ -327,6 +324,7 @@ const Home = () => {
                 visibility: "visible",
                 animationDuration: "1s",
                 animationName: "fadeInRight",
+                height:350
               }}
             >
               <Fade left>
@@ -350,6 +348,8 @@ const Home = () => {
                 visibility: "visible",
                 animationDuration: "1s",
                 animationName: "fadeInRight",
+                height:350
+
               }}
             >
               <Fade left>
@@ -372,6 +372,8 @@ const Home = () => {
                 visibility: "visible",
                 animationDuration: "1s",
                 animationName: "fadeInRight",
+                height:350
+
               }}
             >
               <Fade left>
@@ -394,6 +396,8 @@ const Home = () => {
                 visibility: "visible",
                 animationDuration: "1s",
                 animationName: "fadeInRight",
+                height:350
+
               }}
             >
               <Fade left>
@@ -440,8 +444,8 @@ const Home = () => {
                     spaceBetween: 20,
                   },
                   768: {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
+                    slidesPerView: 2,
+                    spaceBetween: 30,
                   },
                   1024: {
                     slidesPerView: 3,

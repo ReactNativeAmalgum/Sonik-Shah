@@ -176,11 +176,11 @@ const ContactUs = () => {
           <meta property="og:description" content="Seeking Orthopedic care near Kandivali? Our expert orthopedic doctors offer convenient and comprehensive treatment options for bone and joint issues." />
           <meta property="og:image" content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png" />
         </MetaTags>
-        <Breadcrumb title={"Contact Us"} />
+        <Breadcrumb title={"orthopedic-near-kandivali"} />
         <section className="contact mt_75 xs_mt_45 pb_100 xs_pb_70 ">
-          <div className='head-cont'>
+          {/* <div className='head-cont'>
             <h1 className='special-h1'>Orthopedic Care near Kandivali</h1>
-          </div>
+          </div> */}
           <div className="container">
             <Fade up>
               <div className="row">

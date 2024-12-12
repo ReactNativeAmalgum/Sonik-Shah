@@ -34,11 +34,12 @@ import orth4 from '../Asserts/orth4.jpg'
 import hip1 from '../Asserts/hip1.jpg'
 import hip2 from '../Asserts/hip2.jpg'
 import hip3 from '../Asserts/hip3.jpg'
-import hip4 from '../Asserts/hip4.jpeg'
+import hip4 from '../Asserts/hip4.jpg'
 import arth1 from '../Asserts/arth1.webp'
 import arth2 from '../Asserts/arth2.png'
 import arth3 from '../Asserts/arth3.webp'
 import arth4 from '../Asserts/arth4.webp'
+import faq from '../Asserts/faq.jpg'
 
 const galleryData = {
     gal1: gallery1,
@@ -82,6 +83,6 @@ const galleryData = {
     arth2:arth2,
     arth3:arth3,
     arth4:arth4,
-    
+    faq:faq,
 };
 export default galleryData

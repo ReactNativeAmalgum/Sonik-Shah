@@ -1,15 +1,18 @@
 
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
 
-.appoinment_overlay .appointment-row{
+.appoinment_overlay .appointment-row {
   display: flex;
   flex-direction: row !important;
 }
-.error-text{
+
+.error-text {
   color: red;
   font-size: 15px;
 }
+
 .faq_page_form {
   background-color: #f9f9f9;
   padding: 30px;
@@ -21,15 +24,16 @@
   margin-bottom: 20px;
 }
 
-@media(max-width:768px){
-  .cutom-service-row{
-    gap:50px
+@media(max-width:768px) {
+  .cutom-service-row {
+    gap: 50px
   }
 }
 
-.bottom-col{
+.bottom-col {
   text-align: center;
 }
+
 .inputstyle {
   width: 100%;
   padding: 12px;
@@ -98,13 +102,12 @@ textarea:focus {
   background-color: #0056b3;
 }
 
-/* .custom-cont{
-  max-height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-.special-h1{
+.custom-cont {
+  /* background-size:cover; */
+  object-fit: contain !important;
+}
+
+.special-h1 {
   text-align: center;
   /* font-size: 44px; */
   font-weight: 500;
@@ -126,10 +129,13 @@ body {
   font-family: var(--paraFont);
   color: var(--colorBlack);
 }
-html , body{
-  a{
+
+html,
+body {
+  a {
     text-decoration: none;
   }
+
   overflow-x: hidden;
 }
 
@@ -207,20 +213,21 @@ button:focus {
   --colorPrimary: #EF7F1B;
   --bg-color: #eef9ff;
   --color-Secondary: #234996;
-  --bg-color-secondary:rgba(94, 94, 238, 0.10);
+  --bg-color-secondary: rgba(94, 94, 238, 0.10);
   --colorDeepblue: #4589F4;
   --paraColor: #5C728E;
   --colorBlack: #031D36;
   --colorWhite: #ffffff;
-  --fontWeightTitle:"700";
-  --fontWeightPara:"400";
+  --fontWeightTitle: "700";
+  --fontWeightPara: "400";
   /* --paraFont: 'DM Sans', sans-serif; */
   --paraFont: 'Barlow Semi Condensed', sans-serif;
-  --headingFont: "Roboto",sans-serif;
+  --headingFont: "Roboto", sans-serif;
   /* --headingFont: 'Work Sans', sans-serif; */
   --boxShadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   --gradiantBg: linear-gradient(45deg, #CDFFF1 0%, rgba(203, 245, 246, 0.73) 28.13%, rgba(240, 251, 224, 0.80) 79.75%, #F8FFDA 100%);
 }
+
 .common_btns {
   background: var(--colorPrimary);
   text-transform: capitalize;
@@ -291,7 +298,7 @@ button:focus {
 }
 
 .common_btn:hover {
-  background: var(--colorSecondary);
+  background: orange;
   padding: 12px 25px 12px 55px;
   color: var(--colorWhite);
 }
@@ -347,12 +354,13 @@ button:focus {
 }
 
 .breadcrumb {
-  background: url('https://html.themefax.com/madifax/images/breadcrumb_bg.jpg');
+  /* background-image: url(../src/Asserts//arth1.webp); */
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   padding: 270px 0px 165px !important;
   position: relative;
+
   /* height: 370px; */
 }
 
@@ -365,15 +373,16 @@ button:focus {
   top: 0;
   left: 0;
   z-index: 1;
+  object-fit: contain !important;
 }
 
 .breadcrumb_text {
   position: relative;
   z-index: 2;
   height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .breadcrumb_text h1 {
@@ -1579,9 +1588,10 @@ button:focus {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media(max-width:769px){
+
+@media(max-width:769px) {
   .appoinment_overlay .appointment-row {
-    gap:50px
+    gap: 50px
   }
 }
 
@@ -7182,24 +7192,24 @@ button:focus {
 =============================*/
 @media (min-width: 1400px)and (max-width: 1600px) {
   .helpline::after {
-      width: 60px;
-      height: 60px;
-      top: 3%;
+    width: 60px;
+    height: 60px;
+    top: 3%;
   }
 
   .comment_text {
-      width: 86%;
+    width: 86%;
   }
 
   .banner::after {
-      width: 80px;
-      height: 80px;
-      top: 15%;
+    width: 80px;
+    height: 80px;
+    top: 15%;
   }
 
   .banner_3 .banner_text h1,
   .banner_3 .banner_text p {
-      color: var(--colorBlack);
+    color: var(--colorBlack);
   }
 }
 
@@ -7209,119 +7219,119 @@ button:focus {
       HOME PAGE START
   ================================*/
   .banner_img .img {
-      height: 650px;
+    height: 650px;
   }
 
   .banner_img::after {
-      width: 510px;
-      height: 510px;
-      right: 30px;
-      top: 260px;
+    width: 510px;
+    height: 510px;
+    right: 30px;
+    top: 260px;
   }
 
   .banner_text h1 {
-      font-size: 52px;
+    font-size: 52px;
   }
 
   .call {
-      top: 350px;
-      left: 5px;
+    top: 350px;
+    left: 5px;
   }
 
   .video_call {
-      top: 255px;
+    top: 255px;
   }
 
   .react {
-      top: 430px;
-      right: 0px;
+    top: 430px;
+    right: 0px;
   }
 
   .banner .review {
-      top: 525px;
+    top: 525px;
   }
 
   .banner::after {
-      width: 60px;
-      height: 60px;
-      top: 17%;
+    width: 60px;
+    height: 60px;
+    top: 17%;
   }
 
   .review::after {
-      bottom: 5%;
+    bottom: 5%;
   }
 
   .about_img::after {
-      right: 25px;
+    right: 25px;
   }
 
   .service_img {
-      height: 200px;
+    height: 200px;
   }
 
   .faq_img {
-      height: 480px;
-      margin-left: 0;
+    height: 480px;
+    margin-left: 0;
   }
 
   .work_process_area::after {
-      width: 840px;
-      height: 53px;
+    width: 840px;
+    height: 53px;
   }
 
   .helpline::after {
-      top: 10%;
-      left: auto;
-      right: 5%;
+    top: 10%;
+    left: auto;
+    right: 5%;
   }
 
   .common_heading h2 {
-      font-size: 42px;
+    font-size: 42px;
   }
 
   .helpline_contact li {
-      margin-right: 20px;
-      padding: 15px;
+    margin-right: 20px;
+    padding: 15px;
   }
 
   .helpline_contact li span {
-      margin-right: 10px;
+    margin-right: 10px;
   }
 
   .helpline_img {
-      margin-top: 110px;
-      height: 380px;
+    margin-top: 110px;
+    height: 380px;
   }
 
   .about_img_2 {
-      right: 35px;
+    right: 35px;
   }
 
   .helpline_img::after {
-      width: 160px;
-      height: 122px;
-      top: -40px;
-      left: 45px;
+    width: 160px;
+    height: 122px;
+    top: -40px;
+    left: 45px;
   }
 
   .team_img {
-      height: 270px;
+    height: 270px;
   }
 
   .tf_footer_icon ul li a {
-      font-size: 14px;
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
   }
 
   .footer_mail span,
   .tf_footer_icon span {
-      min-width: 75px;
+    min-width: 75px;
   }
 
   .blog_text .blog_heading {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   /*================================
@@ -7329,47 +7339,47 @@ button:focus {
   ================================*/
 
   .appointment_page_img {
-      width: 450px;
-      max-height: 600px;
+    width: 450px;
+    max-height: 600px;
   }
 
   /*================================
       BLOG DETAILS START
   ================================*/
   .blog_details_img {
-      height: 475px;
+    height: 475px;
   }
 
   .comment_text {
-      width: 80%;
+    width: 80%;
   }
 
   .commant_reply .comment_text {
-      width: 76%;
+    width: 76%;
   }
 
   .recent_post_text {
-      width: 56%;
+    width: 56%;
   }
 
   .recent_post_text p {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .recent_post_text a {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .service_dtls_rightside {
-      padding: 20px;
+    padding: 20px;
   }
 
   .breadcrumb {
-      padding: 220px 0px 115px;
+    padding: 220px 0px 115px;
   }
 
   .breadcrumb_text h1 {
-      font-size: 48px;
+    font-size: 48px;
   }
 
   /*================================
@@ -7377,48 +7387,48 @@ button:focus {
   ================================*/
 
   .error_img {
-      height: 480px;
+    height: 480px;
   }
 
   .error_text h3 {
-      font-size: 42px;
+    font-size: 42px;
   }
 
   .faq_page_qus h3 {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .single_payment {
-      height: 100px;
+    height: 100px;
   }
 
   /*================================
       DASHBOARD START
   ================================*/
   .dashboard_overview .text {
-      width: 68%;
+    width: 68%;
   }
 
   .user_profile p {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .dashboard_overview .icon {
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
   }
 
   .massager_option .nav-link {
-      padding: 5px;
+    padding: 5px;
   }
 
   .single_chat_top .text {
-      width: 86%;
+    width: 86%;
   }
 
   .single_massage_text h4 {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   /*================================
@@ -7432,29 +7442,29 @@ button:focus {
   ================================*/
 
   .banner_text {
-      padding-top: 0px;
+    padding-top: 0px;
   }
 
   .home_two_banner .banner_text h1 span::after {
-      top: 60px;
-      right: 126px;
+    top: 60px;
+    right: 126px;
   }
 
   .appoinment_contact {
-      padding: 90px 30px;
+    padding: 90px 30px;
   }
 
   .about_2_img {
-      height: auto;
-      margin-right: 0;
+    height: auto;
+    margin-right: 0;
   }
 
   .get_touch_2 .common_heading {
-      padding-right: 0px;
+    padding-right: 0px;
   }
 
   .team .image_wraper {
-      height: auto;
+    height: auto;
   }
 
   /*================================
@@ -7467,16 +7477,16 @@ button:focus {
       HOME PAGE 3 START
   ================================*/
   .banner_3 {
-      padding-top: 140px;
+    padding-top: 140px;
   }
 
   .banner_3 .banner_text h1,
   .banner_3 .banner_text p {
-      color: var(--colorBlack);
+    color: var(--colorBlack);
   }
 
   .banner_3 .banner_text {
-      padding-top: 60px;
+    padding-top: 60px;
   }
 
   /*================================
@@ -7492,222 +7502,222 @@ button:focus {
       HOME PAGE START
   ================================*/
   .banner_text h1 {
-      font-size: 38px;
+    font-size: 38px;
   }
 
   .banner_text p {
-      max-width: 80%;
+    max-width: 80%;
   }
 
   .banner_counter li {
-      margin-right: 0;
-      min-width: 150px;
+    margin-right: 0;
+    min-width: 150px;
   }
 
   .banner_img .img {
-      height: 550px;
+    height: 550px;
   }
 
   .banner_img::after {
-      width: 420px;
-      height: 420px;
-      top: 280px;
-      right: auto;
-      left: 0;
+    width: 420px;
+    height: 420px;
+    top: 280px;
+    right: auto;
+    left: 0;
   }
 
   .call {
-      left: -15px;
+    left: -15px;
   }
 
   .react {
-      top: 410px;
-      right: 5px;
+    top: 410px;
+    right: 5px;
   }
 
   .video_call {
-      top: 245px;
-      right: 165px;
+    top: 245px;
+    right: 165px;
   }
 
   .banner .review {
-      top: 530px;
-      left: -110px;
-      width: 125px !important;
-      height: 65px !important;
+    top: 530px;
+    left: -110px;
+    width: 125px !important;
+    height: 65px !important;
   }
 
   .banner_counter li h3,
   .banner_counter li span {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .banner_counter li p {
-      font-size: 13px;
+    font-size: 13px;
   }
 
   .banner::after {
-      width: 65px;
-      height: 65px;
-      top: 17%;
-      left: 5%;
+    width: 65px;
+    height: 65px;
+    top: 17%;
+    left: 5%;
   }
 
   .main_menu .navbar-nav .nav-item>a {
-      margin: 0px 10px;
+    margin: 0px 10px;
   }
 
   .about_img_1 {
-      width: 320px;
-      height: 370px;
+    width: 320px;
+    height: 370px;
   }
 
   .about_img_2 {
-      width: 260px;
-      height: 300px;
-      bottom: -140px;
-      right: 0;
+    width: 260px;
+    height: 300px;
+    bottom: -140px;
+    right: 0;
   }
 
   .about_img::after {
-      display: none;
+    display: none;
   }
 
   .service_img {
-      height: 200px;
+    height: 200px;
   }
 
   .common_heading h2 {
-      font-size: 36px;
+    font-size: 36px;
   }
 
   .faq_accordion .accordion-header .accordion-button {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .single_process h4 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .work_process_area::after {
-      width: 728px;
-      height: 47px;
+    width: 728px;
+    height: 47px;
   }
 
   .appoinment_overlay {
-      padding: 30px;
+    padding: 30px;
   }
 
   .appoinment_img {
-      right: 0;
-      height: 540px;
+    right: 0;
+    height: 540px;
   }
 
   .helpline_contact li {
-      margin-right: 0;
-      padding: 10px;
+    margin-right: 0;
+    padding: 10px;
   }
 
   .helpline_contact li {
-      margin-right: 18px;
-      padding: 15px;
+    margin-right: 18px;
+    padding: 15px;
   }
 
   .helpline_contact_text a {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .helpline_contact li span {
-      margin-right: 10px;
+    margin-right: 10px;
   }
 
   .helpline_contact_text p {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .massage_shape {
-      width: 130px;
-      height: 100px;
-      top: 215px;
-      right: 30%;
+    width: 130px;
+    height: 100px;
+    top: 215px;
+    right: 30%;
   }
 
 
   .helpline::after {
-      top: 10%;
-      left: auto;
-      right: 10%;
+    top: 10%;
+    left: auto;
+    right: 10%;
   }
 
   .helpline_img {
-      margin-top: 185px;
-      height: 317px;
+    margin-top: 185px;
+    height: 317px;
   }
 
   .helpline::before {
-      top: 47%;
-      left: 38%;
+    top: 47%;
+    left: 38%;
   }
 
   .review::after {
-      bottom: 5%;
+    bottom: 5%;
   }
 
   .blog_text .blog_heading {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .blog_img {
-      height: 200px;
+    height: 200px;
   }
 
   .footer_mail span,
   .tf_footer_icon span {
-      font-size: 14px;
-      min-width: 70px;
+    font-size: 14px;
+    min-width: 70px;
   }
 
   .footer_mail a {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .tf_footer_icon ul li a {
-      font-size: 14px;
-      margin-right: 5px;
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
+    font-size: 14px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
   }
 
   .quick_link ul li a {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .footer_left p,
   .tf_footer_address p,
   .tf_footer_address a {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .quick_link h5,
   .address h5 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .faq_img {
-      height: 485px;
-      margin-left: 0;
+    height: 485px;
+    margin-left: 0;
   }
 
   .helpline_img::after {
-      width: 150px;
-      height: 115px;
-      top: -50px;
-      left: 25px;
+    width: 150px;
+    height: 115px;
+    top: -50px;
+    left: 25px;
   }
 
   .team_img {
-      height: 280px;
+    height: 280px;
   }
 
   /*================================
@@ -7715,15 +7725,15 @@ button:focus {
   ================================*/
 
   .breadcrumb {
-      padding: 220px 0px 115px;
+    padding: 220px 0px 115px;
   }
 
   /*================================
       APPOINTMENT PAGE START
   ================================*/
   .appointment_page_img {
-      width: 430px;
-      max-height: 560px;
+    width: 430px;
+    max-height: 560px;
   }
 
   /*================================
@@ -7735,27 +7745,27 @@ button:focus {
       BLOG DETAILS START
   ================================*/
   .blog_details_img {
-      height: 350px;
+    height: 350px;
   }
 
   .blog_details_text .details_title {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .comment_text {
-      width: 80%;
+    width: 80%;
   }
 
   .commant_reply .comment_text {
-      width: 76%;
+    width: 76%;
   }
 
   .recent_post_text {
-      width: 59%;
+    width: 59%;
   }
 
   .recent_post_text a {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   /*================================
@@ -7763,58 +7773,58 @@ button:focus {
   ================================*/
 
   .team_details_img {
-      height: 320px;
+    height: 320px;
   }
 
   .error_img {
-      height: 545px;
+    height: 545px;
   }
 
   .faq_page_qus h3 {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .gallary_img1,
   .gallary_img3 {
-      height: 300px;
+    height: 300px;
   }
 
   .gallary_img2 {
-      height: 625px;
+    height: 625px;
   }
 
   .single_payment {
-      height: auto;
+    height: auto;
   }
 
   .service_dstails_img {
-      height: 350px;
+    height: 350px;
   }
 
   /*================================
       DASHBOARD START
   ================================*/
   .dashboard_overview .text {
-      width: 68%;
+    width: 68%;
   }
 
   .message_list {
-      height: 400px;
-      padding-bottom: 0;
-      margin-bottom: 30px;
+    height: 400px;
+    padding-bottom: 0;
+    margin-bottom: 30px;
   }
 
   .chating_text {
-      max-width: 76%;
+    max-width: 76%;
   }
 
   .single_chat_top .text {
-      width: 87%;
-      position: relative;
+    width: 87%;
+    position: relative;
   }
 
   .single_chat_body {
-      height: 400px;
+    height: 400px;
   }
 
   /*================================
@@ -7822,12 +7832,12 @@ button:focus {
   ================================*/
 
   .blog_react li {
-      font-size: 13px;
-      margin-left: 10px;
+    font-size: 13px;
+    margin-left: 10px;
   }
 
   .blog_text {
-      padding: 25px;
+    padding: 25px;
   }
 
   /*================================
@@ -7835,37 +7845,37 @@ button:focus {
   ================================*/
 
   .main_menu_2 .navbar-nav {
-      margin-left: 50px !important;
+    margin-left: 50px !important;
   }
 
   .banner_text {
-      padding-top: 0px;
+    padding-top: 0px;
   }
 
   .home_two_banner .banner_text h1,
   .home_two_banner .banner_text h1 span {
-      font-size: 50px;
+    font-size: 50px;
   }
 
   .home_two_banner .banner_text h1 span::after {
-      right: -277px;
+    right: -277px;
   }
 
   .appoinment_contact {
-      padding: 75px 30px;
+    padding: 75px 30px;
   }
 
   .about_2_img {
-      height: auto;
-      margin-right: 0;
+    height: auto;
+    margin-right: 0;
   }
 
   .get_touch_2 .common_heading {
-      padding-right: 0px;
+    padding-right: 0px;
   }
 
   .home_two_banner {
-      height: auto;
+    height: auto;
   }
 
   /*================================
@@ -7878,20 +7888,20 @@ button:focus {
   ================================*/
 
   .banner_3 {
-      padding-top: 145px;
+    padding-top: 145px;
   }
 
   .banner_3 .banner_text h1,
   .banner_3 .banner_text p {
-      color: var(--colorBlack);
+    color: var(--colorBlack);
   }
 
   .banner_3 .banner_text {
-      padding-top: 70px;
+    padding-top: 70px;
   }
 
   .search_3_area .common_btn {
-      padding: 12px 25px 12px 25px;
+    padding: 12px 25px 12px 25px;
   }
 
   /*================================
@@ -7906,214 +7916,214 @@ button:focus {
       HOME PAGE START
   ================================*/
   .topbar_icon {
-      justify-content: center;
+    justify-content: center;
   }
 
   .main_menu .container {
-      padding: 7px 0px;
+    padding: 7px 0px;
   }
 
   .main_menu .navbar-brand {
-      margin-left: 12px;
+    margin-left: 12px;
   }
 
   .main_menu .navbar-nav {
-      background: var(--colorWhite);
-      padding-top: 15px;
+    background: var(--colorWhite);
+    padding-top: 15px;
   }
 
   #navbarSupportedContent {
-      margin-top: 13px;
-      border-top: 1px solid var(--colorPrimary);
+    margin-top: 13px;
+    border-top: 1px solid var(--colorPrimary);
   }
 
   .main_menu .navbar-nav .nav-item>a {
-      line-height: 55px;
-      text-align: center;
+    line-height: 55px;
+    text-align: center;
   }
 
   .menu_btn {
-      background: var(--colorWhite);
-      justify-content: center;
-      padding: 10px 0px 30px 0px;
-      border-bottom: 1px solid var(--colorPrimary);
+    background: var(--colorWhite);
+    justify-content: center;
+    padding: 10px 0px 30px 0px;
+    border-bottom: 1px solid var(--colorPrimary);
   }
 
   .dropdown {
-      max-height: 250px;
-      left: 50%;
-      transform: translateX(-50%);
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      -o-transform: translateX(-50%);
+    max-height: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
   }
 
   .menu_search form input {
-      padding: 14px 170px 18px 20px;
+    padding: 14px 170px 18px 20px;
   }
 
   .banner::after {
-      display: none;
+    display: none;
   }
 
   .banner_text h1 {
-      font-size: 42px;
+    font-size: 42px;
   }
 
   .banner {
-      height: auto;
-      padding-top: 100px;
+    height: auto;
+    padding-top: 100px;
   }
 
   .banner_counter {
-      margin-top: 60px;
+    margin-top: 60px;
   }
 
   .banner_counter li h3,
   .banner_counter li span {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .banner_counter li p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .banner_img .img {
-      height: 560px;
+    height: 560px;
   }
 
   .banner_img::after {
-      width: 450px;
-      height: 450px;
-      top: 0;
-      right: auto;
-      left: 0;
+    width: 450px;
+    height: 450px;
+    top: 0;
+    right: auto;
+    left: 0;
   }
 
   .banner_img {
-      justify-content: start;
-      align-items: start;
-      margin-top: 60px;
+    justify-content: start;
+    align-items: start;
+    margin-top: 60px;
   }
 
   .banner .react,
   .banner .video_call,
   .banner .call,
   .banner .review {
-      display: none;
+    display: none;
   }
 
   .about_img_1 {
-      width: 300px;
-      height: 310px;
+    width: 300px;
+    height: 310px;
   }
 
   .about_img::after {
-      display: none;
+    display: none;
   }
 
   .about_img_2 {
-      width: 220px;
-      height: 250px;
-      bottom: 0;
-      right: 0;
+    width: 220px;
+    height: 250px;
+    bottom: 0;
+    right: 0;
   }
 
   .about_img {
-      padding-bottom: 50px;
-      margin-bottom: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .common_heading h2 {
-      font-size: 36px;
+    font-size: 36px;
   }
 
   .service_img {
-      height: 200px;
+    height: 200px;
   }
 
   .faq_img {
-      height: auto;
-      margin-left: 0;
+    height: auto;
+    margin-left: 0;
   }
 
   .work_process_area::after {
-      display: none;
+    display: none;
   }
 
   .appoinment_img {
-      display: none;
+    display: none;
   }
 
   .massage_shape,
   .helpline::after,
   .helpline::before {
-      display: none;
+    display: none;
   }
 
   .appoinment_overlay {
-      padding: 30px;
+    padding: 30px;
   }
 
   .helpline_contact li {
-      margin-bottom: 15px;
+    margin-bottom: 15px;
   }
 
   .helpline_img {
-      margin-top: 30px;
-      width: auto;
-      height: auto;
+    margin-top: 30px;
+    width: auto;
+    height: auto;
   }
 
   .review::before,
   .review::after {
-      display: none;
+    display: none;
   }
 
   .blog_text {
-      padding: 20px;
+    padding: 20px;
   }
 
   .subscribe_text h2 {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   .quick_link,
   .address {
-      margin-top: 50px;
+    margin-top: 50px;
   }
 
   .faq::before,
   .faq::after {
-      display: none;
+    display: none;
   }
 
   .faq_accordion .accordion-header .accordion-button {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .appoinment {
-      padding-top: 100px !important;
+    padding-top: 100px !important;
   }
 
   .blog_text .blog_heading {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   .topbar_link {
-      justify-content: center;
+    justify-content: center;
   }
 
   .topbar_link li p {
-      margin-right: 0;
+    margin-right: 0;
   }
 
   .helpline_img::after {
-      width: 125px;
-      height: 96px;
-      top: 15px;
-      left: 130px;
+    width: 125px;
+    height: 96px;
+    top: 15px;
+    left: 130px;
   }
 
   /*================================
@@ -8125,25 +8135,25 @@ button:focus {
       ABOUT PAGE START
   ================================*/
   .breadcrumb_text h1 {
-      font-size: 36px;
+    font-size: 36px;
   }
 
   .breadcrumb {
-      padding: 200px 0px 90px;
+    padding: 200px 0px 90px;
   }
 
   .single_counter {
-      margin-bottom: 35px;
-      border: none;
+    margin-bottom: 35px;
+    border: none;
   }
 
   .about_counter_bg {
-      padding: 35px 0px;
-      padding-bottom: 0;
+    padding: 35px 0px;
+    padding-bottom: 0;
   }
 
   .breadcrumb_text ul li a::after {
-      top: 5px;
+    top: 5px;
   }
 
   /*================================
@@ -8155,11 +8165,11 @@ button:focus {
       APPOINTMENT PAGE START
   ================================*/
   .appointment_page_img {
-      display: none;
+    display: none;
   }
 
   .appointment_page_text form h2 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   /*================================
@@ -8171,36 +8181,36 @@ button:focus {
       BLOG DETAILS START
   ================================*/
   .blog_details_img {
-      height: 400px;
+    height: 400px;
   }
 
   .blog_details_header_left li {
-      margin-bottom: 15px;
+    margin-bottom: 15px;
   }
 
   .comment_text {
-      width: 82%;
+    width: 82%;
   }
 
   .comment_text h4 span {
-      width: 100%;
-      margin-top: 5px;
+    width: 100%;
+    margin-top: 5px;
   }
 
   .comment_input_area {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .recent_post_text {
-      width: 85%;
+    width: 85%;
   }
 
   .blog_details_text .details_title {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .commant_reply .comment_text {
-      width: 79%;
+    width: 79%;
   }
 
   /*================================
@@ -8208,87 +8218,87 @@ button:focus {
   ================================*/
 
   .contact_img {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .tf_contact_map {
-      height: 400px;
+    height: 400px;
   }
 
   .contact_address {
-      padding: 25px;
+    padding: 25px;
   }
 
 
   .error_img {
-      height: 455px;
+    height: 455px;
   }
 
   .error_text h3 {
-      font-size: 38px;
+    font-size: 38px;
   }
 
   .faq_page_qus {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .faq_page_qus h3 {
-      font-size: 38px;
+    font-size: 38px;
   }
 
   .gallary_img1,
   .gallary_img3 {
-      height: 335px;
+    height: 335px;
   }
 
   .gallary_img2 {
-      height: 695px;
+    height: 695px;
   }
 
   .service_search .select2-container--default .select2-selection--single {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .service_page form {
-      padding-bottom: 10px;
+    padding-bottom: 10px;
   }
 
   .service_dstails_img {
-      height: 400px;
+    height: 400px;
   }
 
   /*================================
       DASHBOARD START
   ================================*/
   .dashboard_content {
-      margin-top: 30px;
+    margin-top: 30px;
   }
 
   .dashboard_overview .text {
-      width: 72%;
+    width: 72%;
   }
 
   .dashboard_content h5 {
-      font-size: 20px;
-      padding-bottom: 15px;
+    font-size: 20px;
+    padding-bottom: 15px;
   }
 
   .single_chat_top .text {
-      width: 89%;
+    width: 89%;
   }
 
   .message_list {
-      height: 400px;
-      padding-bottom: 0;
-      margin-bottom: 30px;
+    height: 400px;
+    padding-bottom: 0;
+    margin-bottom: 30px;
   }
 
   .single_chat_body {
-      height: 450px;
+    height: 450px;
   }
 
   .chating_text {
-      max-width: 79%;
+    max-width: 79%;
   }
 
   /*================================
@@ -8296,106 +8306,106 @@ button:focus {
   ================================*/
 
   .subscription {
-      border-radius: 30px;
+    border-radius: 30px;
   }
 
   /*================================
       HOME PAGE 2 START
   ================================*/
   .main_menu_2 {
-      border-bottom: 1px solid #4589F44A;
+    border-bottom: 1px solid #4589F44A;
   }
 
   .main_menu_2 .navbar-nav {
-      margin-left: 0 !important;
+    margin-left: 0 !important;
   }
 
   .main_menu_2 .navbar-nav .nav-item .nav-link:hover::after,
   .main_menu_2 .navbar-nav .nav-item .nav-link.active::after {
-      display: none;
+    display: none;
   }
 
   .menu_sign_in {
-      color: var(--colorblack);
+    color: var(--colorblack);
   }
 
   .home_two_banner {
-      padding: 200px 0px;
-      height: auto;
+    padding: 200px 0px;
+    height: auto;
   }
 
   .banner_text {
-      padding-top: 0px;
+    padding-top: 0px;
   }
 
   .home_two_banner .banner_text h1 {
-      font-size: 42px;
-      margin-top: 0px;
+    font-size: 42px;
+    margin-top: 0px;
   }
 
   .home_two_banner .banner_text h1 span {
-      font-size: 42px;
+    font-size: 42px;
   }
 
   .home_two_banner .banner_text h1 span::after {
-      right: -237px;
+    right: -237px;
   }
 
   .banner_img_tow {
-      height: auto !important;
+    height: auto !important;
   }
 
   .banner_img_tow::after {
-      display: none;
+    display: none;
   }
 
   .appoinment_wraper {
-      padding: 30px 20px;
+    padding: 30px 20px;
   }
 
   .appoinment_contact {
-      padding: 50px 20px;
-      margin-top: 25px;
+    padding: 50px 20px;
+    margin-top: 25px;
   }
 
   .get_touch_2 .common_heading {
-      padding-right: 0px;
+    padding-right: 0px;
   }
 
   .about_2_img {
-      height: auto;
-      margin-right: 0px;
-      margin-bottom: 40px;
+    height: auto;
+    margin-right: 0px;
+    margin-bottom: 40px;
   }
 
   .single_service_2 .item_img {
-      height: auto;
+    height: auto;
   }
 
   .team .image_wraper {
-      height: auto;
+    height: auto;
   }
 
   .blog_img {
-      height: auto;
+    height: auto;
   }
 
   .get_touch_2 .video_box {
-      margin-top: 40px;
+    margin-top: 40px;
   }
 
   .company_img {
-      margin-top: 25px;
+    margin-top: 25px;
   }
 
   .footer_two .footer_top_left {
-      height: auto;
-      margin-bottom: 25px;
+    height: auto;
+    margin-bottom: 25px;
   }
 
   .footer_two .footer_top_right_text h2,
   .footer_two .footer_top_right_text h2 span {
-      font-size: 36px;
+    font-size: 36px;
   }
 
   /*================================
@@ -8408,68 +8418,68 @@ button:focus {
   ================================*/
   .banner_3 .banner_text h1,
   .banner_3 .banner_text p {
-      color: var(--colorblack);
+    color: var(--colorblack);
   }
 
   .banner_3 {
-      padding-bottom: 230px;
+    padding-bottom: 230px;
   }
 
   .button_group {
-      text-align: start;
+    text-align: start;
   }
 
   .banner_3 .button_group .common_btn.read_more {
-      margin-top: 25px;
+    margin-top: 25px;
   }
 
   .search_3 {
-      bottom: 45px;
+    bottom: 45px;
   }
 
   .search_3_area {
-      padding: 35px 25px 10px;
+    padding: 35px 25px 10px;
   }
 
   .search_input {
-      margin-bottom: 25px;
+    margin-bottom: 25px;
   }
 
   .service_3 {
-      padding-top: 235px !important;
+    padding-top: 235px !important;
   }
 
   .about_2 .about_img::before {
-      display: none;
+    display: none;
   }
 
   .help_2 .about_img {
-      height: auto;
+    height: auto;
   }
 
   .help_2 .about_img {
-      height: auto;
+    height: auto;
   }
 
   .about_img {
-      padding-bottom: 0px;
+    padding-bottom: 0px;
   }
 
   .about_img_2 {
-      bottom: 0;
-      right: -135px;
+    bottom: 0;
+    right: -135px;
   }
 
   .newslatter::before {
-      display: none;
+    display: none;
   }
 
   .subscrib_form {
-      margin-top: 40px;
+    margin-top: 40px;
   }
 
   .newslatter .subscrib_form .subscrib_btn {
-      border: 1px solid var(--colorWhite);
+    border: 1px solid var(--colorWhite);
   }
 
   /*================================
@@ -8477,11 +8487,11 @@ button:focus {
   ================================*/
 
   .banner_3 .banner_text {
-      padding-top: 0;
+    padding-top: 0;
   }
 
   .service_3 {
-      padding-top: 65px !important;
+    padding-top: 65px !important;
   }
 
 
@@ -8494,229 +8504,229 @@ button:focus {
       HOME PAGE START
   ================================*/
   .topbar_icon {
-      justify-content: center;
+    justify-content: center;
   }
 
   .main_menu .container {
-      padding: 7px 0px;
+    padding: 7px 0px;
   }
 
   .main_menu .navbar-brand {
-      margin-left: 12px;
+    margin-left: 12px;
   }
 
   .main_menu .navbar-nav {
-      background: var(--colorWhite);
-      padding-top: 15px;
+    background: var(--colorWhite);
+    padding-top: 15px;
   }
 
   #navbarSupportedContent {
-      margin-top: 13px;
-      border-top: 1px solid var(--colorPrimary);
+    margin-top: 13px;
+    border-top: 1px solid var(--colorPrimary);
   }
 
   .main_menu .navbar-nav .nav-item>a {
-      line-height: 55px;
-      text-align: center;
+    line-height: 55px;
+    text-align: center;
   }
 
   .menu_btn {
-      background: var(--colorWhite);
-      justify-content: center;
-      padding: 10px 0px 30px 0px;
-      border-bottom: 1px solid var(--colorPrimary);
+    background: var(--colorWhite);
+    justify-content: center;
+    padding: 10px 0px 30px 0px;
+    border-bottom: 1px solid var(--colorPrimary);
   }
 
   .menu_search form {
-      width: 460px;
+    width: 460px;
   }
 
   .dropdown {
-      max-height: 250px;
-      left: 50%;
-      transform: translateX(-50%);
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      -o-transform: translateX(-50%);
+    max-height: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
   }
 
   .menu_search form input {
-      padding: 14px 170px 18px 20px;
+    padding: 14px 170px 18px 20px;
   }
 
   .banner::after {
-      display: none;
+    display: none;
   }
 
   .banner_text h1 {
-      font-size: 42px;
+    font-size: 42px;
   }
 
   .banner {
-      height: auto;
-      padding-top: 70px;
+    height: auto;
+    padding-top: 70px;
   }
 
   .banner_counter {
-      margin-top: 60px;
+    margin-top: 60px;
   }
 
   .banner_counter li h3,
   .banner_counter li span {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .banner_counter li p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .banner_img .img {
-      height: 450px;
+    height: 450px;
   }
 
   .banner_img::after {
-      width: 360px;
-      height: 360px;
-      top: 0;
-      right: auto;
-      left: 0;
+    width: 360px;
+    height: 360px;
+    top: 0;
+    right: auto;
+    left: 0;
   }
 
   .banner_img {
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 60px;
   }
 
   .banner .react,
   .banner .video_call,
   .banner .call,
   .banner .review {
-      display: none;
+    display: none;
   }
 
   .about_img_1 {
-      width: 300px;
-      height: 310px;
+    width: 300px;
+    height: 310px;
   }
 
   .about_img::after {
-      display: none;
+    display: none;
   }
 
   .about_img_2 {
-      width: 220px;
-      height: 250px;
-      bottom: 0;
-      right: 0;
+    width: 220px;
+    height: 250px;
+    bottom: 0;
+    right: 0;
   }
 
   .about_img {
-      padding-bottom: 50px;
-      margin-bottom: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .common_heading h2 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .service_img {
-      height: 150px;
+    height: 150px;
   }
 
   .faq_img {
-      height: auto;
-      margin-left: 0;
+    height: auto;
+    margin-left: 0;
   }
 
   .work_process_area::after {
-      display: none;
+    display: none;
   }
 
   .appoinment_img {
-      display: none;
+    display: none;
   }
 
   .massage_shape,
   .helpline::after,
   .helpline::before {
-      display: none;
+    display: none;
   }
 
   .appoinment_overlay {
-      padding: 30px;
+    padding: 30px;
   }
 
   .helpline_contact li {
-      margin-right: 0;
-      margin-bottom: 15px;
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 
   .helpline_img {
-      margin-top: 30px;
-      width: auto;
-      height: auto;
+    margin-top: 30px;
+    width: auto;
+    height: auto;
   }
 
   .team_img {
-      height: 230px;
+    height: 230px;
   }
 
   .review::before,
   .review::after {
-      display: none;
+    display: none;
   }
 
   .blog_img {
-      height: 280px;
+    height: 280px;
   }
 
   .subscription {
-      padding: 25px;
-      border-radius: 30px;
+    padding: 25px;
+    border-radius: 30px;
   }
 
   .subscribe_text h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
   }
 
   .quick_link,
   .address {
-      margin-top: 50px;
+    margin-top: 50px;
   }
 
   .copyright ul {
-      margin-top: 15px;
+    margin-top: 15px;
   }
 
   .copyright ul li a {
-      margin-left: 0;
-      margin-right: 25px;
-      margin-top: 5px;
+    margin-left: 0;
+    margin-right: 25px;
+    margin-top: 5px;
   }
 
   .faq::before,
   .faq::after {
-      display: none;
+    display: none;
   }
 
   .service_heading {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .faq_accordion .accordion-header .accordion-button {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .helpline_img::after {
-      display: none;
+    display: none;
   }
 
   footer .sm_margin {
-      margin-top: 65px !important;
+    margin-top: 65px !important;
   }
 
   /*================================
@@ -8728,25 +8738,25 @@ button:focus {
       ABOUT PAGE START
   ================================*/
   .breadcrumb_text h1 {
-      font-size: 36px;
+    font-size: 36px;
   }
 
   .breadcrumb {
-      padding: 200px 0px 90px;
+    padding: 200px 0px 90px;
   }
 
   .single_counter {
-      margin-bottom: 35px;
-      border: none;
+    margin-bottom: 35px;
+    border: none;
   }
 
   .about_counter_bg {
-      padding: 35px 0px;
-      padding-bottom: 0;
+    padding: 35px 0px;
+    padding-bottom: 0;
   }
 
   .breadcrumb_text ul li a::after {
-      top: 5px;
+    top: 5px;
   }
 
   /*================================
@@ -8758,11 +8768,11 @@ button:focus {
       APPOINTMENT PAGE START
   ================================*/
   .appointment_page_img {
-      display: none;
+    display: none;
   }
 
   .appointment_page_text form h2 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   /*================================
@@ -8770,66 +8780,66 @@ button:focus {
   ================================*/
 
   .become_doctor_heading {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   /*================================
       BLOG DETAILS START
   ================================*/
   .blog_details_img {
-      height: 300px;
+    height: 300px;
   }
 
   .blog_details_header_left {
-      width: 100%;
+    width: 100%;
   }
 
   .blog_details_header_left li {
-      margin-bottom: 15px;
+    margin-bottom: 15px;
   }
 
   .blog_details_header_right li {
-      margin-left: 0;
-      margin-right: 25px;
+    margin-left: 0;
+    margin-right: 25px;
   }
 
   .blog_details_text .details_title {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .blog_details_text ul li::after,
   .blog_details_text ol li::after {
-      top: 6px;
+    top: 6px;
   }
 
   .blog_details_text .details_quot_text {
-      padding: 20px;
+    padding: 20px;
   }
 
   .blog_details_share .tags a {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .comment_text {
-      width: 100%;
-      margin-top: 15px;
+    width: 100%;
+    margin-top: 15px;
   }
 
   .comment_text h4 span {
-      width: 100%;
-      margin-top: 5px;
+    width: 100%;
+    margin-top: 5px;
   }
 
   .commant_reply {
-      margin-left: 40px;
+    margin-left: 40px;
   }
 
   .comment_input_area {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .recent_post_text {
-      width: 79%;
+    width: 79%;
   }
 
   /*================================
@@ -8837,115 +8847,115 @@ button:focus {
   ================================*/
 
   .contact_img {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .tf_contact_map {
-      height: 350px;
+    height: 350px;
   }
 
   .team_details_img {
-      height: 530px;
-      margin-bottom: 30px;
+    height: 530px;
+    margin-bottom: 30px;
   }
 
   .commant_reply .comment_text {
-      width: 100%;
+    width: 100%;
   }
 
   .error_img {
-      height: 375px;
+    height: 375px;
   }
 
   .error_text h3 {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .faq_page_qus h3 {
-      font-size: 38px;
+    font-size: 38px;
   }
 
   .faq_page_qus {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .gallary_img1 {
-      height: auto;
+    height: auto;
   }
 
   .gallary_img2 {
-      height: auto;
+    height: auto;
   }
 
   .payment .modal .modal-dialog {
-      max-width: 90%;
+    max-width: 90%;
   }
 
   .service_search .select2-container--default .select2-selection--single {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .service_page form {
-      padding-bottom: 10px;
+    padding-bottom: 10px;
   }
 
   .service_dstails_img {
-      height: 300px;
+    height: 300px;
   }
 
   /*================================
       DASHBOARD START
   ================================*/
   .dashboard_content {
-      margin-top: 30px;
+    margin-top: 30px;
   }
 
   .dashboard_overview .text {
-      width: 83%;
+    width: 83%;
   }
 
   .dashboard_content h5 {
-      font-size: 20px;
-      padding-bottom: 15px;
+    font-size: 20px;
+    padding-bottom: 15px;
   }
 
   .message_list {
-      height: 400px;
-      margin-bottom: 30px;
-      padding-bottom: 0;
+    height: 400px;
+    margin-bottom: 30px;
+    padding-bottom: 0;
   }
 
   .chating_text {
-      max-width: 75%;
-      margin-left: 10px;
+    max-width: 75%;
+    margin-left: 10px;
   }
 
   .chat_name h4 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .tf_chat_right .chating_text {
-      margin-right: 10px;
+    margin-right: 10px;
   }
 
   .single_chat_body {
-      height: 400px;
+    height: 400px;
   }
 
   .single_massage_text {
-      width: 78%;
+    width: 78%;
   }
 
   .massager_option .nav-link {
-      max-height: 80px;
+    max-height: 80px;
   }
 
   .single_chat_top .text {
-      width: 85%;
+    width: 85%;
   }
 
   .single_payment {
-      height: 90px;
+    height: 90px;
   }
 
   /*================================
@@ -8956,107 +8966,107 @@ button:focus {
       HOME PAGE 2 START
   ================================*/
   .main_menu_2 {
-      border-bottom: 1px solid #4589F44A;
+    border-bottom: 1px solid #4589F44A;
   }
 
   .main_menu_2 .navbar-nav {
-      margin-left: 0 !important;
+    margin-left: 0 !important;
   }
 
   .main_menu_2 .navbar-nav .nav-item .nav-link:hover::after,
   .main_menu_2 .navbar-nav .nav-item .nav-link.active::after {
-      display: none;
+    display: none;
   }
 
   .menu_sign_in {
-      color: var(--colorblack);
+    color: var(--colorblack);
   }
 
   .home_two_banner {
-      padding: 130px 0px;
+    padding: 130px 0px;
   }
 
   .home_two_banner {
-      overflow: hidden;
+    overflow: hidden;
   }
 
   .banner_text {
-      padding-top: 0px;
+    padding-top: 0px;
   }
 
   .home_two_banner .banner_text h1 {
-      font-size: 42px;
-      margin-top: 0px;
+    font-size: 42px;
+    margin-top: 0px;
   }
 
   .home_two_banner .banner_text h1 span {
-      font-size: 42px;
+    font-size: 42px;
   }
 
   .home_two_banner .banner_text h1 span::after {
-      right: -237px;
+    right: -237px;
   }
 
   .banner_img_tow {
-      height: auto !important;
-      margin-top: 50px;
+    height: auto !important;
+    margin-top: 50px;
   }
 
   .banner_img_tow::after {
-      display: none;
+    display: none;
   }
 
   .home_two_banner::after {
-      display: none;
+    display: none;
   }
 
   .appoinment_wraper {
-      padding: 30px 20px;
+    padding: 30px 20px;
   }
 
   .appoinment_contact {
-      padding: 50px 20px;
-      margin-top: 25px;
+    padding: 50px 20px;
+    margin-top: 25px;
   }
 
   .get_touch_2 .common_heading {
-      padding-right: 0px;
+    padding-right: 0px;
   }
 
   .about_2_img {
-      height: auto;
-      margin-right: 0px;
-      margin-bottom: 40px;
+    height: auto;
+    margin-right: 0px;
+    margin-bottom: 40px;
   }
 
   .single_service_2 .item_img {
-      height: auto;
+    height: auto;
   }
 
   .team .image_wraper {
-      height: auto;
+    height: auto;
   }
 
   .blog_img {
-      height: auto;
+    height: auto;
   }
 
   .get_touch_2 .video_box {
-      margin-top: 40px;
+    margin-top: 40px;
   }
 
   .company_img {
-      margin-top: 25px;
+    margin-top: 25px;
   }
 
   .footer_two .footer_top_left {
-      height: auto;
-      margin-bottom: 25px;
+    height: auto;
+    margin-bottom: 25px;
   }
 
   .footer_two .footer_top_right_text h2,
   .footer_two .footer_top_right_text h2 span {
-      font-size: 36px;
+    font-size: 36px;
   }
 
   /*================================
@@ -9069,76 +9079,76 @@ button:focus {
   ================================*/
   .banner_3 .banner_text h1,
   .banner_3 .banner_text p {
-      color: var(--colorblack);
+    color: var(--colorblack);
   }
 
   .banner_3 {
-      padding-bottom: 270px;
+    padding-bottom: 270px;
   }
 
   .button_group {
-      text-align: start;
+    text-align: start;
   }
 
   .banner_3 .button_group .common_btn.read_more {
-      margin-top: 25px;
+    margin-top: 25px;
   }
 
   .search_3 {
-      bottom: -38px;
+    bottom: -38px;
   }
 
   .search_3_area {
-      padding: 35px 25px;
+    padding: 35px 25px;
   }
 
   .search_input {
-      margin-bottom: 25px;
+    margin-bottom: 25px;
   }
 
   .service_3 {
-      padding-top: 305px !important;
+    padding-top: 305px !important;
   }
 
   .about_2 .about_img::before {
-      display: none;
+    display: none;
   }
 
   .team_2 .single_member {
-      height: 300px;
+    height: 300px;
   }
 
   .team_2 .single_member .text {
-      top: 230px;
+    top: 230px;
   }
 
   .help_2 .about_img {
-      height: auto;
+    height: auto;
   }
 
   .help_2 .about_img {
-      height: auto;
+    height: auto;
   }
 
   .about_img {
-      padding-bottom: 0px;
+    padding-bottom: 0px;
   }
 
   .about_img_2 {
-      bottom: 0;
-      right: -135px;
+    bottom: 0;
+    right: -135px;
   }
 
   .newslatter::before {
-      display: none;
+    display: none;
   }
 
   .subscrib_form {
-      margin-top: 40px;
+    margin-top: 40px;
   }
 
   .newslatter .subscrib_form .subscrib_btn {
-      border: 1px solid var(--colorWhite);
+    border: 1px solid var(--colorWhite);
   }
 
   /*================================
@@ -9146,19 +9156,19 @@ button:focus {
   ================================*/
 
   .banner_3 .banner_text {
-      padding-top: 0;
+    padding-top: 0;
   }
 
   .banner_3 {
-      padding-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   .banner_3 .banner_text p {
-      max-width: 70%;
+    max-width: 70%;
   }
 
   .service_3 {
-      padding-top: 135px !important;
+    padding-top: 135px !important;
   }
 }
 
@@ -9169,274 +9179,274 @@ button:focus {
       HOME PAGE START
   ================================*/
   .topbar_icon {
-      justify-content: center;
+    justify-content: center;
   }
 
   .main_menu .container {
-      padding: 7px 0px;
+    padding: 7px 0px;
   }
 
   .main_menu .navbar-brand {
-      margin-left: 12px;
+    margin-left: 12px;
   }
 
   .main_menu .navbar-nav {
-      background: var(--colorWhite);
-      padding-top: 15px;
+    background: var(--colorWhite);
+    padding-top: 15px;
   }
 
   #navbarSupportedContent {
-      margin-top: 13px;
-      border-top: 1px solid var(--colorPrimary);
+    margin-top: 13px;
+    border-top: 1px solid var(--colorPrimary);
   }
 
   .main_menu .navbar-nav .nav-item>a {
-      line-height: 55px;
-      text-align: center;
+    line-height: 55px;
+    text-align: center;
   }
 
   .menu_btn {
-      background: var(--colorWhite);
-      justify-content: center;
-      padding: 10px 0px 30px 0px;
-      border-bottom: 1px solid var(--colorPrimary);
+    background: var(--colorWhite);
+    justify-content: center;
+    padding: 10px 0px 30px 0px;
+    border-bottom: 1px solid var(--colorPrimary);
   }
 
   .menu_search form {
-      width: 300px;
+    width: 300px;
   }
 
   .dropdown {
-      max-height: 250px;
-      left: 50%;
-      transform: translateX(-50%);
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      -o-transform: translateX(-50%);
+    max-height: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
   }
 
   .menu_search form input {
-      padding: 14px 125px 18px 20px;
+    padding: 14px 125px 18px 20px;
   }
 
   .menu_search form button {
-      position: relative;
-      top: auto;
-      right: auto;
-      width: 100%;
-      margin-top: 10px;
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    margin-top: 10px;
   }
 
   .banner::after {
-      display: none;
+    display: none;
   }
 
   .banner_text h1 {
-      font-size: 36px;
+    font-size: 36px;
   }
 
   .banner_text h5 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .banner {
-      height: auto;
-      padding-top: 70px;
+    height: auto;
+    padding-top: 70px;
   }
 
   .banner_counter {
-      margin-top: 40px;
+    margin-top: 40px;
   }
 
   .banner_counter li h3,
   .banner_counter li span {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .banner_counter li p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .banner_counter li {
-      width: 100%;
-      margin-top: 20px;
+    width: 100%;
+    margin-top: 20px;
   }
 
   .banner_img .img {
-      height: 370px;
+    height: 370px;
   }
 
   .banner_img::after {
-      width: 300px;
-      height: 300px;
-      top: 0;
-      right: auto;
-      left: 0;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    right: auto;
+    left: 0;
   }
 
   .banner_img {
-      justify-content: start;
-      align-items: start;
-      margin-top: 60px;
+    justify-content: start;
+    align-items: start;
+    margin-top: 60px;
   }
 
   .banner .react,
   .banner .video_call,
   .banner .call,
   .banner .review {
-      display: none;
+    display: none;
   }
 
   .about_img_1 {
-      width: 270px;
-      height: 240px;
+    width: 270px;
+    height: 240px;
   }
 
   .about_img::after {
-      display: none;
+    display: none;
   }
 
   .about_img_2 {
-      width: 215px;
-      height: 250px;
-      bottom: 0;
-      right: 0;
+    width: 215px;
+    height: 250px;
+    bottom: 0;
+    right: 0;
   }
 
   .about_img {
-      padding-bottom: 100px;
-      margin-bottom: 30px;
+    padding-bottom: 100px;
+    margin-bottom: 30px;
   }
 
   .common_heading h2 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .about_iteam li {
-      width: 100%;
+    width: 100%;
   }
 
   .service_img {
-      height: 200px;
+    height: 200px;
   }
 
   .faq_img {
-      height: auto;
-      margin-left: 0;
+    height: auto;
+    margin-left: 0;
   }
 
   .work_process_area::after {
-      display: none;
+    display: none;
   }
 
   .appoinment_img {
-      display: none;
+    display: none;
   }
 
   .massage_shape,
   .helpline::after,
   .helpline::before {
-      display: none;
+    display: none;
   }
 
   .appoinment_overlay {
-      padding: 25px;
+    padding: 25px;
   }
 
   .helpline_contact li {
-      margin-right: 0;
-      margin-bottom: 15px;
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 
   .helpline_img {
-      margin-top: 30px;
-      width: auto;
-      height: auto;
+    margin-top: 30px;
+    width: auto;
+    height: auto;
   }
 
   .helpline_img::after {
-      display: none;
+    display: none;
   }
 
   .team_img {
-      height: 290px;
+    height: 290px;
   }
 
   .single_review::after {
-      bottom: auto;
-      top: 20px;
+    bottom: auto;
+    top: 20px;
   }
 
   .review::before,
   .review::after {
-      display: none;
+    display: none;
   }
 
   .blog_img {
-      height: 220px;
+    height: 220px;
   }
 
   .blog_text {
-      padding: 20px;
+    padding: 20px;
   }
 
   .subscription {
-      padding: 25px;
-      border-radius: 30px;
+    padding: 25px;
+    border-radius: 30px;
   }
 
   .subscribe_text h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
   }
 
   .subscrib_form .subscrib_btn {
-      position: static;
-      width: 100%;
-      background: var(--colorSecondary);
-      margin-top: 15px;
-      transform: translate(0);
-      -webkit-transform: translate(0);
-      -moz-transform: translate(0);
-      -ms-transform: translate(0);
-      -o-transform: translate(0);
+    position: static;
+    width: 100%;
+    background: var(--colorSecondary);
+    margin-top: 15px;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
   }
 
   .quick_link,
   .address {
-      margin-top: 50px;
+    margin-top: 50px;
   }
 
   .copyright ul {
-      margin-top: 15px;
+    margin-top: 15px;
   }
 
   .copyright ul li a {
-      margin-left: 0;
-      margin-right: 25px;
-      margin-top: 5px;
+    margin-left: 0;
+    margin-right: 25px;
+    margin-top: 5px;
   }
 
   .faq::before,
   .faq::after {
-      display: none;
+    display: none;
   }
 
   .faq_accordion .accordion-header .accordion-button {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .reviewer_info h3 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .reviewer_info span {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .blog_text .blog_heading {
-      font-size: 22px;
+    font-size: 22px;
   }
 
   /*================================
@@ -9448,30 +9458,30 @@ button:focus {
       ABOUT PAGE START
   ================================*/
   .breadcrumb_text h1 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .breadcrumb_text ul li,
   .breadcrumb_text ul li a {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .breadcrumb_text ul li a::after {
-      font-size: 10px;
-      top: 4px;
+    font-size: 10px;
+    top: 4px;
   }
 
   .breadcrumb {
-      padding: 173px 0px 65px;
+    padding: 173px 0px 65px;
   }
 
   .single_counter {
-      margin-bottom: 35px;
+    margin-bottom: 35px;
   }
 
   .about_counter_bg {
-      padding: 35px 0px;
-      padding-bottom: 0;
+    padding: 35px 0px;
+    padding-bottom: 0;
   }
 
   /*================================
@@ -9483,11 +9493,11 @@ button:focus {
       APPOINTMENT PAGE START
   ================================*/
   .appointment_page_img {
-      display: none;
+    display: none;
   }
 
   .appointment_page_text form h2 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   /*================================
@@ -9499,28 +9509,28 @@ button:focus {
       BECOME DOCTOR END
   ================================*/
   .become_doctor_contant {
-      border: 0;
-      padding: 0;
+    border: 0;
+    padding: 0;
   }
 
   .become_doctor_heading {
-      font-size: 26px;
+    font-size: 26px;
   }
 
   .become_doctor_text h1,
   .become_doctor_text h2,
   .become_doctor_text h3,
   .become_doctor_form h2 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .become_doctor_text ul li::after,
   .become_doctor_text ol li::after {
-      top: 5px;
+    top: 5px;
   }
 
   .become_doctor_form {
-      padding: 20px;
+    padding: 20px;
   }
 
   /*================================
@@ -9532,76 +9542,76 @@ button:focus {
       BLOG DETAILS START
   ================================*/
   .blog_details_img {
-      height: auto;
+    height: auto;
   }
 
   .blog_details_header_left li {
-      margin-bottom: 15px;
+    margin-bottom: 15px;
   }
 
   .blog_details_header_right li {
-      margin-left: 0;
-      margin-right: 25px;
+    margin-left: 0;
+    margin-right: 25px;
   }
 
   .blog_details_text .details_title {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .blog_details_text ul li::after,
   .blog_details_text ol li::after {
-      top: 6px;
+    top: 6px;
   }
 
   .blog_details_text .details_quot_text {
-      padding: 20px;
+    padding: 20px;
   }
 
   .blog_details_share .tags a {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .comment_area {
-      padding: 20px;
+    padding: 20px;
   }
 
   .comment_area h2 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .comment_text {
-      width: 100%;
-      margin-top: 15px;
+    width: 100%;
+    margin-top: 15px;
   }
 
   .comment_text h4 span {
-      width: 100%;
-      margin-top: 5px;
+    width: 100%;
+    margin-top: 5px;
   }
 
   .commant_reply {
-      margin-left: 20px;
+    margin-left: 20px;
   }
 
   .comment_input_area {
-      padding: 20px;
-      margin-bottom: 30px;
+    padding: 20px;
+    margin-bottom: 30px;
   }
 
   .comment_input_area input {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   .service_dtls_rightside {
-      padding: 20px;
+    padding: 20px;
   }
 
   .recent_post_text {
-      width: 62%;
+    width: 62%;
   }
 
   .blog_details_header_left {
-      width: 100%;
+    width: 100%;
   }
 
   /*================================
@@ -9609,162 +9619,162 @@ button:focus {
   ================================*/
 
   .contact_img {
-      height: auto;
-      margin-bottom: 30px;
+    height: auto;
+    margin-bottom: 30px;
   }
 
   .tf_contact_map {
-      height: 300px;
+    height: 300px;
   }
 
   .contact_address {
-      padding: 20px;
+    padding: 20px;
   }
 
   .team_details_img {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .team_details_img_text h3 {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   .commant_reply .comment_text {
-      width: 100%;
+    width: 100%;
   }
 
   .error_img {
-      height: auto;
+    height: auto;
   }
 
   .error_text h3 {
-      font-size: 36px;
+    font-size: 36px;
   }
 
   .faq_page_qus h3 {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .faq_page_qus {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .sign_up_form {
-      padding: 30px;
+    padding: 30px;
   }
 
   .sign_option li {
-      width: 48%;
+    width: 48%;
   }
 
   .sign_option li a {
-      height: auto;
-      margin-bottom: 10px;
+    height: auto;
+    margin-bottom: 10px;
   }
 
   .signup_check_area a {
-      display: block;
-      width: 100%;
-      margin-top: 10px;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
   }
 
   .sign_up_logo {
-      width: 150px;
+    width: 150px;
   }
 
   .gallary_img1 {
-      height: auto;
+    height: auto;
   }
 
   .gallary_img2 {
-      height: auto;
+    height: auto;
   }
 
   .single_payment {
-      height: auto;
+    height: auto;
   }
 
   .payment .modal .modal-dialog {
-      max-width: 95%;
+    max-width: 95%;
   }
 
   .service_search .select2-container--default .select2-selection--single {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .service_dstails_img {
-      height: auto;
+    height: auto;
   }
 
   .tf_service_pdf_link li {
-      width: 100%;
+    width: 100%;
   }
 
   /*================================
       DASHBOARD START
   ================================*/
   .dashboard_content {
-      margin-top: 30px;
+    margin-top: 30px;
   }
 
   .dashboard_overview .text {
-      width: 100%;
-      margin-top: 20px;
+    width: 100%;
+    margin-top: 20px;
   }
 
   .dashboard_content h5 {
-      font-size: 20px;
-      padding-bottom: 15px;
+    font-size: 20px;
+    padding-bottom: 15px;
   }
 
   .message_list {
-      height: 400px;
-      margin-bottom: 30px;
-      padding-bottom: 0;
+    height: 400px;
+    margin-bottom: 30px;
+    padding-bottom: 0;
   }
 
   .single_chat_top_right {
-      width: 100%;
-      margin-top: 10px;
+    width: 100%;
+    margin-top: 10px;
   }
 
   .chating_text {
-      max-width: 75%;
-      margin-left: 10px;
+    max-width: 75%;
+    margin-left: 10px;
   }
 
   .single_chat_top {
-      padding: 10px;
+    padding: 10px;
   }
 
   .chat_name h4 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .tf_chat_right .chating_text {
-      margin-right: 10px;
+    margin-right: 10px;
   }
 
   .single_chat_body {
-      padding: 10px;
-      height: 400px;
+    padding: 10px;
+    height: 400px;
   }
 
   .single_chat_bottom label {
-      left: 10px;
+    left: 10px;
   }
 
   .massage_btn {
-      right: 10px;
+    right: 10px;
   }
 
   .single_chat_top .text {
-      width: 100%;
-      margin-top: 10px;
+    width: 100%;
+    margin-top: 10px;
   }
 
   .single_chat_top .text a {
-      top: 12px;
+    top: 12px;
   }
 
   /*================================
@@ -9777,111 +9787,111 @@ button:focus {
       HOME PAGE 2 START
   ================================*/
   .main_menu_2 {
-      border-bottom: 1px solid #4589F44A;
+    border-bottom: 1px solid #4589F44A;
   }
 
   .main_menu_2 .navbar-nav {
-      margin-left: 0 !important;
+    margin-left: 0 !important;
   }
 
   .main_menu_2 .navbar-nav .nav-item .nav-link:hover::after,
   .main_menu_2 .navbar-nav .nav-item .nav-link.active::after {
-      display: none;
+    display: none;
   }
 
   .menu_sign_in {
-      color: var(--colorblack);
+    color: var(--colorblack);
   }
 
   .home_two_banner {
-      padding: 130px 0px;
+    padding: 130px 0px;
   }
 
   .banner_text {
-      padding-top: 0px;
+    padding-top: 0px;
   }
 
   .home_two_banner .banner_text h1 {
-      font-size: 36px;
-      margin-top: 0px;
+    font-size: 36px;
+    margin-top: 0px;
   }
 
   .home_two_banner .banner_text h1 span {
-      font-size: 36px;
+    font-size: 36px;
   }
 
   .banner_img_tow {
-      height: auto !important;
-      margin-top: 50px;
+    height: auto !important;
+    margin-top: 50px;
   }
 
   .banner_img_tow::after {
-      display: none;
+    display: none;
   }
 
   .home_two_banner::after {
-      display: none;
+    display: none;
   }
 
 
   .home_two_categories .common_heading.home_tow_heading.mb_25 {
-      width: 50%;
+    width: 50%;
   }
 
   .appoinment_wraper {
-      padding: 30px 20px;
+    padding: 30px 20px;
   }
 
   .appoinment_contact {
-      padding: 50px 20px;
-      margin-top: 25px;
+    padding: 50px 20px;
+    margin-top: 25px;
   }
 
   .get_touch_2 .common_heading {
-      padding-right: 0px;
+    padding-right: 0px;
   }
 
   .about_2_img {
-      height: auto;
-      margin-right: 0px;
-      margin-bottom: 40px;
+    height: auto;
+    margin-right: 0px;
+    margin-bottom: 40px;
   }
 
   .single_service_2 .item_img {
-      height: auto;
+    height: auto;
   }
 
   .team .image_wraper {
-      height: auto;
+    height: auto;
   }
 
   .blog_img {
-      height: auto;
+    height: auto;
   }
 
   .get_touch_2_btn {
-      margin-left: 0;
-      margin-top: 20px;
+    margin-left: 0;
+    margin-top: 20px;
   }
 
   .get_touch_2 .video_box {
-      width: auto;
-      height: auto;
-      margin-top: 40px;
+    width: auto;
+    height: auto;
+    margin-top: 40px;
   }
 
   .company_img {
-      margin-bottom: 25px;
+    margin-bottom: 25px;
   }
 
   .footer_two .footer_top_left {
-      height: auto;
-      margin-bottom: 25px;
+    height: auto;
+    margin-bottom: 25px;
   }
 
   .footer_two .footer_top_right_text h2,
   .footer_two .footer_top_right_text h2 span {
-      font-size: 36px;
+    font-size: 36px;
   }
 
   /*================================
@@ -9894,63 +9904,63 @@ button:focus {
   ================================*/
   .banner_3 .banner_text h1,
   .banner_3 .banner_text p {
-      color: var(--colorblack);
+    color: var(--colorblack);
   }
 
   .banner_3 {
-      padding-bottom: 270px;
+    padding-bottom: 270px;
   }
 
   .button_group {
-      text-align: start;
+    text-align: start;
   }
 
   .banner_3 .button_group .common_btn.read_more {
-      margin-top: 25px;
+    margin-top: 25px;
   }
 
   .search_3 {
-      bottom: -115px;
+    bottom: -115px;
   }
 
   .search_3_area {
-      padding: 35px 25px;
+    padding: 35px 25px;
   }
 
   .search_input {
-      margin-bottom: 25px;
+    margin-bottom: 25px;
   }
 
   .service_3 {
-      padding-top: 215px !important;
+    padding-top: 215px !important;
   }
 
   .about_2 .about_img::before {
-      display: none;
+    display: none;
   }
 
   .help_2 .about_img {
-      height: auto;
+    height: auto;
   }
 
   .help_2 .about_img {
-      height: auto;
+    height: auto;
   }
 
   .about_img {
-      padding-bottom: 0px;
+    padding-bottom: 0px;
   }
 
   .newslatter::before {
-      display: none;
+    display: none;
   }
 
   .subscrib_form {
-      margin-top: 40px;
+    margin-top: 40px;
   }
 
   .newslatter .subscrib_form .subscrib_btn {
-      border: 1px solid var(--colorWhite);
+    border: 1px solid var(--colorWhite);
   }
 
   /*================================
@@ -9958,22 +9968,23 @@ button:focus {
   ================================*/
 
   .single_project {
-      height: auto;
+    height: auto;
   }
 
   .banner_3 .banner_text {
-      padding-top: 0;
+    padding-top: 0;
   }
 
   .banner_3 {
-      padding-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   .banner_3 .banner_text p {
-      max-width: 100%;
+    max-width: 100%;
   }
 
 }
+
 .select2-container {
   box-sizing: border-box;
   display: inline-block;
@@ -10672,1367 +10683,1364 @@ button:focus {
 
 
 /* Slider */
-.slick-slider
-{
-    position: relative;
+.slick-slider {
+  position: relative;
 
-    display: block;
-    box-sizing: border-box;
+  display: block;
+  box-sizing: border-box;
 
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.slick-list
-{
-    position: relative;
+.slick-list {
+  position: relative;
 
-    display: block;
-    overflow: hidden;
+  display: block;
+  overflow: hidden;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-.slick-list:focus
-{
-    outline: none;
+
+.slick-list:focus {
+  outline: none;
 }
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
 }
 
 .slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .slick-track:before,
-.slick-track:after
-{
-    display: table;
+.slick-track:after {
+  display: table;
 
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
+  content: '';
 }
 
-.slick-slide
-{
-    display: none;
-    float: left;
+.slick-track:after {
+  clear: both;
+}
 
-    height: 100%;
-    min-height: 1px;
+.slick-loading .slick-track {
+  visibility: hidden;
 }
-[dir='rtl'] .slick-slide
-{
-    float: right;
-}
-.slick-slide img
-{
-    display: block;
-}
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{
-    display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    display: block;
 
-    height: auto;
+.slick-slide {
+  display: none;
+  float: left;
 
-    border: 1px solid transparent;
+  height: 100%;
+  min-height: 1px;
 }
+
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+
+  height: auto;
+
+  border: 1px solid transparent;
+}
+
 .slick-arrow.slick-hidden {
-    display: none;
+  display: none;
 }
+
 .vbox-overlay *,
 .vbox-overlay :after,
 .vbox-overlay :before {
-    -webkit-backface-visibility: hidden;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box
+  -webkit-backface-visibility: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
 }
 
 .vbox-overlay * {
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible
 }
 
 .vbox-overlay {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 999999
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999999
 }
 
 .vbox-title {
-    width: 100%;
-    height: 40px;
-    float: left;
-    text-align: center;
-    line-height: 28px;
-    font-size: 12px;
-    padding: 6px 50px;
-    overflow: hidden;
-    position: fixed;
-    display: none;
-    left: 0;
-    z-index: 89
+  width: 100%;
+  height: 40px;
+  float: left;
+  text-align: center;
+  line-height: 28px;
+  font-size: 12px;
+  padding: 6px 50px;
+  overflow: hidden;
+  position: fixed;
+  display: none;
+  left: 0;
+  z-index: 89
 }
 
 .vbox-close {
-    cursor: pointer;
-    position: fixed;
-    top: -1px;
-    right: 0;
-    width: 50px;
-    height: 40px;
-    padding: 6px;
-    display: block;
-    background-position: 10px center;
-    overflow: hidden;
-    font-size: 24px;
-    line-height: 1;
-    text-align: center;
-    z-index: 99
+  cursor: pointer;
+  position: fixed;
+  top: -1px;
+  right: 0;
+  width: 50px;
+  height: 40px;
+  padding: 6px;
+  display: block;
+  background-position: 10px center;
+  overflow: hidden;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  z-index: 99
 }
 
 .vbox-left {
-    cursor: pointer;
-    position: fixed;
-    left: 0;
-    height: 40px;
-    overflow: hidden;
-    line-height: 28px;
-    font-size: 12px;
-    z-index: 99;
-    display: flex;
-    align-items: center
+  cursor: pointer;
+  position: fixed;
+  left: 0;
+  height: 40px;
+  overflow: hidden;
+  line-height: 28px;
+  font-size: 12px;
+  z-index: 99;
+  display: flex;
+  align-items: center
 }
 
 .vbox-num {
-    display: inline-block;
-    margin: 6px 0 6px 15px
+  display: inline-block;
+  margin: 6px 0 6px 15px
 }
 
 .vbox-share {
-    line-height: 28px;
-    font-size: 12px;
-    overflow: hidden;
-    position: fixed;
-    left: 0;
-    z-index: 98;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    text-align: center
+  line-height: 28px;
+  font-size: 12px;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  z-index: 98;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center
 }
 
 .vbox-share svg {
-    max-height: 28px;
-    width: 28px;
-    z-index: 10;
-    margin-left: 12px;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    vertical-align: middle
+  max-height: 28px;
+  width: 28px;
+  z-index: 10;
+  margin-left: 12px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  vertical-align: middle
 }
 
 .vbox-next,
 .vbox-prev {
-    position: fixed;
-    top: 50%;
-    margin-top: -15px;
-    overflow: hidden;
-    cursor: pointer;
-    display: block;
-    width: 45px;
-    height: 45px;
-    z-index: 99
+  position: fixed;
+  top: 50%;
+  margin-top: -15px;
+  overflow: hidden;
+  cursor: pointer;
+  display: block;
+  width: 45px;
+  height: 45px;
+  z-index: 99
 }
 
 .vbox-next span,
 .vbox-prev span {
-    width: 20px;
-    height: 20px;
-    border: 2px solid transparent;
-    border-top-color: #b6b6b6;
-    border-right-color: #b6b6b6;
-    text-indent: -100px;
-    position: absolute;
-    top: 8px;
-    display: block
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top-color: #b6b6b6;
+  border-right-color: #b6b6b6;
+  text-indent: -100px;
+  position: absolute;
+  top: 8px;
+  display: block
 }
 
 .vbox-prev {
-    left: 15px
+  left: 15px
 }
 
 .vbox-next {
-    right: 15px
+  right: 15px
 }
 
 .vbox-prev span {
-    left: 10px;
-    -ms-transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-    transform: rotate(-135deg)
+  left: 10px;
+  -ms-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg)
 }
 
 .vbox-next span {
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    right: 10px
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 10px
 }
 
 .vbox-inline {
-    width: 420px;
-    height: 70vh;
-    padding: 10px;
-    background: #fff;
-    margin: 0 auto;
-    overflow: auto;
-    text-align: left
+  width: 420px;
+  height: 70vh;
+  padding: 10px;
+  background: #fff;
+  margin: 0 auto;
+  overflow: auto;
+  text-align: left
 }
 
 .venoframe {
-    max-width: 100%;
-    border: none;
-    width: 100%;
-    height: 70vh
+  max-width: 100%;
+  border: none;
+  width: 100%;
+  height: 70vh
 }
 
 .venoframe.vbvid {
-    height: 260px
+  height: 260px
 }
 
 @media (min-width: 768px) {
 
-    .vbox-inline,
-    .venoframe {
-        width: 90%;
-        height: 70vh
-    }
+  .vbox-inline,
+  .venoframe {
+    width: 90%;
+    height: 70vh
+  }
 
-    .venoframe.vbvid {
-        width: 640px;
-        height: 360px
-    }
+  .venoframe.vbvid {
+    width: 640px;
+    height: 360px
+  }
 }
 
 @media (min-width: 992px) {
 
-    .vbox-inline,
-    .venoframe {
-        max-width: 1200px;
-        width: 80%;
-        height: 70vh
-    }
+  .vbox-inline,
+  .venoframe {
+    max-width: 1200px;
+    width: 80%;
+    height: 70vh
+  }
 
-    .venoframe.vbvid {
-        width: 960px;
-        height: 540px
-    }
+  .venoframe.vbvid {
+    width: 960px;
+    height: 540px
+  }
 }
 
 .vbox-open {
-    overflow: hidden
+  overflow: hidden
 }
 
 .vbox-container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    overflow-scrolling: touch;
-    -webkit-overflow-scrolling: touch;
-    z-index: 20;
-    max-height: 100%
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+  z-index: 20;
+  max-height: 100%
 }
 
 .vbox-content {
-    text-align: center;
-    width: auto;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-    margin: 0 !important;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+  text-align: center;
+  width: auto;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin: 0 !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 .vbox-container img {
-    width: auto !important;
-    max-width: 100%;
-    height: auto
+  width: auto !important;
+  max-width: 100%;
+  height: auto
 }
 
 .vbox-figlio {
-    box-shadow: 0 0 12px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
-    max-width: 100%;
-    text-align: initial
+  box-shadow: 0 0 12px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
+  max-width: 100%;
+  text-align: initial
 }
 
 img.vbox-figlio {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none
 }
 
 .vbox-content.swipe-left {
-    margin-left: -200px !important
+  margin-left: -200px !important
 }
 
 .vbox-content.swipe-right {
-    margin-left: 200px !important
+  margin-left: 200px !important
 }
 
 .vbox-animated {
-    webkit-transition: margin .3s ease-out;
-    transition: margin .3s ease-out
+  webkit-transition: margin .3s ease-out;
+  transition: margin .3s ease-out
 }
 
 .sk-double-bounce,
 .sk-rotating-plane {
-    width: 40px;
-    height: 40px;
-    margin: 40px auto
+  width: 40px;
+  height: 40px;
+  margin: 40px auto
 }
 
 .sk-rotating-plane {
-    background-color: #333;
-    -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
-    animation: sk-rotatePlane 1.2s infinite ease-in-out
+  background-color: #333;
+  -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+  animation: sk-rotatePlane 1.2s infinite ease-in-out
 }
 
 @-webkit-keyframes sk-rotatePlane {
-    0% {
-        -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
-        transform: perspective(120px) rotateX(0) rotateY(0)
-    }
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
+    transform: perspective(120px) rotateX(0) rotateY(0)
+  }
 
-    50% {
-        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
-        transform: perspective(120px) rotateX(-180.1deg) rotateY(0)
-    }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0)
+  }
 
-    100% {
-        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
-    }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
+  }
 }
 
 @keyframes sk-rotatePlane {
-    0% {
-        -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
-        transform: perspective(120px) rotateX(0) rotateY(0)
-    }
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
+    transform: perspective(120px) rotateX(0) rotateY(0)
+  }
 
-    50% {
-        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
-        transform: perspective(120px) rotateX(-180.1deg) rotateY(0)
-    }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0)
+  }
 
-    100% {
-        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
-    }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
+  }
 }
 
 .sk-double-bounce {
-    position: relative
+  position: relative
 }
 
 .sk-double-bounce .sk-child {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #333;
-    opacity: .6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-animation: sk-doubleBounce 2s infinite ease-in-out;
-    animation: sk-doubleBounce 2s infinite ease-in-out
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: .6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-doubleBounce 2s infinite ease-in-out;
+  animation: sk-doubleBounce 2s infinite ease-in-out
 }
 
 .sk-chasing-dots .sk-child,
 .sk-spinner-pulse,
 .sk-three-bounce .sk-child {
-    background-color: #333;
-    border-radius: 100%
+  background-color: #333;
+  border-radius: 100%
 }
 
 .sk-double-bounce .sk-double-bounce2 {
-    -webkit-animation-delay: -1s;
-    animation-delay: -1s
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s
 }
 
 @-webkit-keyframes sk-doubleBounce {
 
-    0%,
-    100% {
-        -webkit-transform: scale(0);
-        transform: scale(0)
-    }
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0)
+  }
 
-    50% {
-        -webkit-transform: scale(1);
-        transform: scale(1)
-    }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
 }
 
 @keyframes sk-doubleBounce {
 
-    0%,
-    100% {
-        -webkit-transform: scale(0);
-        transform: scale(0)
-    }
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0)
+  }
 
-    50% {
-        -webkit-transform: scale(1);
-        transform: scale(1)
-    }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
 }
 
 .sk-wave {
-    margin: 40px auto;
-    width: 50px;
-    height: 40px;
-    text-align: center;
-    font-size: 10px
+  margin: 40px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px
 }
 
 .sk-wave .sk-rect {
-    background-color: #333;
-    height: 100%;
-    width: 6px;
-    display: inline-block;
-    -webkit-animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
-    animation: sk-waveStretchDelay 1.2s infinite ease-in-out
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  -webkit-animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
+  animation: sk-waveStretchDelay 1.2s infinite ease-in-out
 }
 
 .sk-wave .sk-rect1 {
-    -webkit-animation-delay: -1.2s;
-    animation-delay: -1.2s
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s
 }
 
 .sk-wave .sk-rect2 {
-    -webkit-animation-delay: -1.1s;
-    animation-delay: -1.1s
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s
 }
 
 .sk-wave .sk-rect3 {
-    -webkit-animation-delay: -1s;
-    animation-delay: -1s
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s
 }
 
 .sk-wave .sk-rect4 {
-    -webkit-animation-delay: -.9s;
-    animation-delay: -.9s
+  -webkit-animation-delay: -.9s;
+  animation-delay: -.9s
 }
 
 .sk-wave .sk-rect5 {
-    -webkit-animation-delay: -.8s;
-    animation-delay: -.8s
+  -webkit-animation-delay: -.8s;
+  animation-delay: -.8s
 }
 
 @-webkit-keyframes sk-waveStretchDelay {
 
-    0%,
-    100%,
-    40% {
-        -webkit-transform: scaleY(.4);
-        transform: scaleY(.4)
-    }
+  0%,
+  100%,
+  40% {
+    -webkit-transform: scaleY(.4);
+    transform: scaleY(.4)
+  }
 
-    20% {
-        -webkit-transform: scaleY(1);
-        transform: scaleY(1)
-    }
+  20% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1)
+  }
 }
 
 @keyframes sk-waveStretchDelay {
 
-    0%,
-    100%,
-    40% {
-        -webkit-transform: scaleY(.4);
-        transform: scaleY(.4)
-    }
+  0%,
+  100%,
+  40% {
+    -webkit-transform: scaleY(.4);
+    transform: scaleY(.4)
+  }
 
-    20% {
-        -webkit-transform: scaleY(1);
-        transform: scaleY(1)
-    }
+  20% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1)
+  }
 }
 
 .sk-wandering-cubes {
-    margin: 40px auto;
-    width: 40px;
-    height: 40px;
-    position: relative
+  margin: 40px auto;
+  width: 40px;
+  height: 40px;
+  position: relative
 }
 
 .sk-wandering-cubes .sk-cube {
-    background-color: #333;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-animation: sk-wanderingCube 1.8s ease-in-out -1.8s infinite both;
-    animation: sk-wanderingCube 1.8s ease-in-out -1.8s infinite both
+  background-color: #333;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-wanderingCube 1.8s ease-in-out -1.8s infinite both;
+  animation: sk-wanderingCube 1.8s ease-in-out -1.8s infinite both
 }
 
 .sk-chasing-dots,
 .sk-spinner-pulse {
-    width: 40px;
-    height: 40px;
-    margin: 40px auto
+  width: 40px;
+  height: 40px;
+  margin: 40px auto
 }
 
 .sk-wandering-cubes .sk-cube2 {
-    -webkit-animation-delay: -.9s;
-    animation-delay: -.9s
+  -webkit-animation-delay: -.9s;
+  animation-delay: -.9s
 }
 
 @-webkit-keyframes sk-wanderingCube {
-    0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0)
-    }
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0)
+  }
 
-    25% {
-        -webkit-transform: translateX(30px) rotate(-90deg) scale(.5);
-        transform: translateX(30px) rotate(-90deg) scale(.5)
-    }
+  25% {
+    -webkit-transform: translateX(30px) rotate(-90deg) scale(.5);
+    transform: translateX(30px) rotate(-90deg) scale(.5)
+  }
 
-    50% {
-        -webkit-transform: translateX(30px) translateY(30px) rotate(-179deg);
-        transform: translateX(30px) translateY(30px) rotate(-179deg)
-    }
+  50% {
+    -webkit-transform: translateX(30px) translateY(30px) rotate(-179deg);
+    transform: translateX(30px) translateY(30px) rotate(-179deg)
+  }
 
-    50.1% {
-        -webkit-transform: translateX(30px) translateY(30px) rotate(-180deg);
-        transform: translateX(30px) translateY(30px) rotate(-180deg)
-    }
+  50.1% {
+    -webkit-transform: translateX(30px) translateY(30px) rotate(-180deg);
+    transform: translateX(30px) translateY(30px) rotate(-180deg)
+  }
 
-    75% {
-        -webkit-transform: translateX(0) translateY(30px) rotate(-270deg) scale(.5);
-        transform: translateX(0) translateY(30px) rotate(-270deg) scale(.5)
-    }
+  75% {
+    -webkit-transform: translateX(0) translateY(30px) rotate(-270deg) scale(.5);
+    transform: translateX(0) translateY(30px) rotate(-270deg) scale(.5)
+  }
 
-    100% {
-        -webkit-transform: rotate(-360deg);
-        transform: rotate(-360deg)
-    }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg)
+  }
 }
 
 @keyframes sk-wanderingCube {
-    0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0)
-    }
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0)
+  }
 
-    25% {
-        -webkit-transform: translateX(30px) rotate(-90deg) scale(.5);
-        transform: translateX(30px) rotate(-90deg) scale(.5)
-    }
+  25% {
+    -webkit-transform: translateX(30px) rotate(-90deg) scale(.5);
+    transform: translateX(30px) rotate(-90deg) scale(.5)
+  }
 
-    50% {
-        -webkit-transform: translateX(30px) translateY(30px) rotate(-179deg);
-        transform: translateX(30px) translateY(30px) rotate(-179deg)
-    }
+  50% {
+    -webkit-transform: translateX(30px) translateY(30px) rotate(-179deg);
+    transform: translateX(30px) translateY(30px) rotate(-179deg)
+  }
 
-    50.1% {
-        -webkit-transform: translateX(30px) translateY(30px) rotate(-180deg);
-        transform: translateX(30px) translateY(30px) rotate(-180deg)
-    }
+  50.1% {
+    -webkit-transform: translateX(30px) translateY(30px) rotate(-180deg);
+    transform: translateX(30px) translateY(30px) rotate(-180deg)
+  }
 
-    75% {
-        -webkit-transform: translateX(0) translateY(30px) rotate(-270deg) scale(.5);
-        transform: translateX(0) translateY(30px) rotate(-270deg) scale(.5)
-    }
+  75% {
+    -webkit-transform: translateX(0) translateY(30px) rotate(-270deg) scale(.5);
+    transform: translateX(0) translateY(30px) rotate(-270deg) scale(.5)
+  }
 
-    100% {
-        -webkit-transform: rotate(-360deg);
-        transform: rotate(-360deg)
-    }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg)
+  }
 }
 
 .sk-spinner-pulse {
-    -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
-    animation: sk-pulseScaleOut 1s infinite ease-in-out
+  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+  animation: sk-pulseScaleOut 1s infinite ease-in-out
 }
 
 @-webkit-keyframes sk-pulseScaleOut {
-    0% {
-        -webkit-transform: scale(0);
-        transform: scale(0)
-    }
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0)
+  }
 
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        opacity: 0
-    }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0
+  }
 }
 
 @keyframes sk-pulseScaleOut {
-    0% {
-        -webkit-transform: scale(0);
-        transform: scale(0)
-    }
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0)
+  }
 
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        opacity: 0
-    }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0
+  }
 }
 
 .sk-chasing-dots {
-    position: relative;
-    text-align: center;
-    -webkit-animation: sk-chasingDotsRotate 2s infinite linear;
-    animation: sk-chasingDotsRotate 2s infinite linear
+  position: relative;
+  text-align: center;
+  -webkit-animation: sk-chasingDotsRotate 2s infinite linear;
+  animation: sk-chasingDotsRotate 2s infinite linear
 }
 
 .sk-chasing-dots .sk-child {
-    width: 60%;
-    height: 60%;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    -webkit-animation: sk-chasingDotsBounce 2s infinite ease-in-out;
-    animation: sk-chasingDotsBounce 2s infinite ease-in-out
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  -webkit-animation: sk-chasingDotsBounce 2s infinite ease-in-out;
+  animation: sk-chasingDotsBounce 2s infinite ease-in-out
 }
 
 .sk-chasing-dots .sk-dot2 {
-    top: auto;
-    bottom: 0;
-    -webkit-animation-delay: -1s;
-    animation-delay: -1s
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s
 }
 
 @-webkit-keyframes sk-chasingDotsRotate {
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg)
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+  }
 }
 
 @keyframes sk-chasingDotsRotate {
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg)
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+  }
 }
 
 @-webkit-keyframes sk-chasingDotsBounce {
 
-    0%,
-    100% {
-        -webkit-transform: scale(0);
-        transform: scale(0)
-    }
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0)
+  }
 
-    50% {
-        -webkit-transform: scale(1);
-        transform: scale(1)
-    }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
 }
 
 @keyframes sk-chasingDotsBounce {
 
-    0%,
-    100% {
-        -webkit-transform: scale(0);
-        transform: scale(0)
-    }
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0)
+  }
 
-    50% {
-        -webkit-transform: scale(1);
-        transform: scale(1)
-    }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
 }
 
 .sk-three-bounce {
-    margin: 40px auto;
-    width: 80px;
-    text-align: center
+  margin: 40px auto;
+  width: 80px;
+  text-align: center
 }
 
 .sk-three-bounce .sk-child {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
-    animation: sk-three-bounce 1.4s ease-in-out 0s infinite both
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+  animation: sk-three-bounce 1.4s ease-in-out 0s infinite both
 }
 
 .sk-circle .sk-child:before,
 .sk-fading-circle .sk-circle:before {
-    display: block;
-    border-radius: 100%;
-    content: '';
-    background-color: #333
+  display: block;
+  border-radius: 100%;
+  content: '';
+  background-color: #333
 }
 
 .sk-three-bounce .sk-bounce1 {
-    -webkit-animation-delay: -.32s;
-    animation-delay: -.32s
+  -webkit-animation-delay: -.32s;
+  animation-delay: -.32s
 }
 
 .sk-three-bounce .sk-bounce2 {
-    -webkit-animation-delay: -.16s;
-    animation-delay: -.16s
+  -webkit-animation-delay: -.16s;
+  animation-delay: -.16s
 }
 
 @-webkit-keyframes sk-three-bounce {
 
-    0%,
-    100%,
-    80% {
-        -webkit-transform: scale(0);
-        transform: scale(0)
-    }
+  0%,
+  100%,
+  80% {
+    -webkit-transform: scale(0);
+    transform: scale(0)
+  }
 
-    40% {
-        -webkit-transform: scale(1);
-        transform: scale(1)
-    }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
 }
 
 @keyframes sk-three-bounce {
 
-    0%,
-    100%,
-    80% {
-        -webkit-transform: scale(0);
-        transform: scale(0)
-    }
+  0%,
+  100%,
+  80% {
+    -webkit-transform: scale(0);
+    transform: scale(0)
+  }
 
-    40% {
-        -webkit-transform: scale(1);
-        transform: scale(1)
-    }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
 }
 
 .sk-circle {
-    margin: 40px auto;
-    width: 40px;
-    height: 40px;
-    position: relative
+  margin: 40px auto;
+  width: 40px;
+  height: 40px;
+  position: relative
 }
 
 .sk-circle .sk-child {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0
 }
 
 .sk-circle .sk-child:before {
-    margin: 0 auto;
-    width: 15%;
-    height: 15%;
-    -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
-    animation: sk-circleBounceDelay 1.2s infinite ease-in-out both
+  margin: 0 auto;
+  width: 15%;
+  height: 15%;
+  -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
+  animation: sk-circleBounceDelay 1.2s infinite ease-in-out both
 }
 
 .sk-circle .sk-circle2 {
-    -webkit-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    transform: rotate(30deg)
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg)
 }
 
 .sk-circle .sk-circle3 {
-    -webkit-transform: rotate(60deg);
-    -ms-transform: rotate(60deg);
-    transform: rotate(60deg)
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg)
 }
 
 .sk-circle .sk-circle4 {
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg)
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg)
 }
 
 .sk-circle .sk-circle5 {
-    -webkit-transform: rotate(120deg);
-    -ms-transform: rotate(120deg);
-    transform: rotate(120deg)
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg)
 }
 
 .sk-circle .sk-circle6 {
-    -webkit-transform: rotate(150deg);
-    -ms-transform: rotate(150deg);
-    transform: rotate(150deg)
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg)
 }
 
 .sk-circle .sk-circle7 {
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg)
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg)
 }
 
 .sk-circle .sk-circle8 {
-    -webkit-transform: rotate(210deg);
-    -ms-transform: rotate(210deg);
-    transform: rotate(210deg)
+  -webkit-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  transform: rotate(210deg)
 }
 
 .sk-circle .sk-circle9 {
-    -webkit-transform: rotate(240deg);
-    -ms-transform: rotate(240deg);
-    transform: rotate(240deg)
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  transform: rotate(240deg)
 }
 
 .sk-circle .sk-circle10 {
-    -webkit-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg)
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg)
 }
 
 .sk-circle .sk-circle11 {
-    -webkit-transform: rotate(300deg);
-    -ms-transform: rotate(300deg);
-    transform: rotate(300deg)
+  -webkit-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  transform: rotate(300deg)
 }
 
 .sk-circle .sk-circle12 {
-    -webkit-transform: rotate(330deg);
-    -ms-transform: rotate(330deg);
-    transform: rotate(330deg)
+  -webkit-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  transform: rotate(330deg)
 }
 
 .sk-circle .sk-circle2:before {
-    -webkit-animation-delay: -1.1s;
-    animation-delay: -1.1s
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s
 }
 
 .sk-circle .sk-circle3:before {
-    -webkit-animation-delay: -1s;
-    animation-delay: -1s
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s
 }
 
 .sk-circle .sk-circle4:before {
-    -webkit-animation-delay: -.9s;
-    animation-delay: -.9s
+  -webkit-animation-delay: -.9s;
+  animation-delay: -.9s
 }
 
 .sk-circle .sk-circle5:before {
-    -webkit-animation-delay: -.8s;
-    animation-delay: -.8s
+  -webkit-animation-delay: -.8s;
+  animation-delay: -.8s
 }
 
 .sk-circle .sk-circle6:before {
-    -webkit-animation-delay: -.7s;
-    animation-delay: -.7s
+  -webkit-animation-delay: -.7s;
+  animation-delay: -.7s
 }
 
 .sk-circle .sk-circle7:before {
-    -webkit-animation-delay: -.6s;
-    animation-delay: -.6s
+  -webkit-animation-delay: -.6s;
+  animation-delay: -.6s
 }
 
 .sk-circle .sk-circle8:before {
-    -webkit-animation-delay: -.5s;
-    animation-delay: -.5s
+  -webkit-animation-delay: -.5s;
+  animation-delay: -.5s
 }
 
 .sk-circle .sk-circle9:before {
-    -webkit-animation-delay: -.4s;
-    animation-delay: -.4s
+  -webkit-animation-delay: -.4s;
+  animation-delay: -.4s
 }
 
 .sk-circle .sk-circle10:before {
-    -webkit-animation-delay: -.3s;
-    animation-delay: -.3s
+  -webkit-animation-delay: -.3s;
+  animation-delay: -.3s
 }
 
 .sk-circle .sk-circle11:before {
-    -webkit-animation-delay: -.2s;
-    animation-delay: -.2s
+  -webkit-animation-delay: -.2s;
+  animation-delay: -.2s
 }
 
 .sk-circle .sk-circle12:before {
-    -webkit-animation-delay: -.1s;
-    animation-delay: -.1s
+  -webkit-animation-delay: -.1s;
+  animation-delay: -.1s
 }
 
 @-webkit-keyframes sk-circleBounceDelay {
 
-    0%,
-    100%,
-    80% {
-        -webkit-transform: scale(0);
-        transform: scale(0)
-    }
+  0%,
+  100%,
+  80% {
+    -webkit-transform: scale(0);
+    transform: scale(0)
+  }
 
-    40% {
-        -webkit-transform: scale(1);
-        transform: scale(1)
-    }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
 }
 
 @keyframes sk-circleBounceDelay {
 
-    0%,
-    100%,
-    80% {
-        -webkit-transform: scale(0);
-        transform: scale(0)
-    }
+  0%,
+  100%,
+  80% {
+    -webkit-transform: scale(0);
+    transform: scale(0)
+  }
 
-    40% {
-        -webkit-transform: scale(1);
-        transform: scale(1)
-    }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
 }
 
 .sk-cube-grid {
-    width: 40px;
-    height: 40px;
-    margin: 40px auto
+  width: 40px;
+  height: 40px;
+  margin: 40px auto
 }
 
 .sk-cube-grid .sk-cube {
-    width: 33.33%;
-    height: 33.33%;
-    background-color: #333;
-    float: left;
-    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out
+  width: 33.33%;
+  height: 33.33%;
+  background-color: #333;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out
 }
 
 .sk-cube-grid .sk-cube1 {
-    -webkit-animation-delay: .2s;
-    animation-delay: .2s
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s
 }
 
 .sk-cube-grid .sk-cube2 {
-    -webkit-animation-delay: .3s;
-    animation-delay: .3s
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s
 }
 
 .sk-cube-grid .sk-cube3 {
-    -webkit-animation-delay: .4s;
-    animation-delay: .4s
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s
 }
 
 .sk-cube-grid .sk-cube4 {
-    -webkit-animation-delay: .1s;
-    animation-delay: .1s
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s
 }
 
 .sk-cube-grid .sk-cube5 {
-    -webkit-animation-delay: .2s;
-    animation-delay: .2s
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s
 }
 
 .sk-cube-grid .sk-cube6 {
-    -webkit-animation-delay: .3s;
-    animation-delay: .3s
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s
 }
 
 .sk-cube-grid .sk-cube7 {
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s
 }
 
 .sk-cube-grid .sk-cube8 {
-    -webkit-animation-delay: .1s;
-    animation-delay: .1s
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s
 }
 
 .sk-cube-grid .sk-cube9 {
-    -webkit-animation-delay: .2s;
-    animation-delay: .2s
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s
 }
 
 @-webkit-keyframes sk-cubeGridScaleDelay {
 
-    0%,
-    100%,
-    70% {
-        -webkit-transform: scale3D(1, 1, 1);
-        transform: scale3D(1, 1, 1)
-    }
+  0%,
+  100%,
+  70% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1)
+  }
 
-    35% {
-        -webkit-transform: scale3D(0, 0, 1);
-        transform: scale3D(0, 0, 1)
-    }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1)
+  }
 }
 
 @keyframes sk-cubeGridScaleDelay {
 
-    0%,
-    100%,
-    70% {
-        -webkit-transform: scale3D(1, 1, 1);
-        transform: scale3D(1, 1, 1)
-    }
+  0%,
+  100%,
+  70% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1)
+  }
 
-    35% {
-        -webkit-transform: scale3D(0, 0, 1);
-        transform: scale3D(0, 0, 1)
-    }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1)
+  }
 }
 
 .sk-fading-circle {
-    margin: 40px auto;
-    width: 40px;
-    height: 40px;
-    position: relative
+  margin: 40px auto;
+  width: 40px;
+  height: 40px;
+  position: relative
 }
 
 .sk-fading-circle .sk-circle {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0
 }
 
 .sk-fading-circle .sk-circle:before {
-    margin: 0 auto;
-    width: 15%;
-    height: 15%;
-    -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
-    animation: sk-circleFadeDelay 1.2s infinite ease-in-out both
+  margin: 0 auto;
+  width: 15%;
+  height: 15%;
+  -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+  animation: sk-circleFadeDelay 1.2s infinite ease-in-out both
 }
 
 .sk-fading-circle .sk-circle2 {
-    -webkit-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    transform: rotate(30deg)
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg)
 }
 
 .sk-fading-circle .sk-circle3 {
-    -webkit-transform: rotate(60deg);
-    -ms-transform: rotate(60deg);
-    transform: rotate(60deg)
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg)
 }
 
 .sk-fading-circle .sk-circle4 {
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg)
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg)
 }
 
 .sk-fading-circle .sk-circle5 {
-    -webkit-transform: rotate(120deg);
-    -ms-transform: rotate(120deg);
-    transform: rotate(120deg)
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg)
 }
 
 .sk-fading-circle .sk-circle6 {
-    -webkit-transform: rotate(150deg);
-    -ms-transform: rotate(150deg);
-    transform: rotate(150deg)
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg)
 }
 
 .sk-fading-circle .sk-circle7 {
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg)
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg)
 }
 
 .sk-fading-circle .sk-circle8 {
-    -webkit-transform: rotate(210deg);
-    -ms-transform: rotate(210deg);
-    transform: rotate(210deg)
+  -webkit-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  transform: rotate(210deg)
 }
 
 .sk-fading-circle .sk-circle9 {
-    -webkit-transform: rotate(240deg);
-    -ms-transform: rotate(240deg);
-    transform: rotate(240deg)
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  transform: rotate(240deg)
 }
 
 .sk-fading-circle .sk-circle10 {
-    -webkit-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg)
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg)
 }
 
 .sk-fading-circle .sk-circle11 {
-    -webkit-transform: rotate(300deg);
-    -ms-transform: rotate(300deg);
-    transform: rotate(300deg)
+  -webkit-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  transform: rotate(300deg)
 }
 
 .sk-fading-circle .sk-circle12 {
-    -webkit-transform: rotate(330deg);
-    -ms-transform: rotate(330deg);
-    transform: rotate(330deg)
+  -webkit-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  transform: rotate(330deg)
 }
 
 .sk-fading-circle .sk-circle2:before {
-    -webkit-animation-delay: -1.1s;
-    animation-delay: -1.1s
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s
 }
 
 .sk-fading-circle .sk-circle3:before {
-    -webkit-animation-delay: -1s;
-    animation-delay: -1s
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s
 }
 
 .sk-fading-circle .sk-circle4:before {
-    -webkit-animation-delay: -.9s;
-    animation-delay: -.9s
+  -webkit-animation-delay: -.9s;
+  animation-delay: -.9s
 }
 
 .sk-fading-circle .sk-circle5:before {
-    -webkit-animation-delay: -.8s;
-    animation-delay: -.8s
+  -webkit-animation-delay: -.8s;
+  animation-delay: -.8s
 }
 
 .sk-fading-circle .sk-circle6:before {
-    -webkit-animation-delay: -.7s;
-    animation-delay: -.7s
+  -webkit-animation-delay: -.7s;
+  animation-delay: -.7s
 }
 
 .sk-fading-circle .sk-circle7:before {
-    -webkit-animation-delay: -.6s;
-    animation-delay: -.6s
+  -webkit-animation-delay: -.6s;
+  animation-delay: -.6s
 }
 
 .sk-fading-circle .sk-circle8:before {
-    -webkit-animation-delay: -.5s;
-    animation-delay: -.5s
+  -webkit-animation-delay: -.5s;
+  animation-delay: -.5s
 }
 
 .sk-fading-circle .sk-circle9:before {
-    -webkit-animation-delay: -.4s;
-    animation-delay: -.4s
+  -webkit-animation-delay: -.4s;
+  animation-delay: -.4s
 }
 
 .sk-fading-circle .sk-circle10:before {
-    -webkit-animation-delay: -.3s;
-    animation-delay: -.3s
+  -webkit-animation-delay: -.3s;
+  animation-delay: -.3s
 }
 
 .sk-fading-circle .sk-circle11:before {
-    -webkit-animation-delay: -.2s;
-    animation-delay: -.2s
+  -webkit-animation-delay: -.2s;
+  animation-delay: -.2s
 }
 
 .sk-fading-circle .sk-circle12:before {
-    -webkit-animation-delay: -.1s;
-    animation-delay: -.1s
+  -webkit-animation-delay: -.1s;
+  animation-delay: -.1s
 }
 
 @-webkit-keyframes sk-circleFadeDelay {
 
-    0%,
-    100%,
-    39% {
-        opacity: 0
-    }
+  0%,
+  100%,
+  39% {
+    opacity: 0
+  }
 
-    40% {
-        opacity: 1
-    }
+  40% {
+    opacity: 1
+  }
 }
 
 @keyframes sk-circleFadeDelay {
 
-    0%,
-    100%,
-    39% {
-        opacity: 0
-    }
+  0%,
+  100%,
+  39% {
+    opacity: 0
+  }
 
-    40% {
-        opacity: 1
-    }
+  40% {
+    opacity: 1
+  }
 }
 
 .sk-folding-cube {
-    margin: 40px auto;
-    width: 40px;
-    height: 40px;
-    position: relative;
-    -webkit-transform: rotateZ(45deg);
-    transform: rotateZ(45deg)
+  margin: 40px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg)
 }
 
 .sk-folding-cube .sk-cube {
-    float: left;
-    width: 50%;
-    height: 50%;
-    position: relative;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1)
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1)
 }
 
 .sk-folding-cube .sk-cube:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
-    animation: sk-foldCubeAngle 2.4s infinite linear both;
-    -webkit-transform-origin: 100% 100%;
-    -ms-transform-origin: 100% 100%;
-    transform-origin: 100% 100%
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+  animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%
 }
 
 .sk-folding-cube .sk-cube2 {
-    -webkit-transform: scale(1.1) rotateZ(90deg);
-    transform: scale(1.1) rotateZ(90deg)
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+  transform: scale(1.1) rotateZ(90deg)
 }
 
 .sk-folding-cube .sk-cube3 {
-    -webkit-transform: scale(1.1) rotateZ(180deg);
-    transform: scale(1.1) rotateZ(180deg)
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+  transform: scale(1.1) rotateZ(180deg)
 }
 
 .sk-folding-cube .sk-cube4 {
-    -webkit-transform: scale(1.1) rotateZ(270deg);
-    transform: scale(1.1) rotateZ(270deg)
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+  transform: scale(1.1) rotateZ(270deg)
 }
 
 .sk-folding-cube .sk-cube2:before {
-    -webkit-animation-delay: .3s;
-    animation-delay: .3s
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s
 }
 
 .sk-folding-cube .sk-cube3:before {
-    -webkit-animation-delay: .6s;
-    animation-delay: .6s
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s
 }
 
 .sk-folding-cube .sk-cube4:before {
-    -webkit-animation-delay: .9s;
-    animation-delay: .9s
+  -webkit-animation-delay: .9s;
+  animation-delay: .9s
 }
 
 @-webkit-keyframes sk-foldCubeAngle {
 
-    0%,
-    10% {
-        -webkit-transform: perspective(140px) rotateX(-180deg);
-        transform: perspective(140px) rotateX(-180deg);
-        opacity: 0
-    }
+  0%,
+  10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0
+  }
 
-    25%,
-    75% {
-        -webkit-transform: perspective(140px) rotateX(0);
-        transform: perspective(140px) rotateX(0);
-        opacity: 1
-    }
+  25%,
+  75% {
+    -webkit-transform: perspective(140px) rotateX(0);
+    transform: perspective(140px) rotateX(0);
+    opacity: 1
+  }
 
-    100%,
-    90% {
-        -webkit-transform: perspective(140px) rotateY(180deg);
-        transform: perspective(140px) rotateY(180deg);
-        opacity: 0
-    }
+  100%,
+  90% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0
+  }
 }
 
 @keyframes sk-foldCubeAngle {
 
-    0%,
-    10% {
-        -webkit-transform: perspective(140px) rotateX(-180deg);
-        transform: perspective(140px) rotateX(-180deg);
-        opacity: 0
-    }
+  0%,
+  10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform: perspective(140px) rotateX(-180deg);
+    opacity: 0
+  }
 
-    25%,
-    75% {
-        -webkit-transform: perspective(140px) rotateX(0);
-        transform: perspective(140px) rotateX(0);
-        opacity: 1
-    }
+  25%,
+  75% {
+    -webkit-transform: perspective(140px) rotateX(0);
+    transform: perspective(140px) rotateX(0);
+    opacity: 1
+  }
 
-    100%,
-    90% {
-        -webkit-transform: perspective(140px) rotateY(180deg);
-        transform: perspective(140px) rotateY(180deg);
-        opacity: 0
-    }
+  100%,
+  90% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform: perspective(140px) rotateY(180deg);
+    opacity: 0
+  }
 }
 
 :where(.css-dev-only-do-not-override-1k979oh).ant-image-preview-root .ant-image-preview-img {
@@ -12045,13 +12053,15 @@ img.vbox-figlio {
   user-select: none;
 }
 
-.section-custom-padding{
+.section-custom-padding {
   padding: 62px 0px;
 }
-.custom-bg-color{
+
+.custom-bg-color {
   background-color: var(--bg-color);
 }
-.custom-bg-color-secondary{
+
+.custom-bg-color-secondary {
   background-color: var(--bg-color-secondary);
 }
 
@@ -12061,6 +12071,7 @@ img.vbox-figlio {
   text-align: center;
   font-size: 14px;
 }
+
 .card {
   position: relative;
   display: -ms-flexbox;
@@ -12074,37 +12085,44 @@ img.vbox-figlio {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
+
 .section-emergency .location {
   text-align: center;
   color: #00a3c8;
   font-size: 30px;
 }
+
 .section-emergency .card-body {
   padding-top: 0;
 }
+
 .section-emergency .card-body h4 {
   font-size: 20px;
 }
+
 .qrimg {
   width: 120px;
 }
+
 .scanqr {
   font-size: 12px;
   color: #666666;
 }
-.location-address{
+
+.location-address {
   padding-left: 25px;
 }
 
-.scanner-text{
+.scanner-text {
   /* padding-bottom: 3px; */
   font-size: 0.9rem !important;
 }
 
-.bookAppointment{
+.bookAppointment {
   background-color: var(--colorPrimary) !important;
-  color: var(--colorWhite)  !important;
+  color: var(--colorWhite) !important;
 }
+
 /* .service_details div h3::after{
   content: "";
   position: absolute;
@@ -12135,27 +12153,59 @@ img.vbox-figlio {
   background-color: var(--colorPrimary);
   margin-bottom: 15px;
 }
-.qualification{
 
-}
-.testimonials-section{
+.qualification {}
+
+.testimonials-section {
   background: rgba(94, 94, 238, 0.10);
 
 }
 
 @media (min-width: 768px) {
   .col-md-9 {
-      flex: 0 0 auto;
-      width: 100% !important;
+    flex: 0 0 auto;
+    width: 100% !important;
   }
 }
 
-.navbar-toggler{
+.navbar-toggler {
   background-color: orange !important;
 }
 
 @media (min-width: 768px) {
   .d-md-block {
-      display: none !important;
+    display: none !important;
+  }
+
+}
+@media(max-width:1024px) {
+  .surgery-img {
+    max-height: 250px !important;
+  }
+}
+@media(max-width:425px) {
+  .surgery-img {
+    display: contents !important;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+
+  .custom-surgery-row {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: inherit;
+    margin-left: 0 !important; */
+    gap:30px !important
+  }
+  
+
+}
+
+@media(max-width:768px){
+  .custom-surgery-row{
+    gap:20px !important
   }
 }

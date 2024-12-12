@@ -147,6 +147,7 @@ const Footer = () => {
 
       </footer>
       <div className='contianer-fluid' style={{ justifyContent: 'space-around' }}>
+        <div style={{display:'none'}} ><span>nsna</span></div>
         <div className='row'>
           <div className='col bottom-col'>
             © Copyright . All Rights Reserved Dr. Sonik Shah

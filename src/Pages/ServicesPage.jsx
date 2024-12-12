@@ -174,9 +174,9 @@ const ServicesPage = () => {
       </MetaTags>
       <Breadcrumb title={getData.ServiceName} />
       <section className="service_details pt_100 xs_pt_70 pb_100 xs_pb_70 custom-cont">
-        <div className='head-cont'>
+        {/* <div className='head-cont'>
           <h1 className='special-h1'>{getData.keyword}</h1>
-        </div>
+        </div> */}
         <div className="container" bis_skin_checked={1}>
 
           {/* <div className="my-5">
@@ -234,12 +234,12 @@ const ServicesPage = () => {
                 <h3>Surgery Images</h3>
                 <p>{getData.descp4}</p>
               </div>
-              <div className="row" bis_skin_checked={1}>
-                <div className="col-xl-4 col-sm-6" bis_skin_checked={1}>
+              <div className="row custom-surgery-row" bis_skin_checked={1}>
+                <div className="col-xl-4 col-sm-6 surgery-img" bis_skin_checked={1}>
                   
                   <Image
-                    width={300}
-                    height={200}
+                    width={'100%'}
+                    height={'100%'}
                     src={getData.img1}
                     alt={getData.keyword}
                     preview={{
@@ -277,11 +277,11 @@ const ServicesPage = () => {
                   />
 
                 </div>
-                <div className="col-xl-4 col-sm-6" bis_skin_checked={1}>
+                <div className="col-xl-4 col-sm-6 surgery-img" bis_skin_checked={1}>
 
                   <Image
-                    width={300}
-                    height={200}
+                    width={'100%'}
+                    height={'100%'}
                     src={getData.img2}
                     alt={getData.keyword}
                     preview={{
@@ -319,11 +319,15 @@ const ServicesPage = () => {
                   />
 
                 </div>
-                <div className="col-xl-4 col-sm-6" bis_skin_checked={1}>
+                <div className="col-xl-4 col-sm-6 mt-sm-5 surgery-img" bis_skin_checked={1}>
 
                   <Image
-                    width={300}
-                    height={200}
+                    width={'100%'}
+                    height={'100%'}
+                    style={{
+                      height:'100%',
+                      width:'100%'
+                    }}
                     src={getData.img3}
                     alt={getData.keyword}
                     preview={{

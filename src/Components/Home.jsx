@@ -20,6 +20,7 @@ import { MetaTags } from "react-meta-tags";
 import bgImage from '../Asserts/banner_img_bg.webp'
 import galleryData from "../Asserts/galleryData";
 import { Slide } from "react-reveal";
+import { Image } from "antd";
 
 const Home = () => {
   return (
@@ -54,9 +55,9 @@ const Home = () => {
         </div>
       </div>
       <div className='head-cont'>
-       <Slide left sm>
-       <h1 className='special-h1'>Orthopedic Doctor in Kandivali</h1>
-       </Slide>
+        <Slide left sm>
+          <h1 className='special-h1'>Orthopedic Doctor in Kandivali</h1>
+        </Slide>
       </div>
       <section
         className="banner"
@@ -298,7 +299,7 @@ const Home = () => {
                       className="img-fluid w-100"
                     />
                   </div>
-                 
+
                 </div>
               </div>
             </Fade>
@@ -309,12 +310,11 @@ const Home = () => {
 
       <HomeServices />
 
-
       <section className="about pt_100 xs_pt_70 pb_100 xs_pb_70 py-5">
         <div className="container">
           <div className="text-center mb-4">
-            <h5>Video</h5>
-            <h2>Video Testimonials Of Patients.</h2>
+            <h5>Gallery</h5>
+            <h2>Photo Gallery</h2>
           </div>
           <div className="row g-3">
             <div
@@ -324,20 +324,18 @@ const Home = () => {
                 visibility: "visible",
                 animationDuration: "1s",
                 animationName: "fadeInRight",
-                height:350
+                height: 300, // Defining the height of the image container
               }}
             >
               <Fade left>
-                <iframe
-                  frameBorder={0}
-                  allowFullScreen=""
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  title="MINIMALLY INVASIVE HIP REPLACEMENT SURGERY"
+                <Image
+                  width="100%"  // Ensures the image takes the full width of the container
+                  height={300}  // Defining a fixed height for the image
                   style={{
-                    width: "100%",
-                    height: "100%",
+                    objectFit: "cover", // Ensures the image fits within the container without distortion
                   }}
-                  src="https://www.youtube.com/embed/FvcfThzQnk8?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1"
+                  src={galleryData.gal1} // Replace with your image URL
+                  alt="MINIMALLY INVASIVE HIP REPLACEMENT SURGERY"
                 />
               </Fade>
             </div>
@@ -348,20 +346,18 @@ const Home = () => {
                 visibility: "visible",
                 animationDuration: "1s",
                 animationName: "fadeInRight",
-                height:350
-
+                height: 300, // Defining the height of the image container
               }}
             >
               <Fade left>
-                <iframe
+                <Image
+                  width="100%"
+                  height={300} // Defining a fixed height for the image
                   style={{
-                    width: "100%",
-                    height: "100%",
+                    objectFit: "cover",
                   }}
-                  src="https://www.youtube.com/embed/NWUBpVoUbSk?start=3"
-                  allowFullScreen=""
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  title="ROBOTIC KNEE REPLACEMENT SURGERY"
+                  src={galleryData.gal2}
+                  alt="ROBOTIC KNEE REPLACEMENT SURGERY"
                 />
               </Fade>
             </div>
@@ -372,20 +368,18 @@ const Home = () => {
                 visibility: "visible",
                 animationDuration: "1s",
                 animationName: "fadeInRight",
-                height:350
-
+                height: 300, // Defining the height of the image container
               }}
             >
               <Fade left>
-                <iframe
+                <Image
+                  width="100%"
+                  height={300} // Defining a fixed height for the image
                   style={{
-                    width: "100%",
-                    height: "100%",
+                    objectFit: "cover",
                   }}
-                  src="https://www.youtube.com/embed/CxZreWHb3LQ?start=3"
-                  allowFullScreen=""
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  title="YouTube video player"
+                  src={galleryData.gal3}
+                  alt="YouTube video 1"
                 />
               </Fade>
             </div>
@@ -396,26 +390,27 @@ const Home = () => {
                 visibility: "visible",
                 animationDuration: "1s",
                 animationName: "fadeInRight",
-                height:350
-
+                height: 300, // Defining the height of the image container
               }}
             >
               <Fade left>
-                <iframe
+                <Image
+                  width="100%"
+                  height={300} // Defining a fixed height for the image
                   style={{
-                    width: "100%",
-                    height: "100%",
+                    objectFit: "cover",
                   }}
-                  src="https://www.youtube.com/embed/dYNfPlQxq_U?start=3"
-                  allowFullScreen=""
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  title="YouTube video player"
+                  src={galleryData.arth1}
+                  alt="YouTube video 2"
                 />
               </Fade>
             </div>
           </div>
         </div>
       </section>
+
+
+
       <section
         className="service"
         style={{ background: "url(https://html.themefax.com/madifax/images/service_bg.jpg)" }}
@@ -611,7 +606,7 @@ const Home = () => {
                             <div>  <i className="-alt" style={{ fontSize: "20px" }} aria-hidden="true" > <FaBuilding /></i></div>
                             <div className="location-address">
                               <span className="">
-                              Namaha Healthcare,S.V Road, opp. Rajyaguru Flyover, Kandivali, Bhadran Nagar, Kandivali West, Mumbai, Maharashtra 400067
+                                Namaha Healthcare,S.V Road, opp. Rajyaguru Flyover, Kandivali, Bhadran Nagar, Kandivali West, Mumbai, Maharashtra 400067
                               </span>
                             </div>
                           </p>

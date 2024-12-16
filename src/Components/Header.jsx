@@ -17,6 +17,10 @@ const NavBar = () => {
     }
   };
 
+  const onPress = () =>{
+    return window.scrollTo(0,0)
+  }
+
   window.addEventListener("scroll", changeColor);
   return (
     <>
@@ -97,7 +101,7 @@ const NavBar = () => {
                 <Nav>
                   <Nav.Link href="/" className="nav-link">
                     {" "}
-                    <Link to="/" className="nav-link">
+                    <Link onClick={() => window.scrollTo(0, 0)}  to="/" className="nav-link">
                       {" "}
                       Home
                     </Link>
@@ -105,7 +109,7 @@ const NavBar = () => {
 
                   <Nav.Link className="nav-link" href="/orthopedic-doctor-kandivali">
                     {" "}
-                    <Link className="nav-link" to="/orthopedic-doctor-kandivali">
+                    <Link  onClick={() => window.scrollTo(0, 0)} className="nav-link" to="/orthopedic-doctor-kandivali">
                       About Us
                     </Link>
                   </Nav.Link>
@@ -122,7 +126,7 @@ const NavBar = () => {
                         return (
                           <Col key={slugs} xs={12} md={4} sm={1}>
                             <Nav.Link href="/" className="">
-                              <Link to={`${slugs}`}>{ServiceName}</Link>
+                              <Link onClick={() => window.scrollTo(0, 0)}  to={`${slugs}`}>{ServiceName}</Link>
                             </Nav.Link>
                           </Col>
                         );
@@ -132,19 +136,19 @@ const NavBar = () => {
 
                   <Nav.Link className="nav-link" href="/ortho-specialist-kandivali">
                     {" "}
-                    <Link className="nav-link" to="/ortho-specialist-kandivali">
+                    <Link onClick={() => window.scrollTo(0, 0)}  className="nav-link" to="/ortho-specialist-kandivali">
                       FAQ
                     </Link>
                   </Nav.Link>
-                  <Nav.Link className="nav-link" href="/Gallery">
+                  <Nav.Link onClick={() => window.scrollTo(0, 0)}  className="nav-link" href="/Gallery">
                     {" "}
-                    <Link className="nav-link" to="/Gallery">
+                    <Link onClick={() => window.scrollTo(0, 0)}  className="nav-link" to="/Gallery">
                       Gallery
                     </Link>
                   </Nav.Link>
                   <Nav.Link className="nav-link" href="/orthopedic-near-kandivali">
                     {" "}
-                    <Link className="nav-link" to="/orthopedic-near-kandivali">
+                    <Link onClick={() => window.scrollTo(0, 0)}  className="nav-link" to="/orthopedic-near-kandivali">
                       Contact Us
                     </Link>
                   </Nav.Link>

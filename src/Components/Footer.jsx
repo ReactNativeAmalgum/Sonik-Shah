@@ -75,7 +75,7 @@ const Footer = () => {
                 <h5>Company</h5>
                 <ul>
                   <li>
-                    <a href="/">home</a>
+                    <a onClick={() => window.scrollTo(0, 0)}  href="/">home</a>
                   </li>
                   <li>
                     <a href="/orthopedic-doctor-kandivali">about us</a>
@@ -104,7 +104,7 @@ const Footer = () => {
                     const { ServiceName, slugs } = v;
                     return (
                       <li className='col'>
-                        <Link to={`${slugs}`}><a href={slugs}>{ServiceName}</a></Link>
+                        <Link onClick={() => window.scrollTo(0, 0)}  to={`${slugs}`}><a href={slugs}>{ServiceName}</a></Link>
                       </li>
                     )
                   })}
@@ -123,11 +123,11 @@ const Footer = () => {
                   <p>
                     <i className="fas fa-map-marker-alt" aria-hidden="true" />
                     Namaha Healthcare,S.V Road, opp. Rajyaguru Flyover, Kandivali, Bhadran Nagar, Kandivali West, Mumbai, Maharashtra 400067                  </p>
-                  <a href="#">
+                  <a>
                     <i className="fas fa-envelope" aria-hidden="true" />
                     Shah.sonik@gmail.com
                   </a>
-                  <a href="#">
+                  <a>
                     <div style={{ display: 'none' }} >
                       <span>MS</span>
                     </div>
